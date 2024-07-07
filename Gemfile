@@ -16,6 +16,7 @@ group :jekyll_plugins do
   gem 'jekyll-seo-tag', '~> 2.7.1'
   gem 'jekyll-sitemap', '~> 1.4.0'
   gem 'rexml', '>= 3.2.7'
-
+  gem 'directory_tag', path: './_plugins/directory_tag.rb'
+  
 end
 
