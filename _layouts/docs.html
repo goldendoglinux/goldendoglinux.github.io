@@ -1,12 +1,77 @@
----
-layout: default
----
+<!doctype html>
+<html lang="en"></html>
+<head>
+	{% seo %}
+	{% feed_meta %}
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+	  <link rel="stylesheet" href="{{ site.baseurl }}/css/screen.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Freeman&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+	{% if jekyll.environment == 'production' and site.google_analytics_key != '' %}
+	<script>
+		window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+		ga('create', '{{ site.google_analytics_key }}', 'auto');
+		ga('send', 'pageview');
+	</script>
+  
+	<script async src='https://www.google-analytics.com/analytics.js'></script>
+	{% endif %}
+	</head>
+
+<body>
+
+  {% include header.html %}
+
+<div class="contenedor-docs">
+
+<aside>
+  <div class="openClose"> < </div>
+    <ul>
+     
+        {% if page.url == "/docs/" %}
+          <h3 class="active"><a href="{{site.url}}/docs">GoldenDog Linux: Introduction</a></h3>
+        {% else %}
+          <h3><a href="{{site.url}}/docs">GoldenDog Linux</a></h3>
+        {% endif %}
+
+        {% assign  nombrepagina = page.url | replace: '/docs/', '' | replace: '/', '' %}
+        {% assign  nombrepaginalimpio = nombrepagina | replace: '%20', ' ' %}
+
+        {% directory path: docs %}
+        {% assign nombreArchivoLimpio = file.name | split: "." | first %}
+        {% if file.name != "index.md" and nombrepaginalimpio !=  nombreArchivoLimpio%}
+        <li><a href="{{ file.url | split: "." | first  }}">{{ file.name | replace: "-", " "  | split: "." | first }}</a></li>
+        {% elsif file.name != "index.md" %}
+        <li class="active"><a href="{{ file.url | split: "." | first  }}">{{ file.name | replace: "-", " "  | split: "." | first }}</a></li>
+        {% endif %}
+        {% enddirectory %}
+      
+      </ul>
+</aside>
+
+  <section id='content-docs'>
+    {{ content }}
+  </section>
+</div>
+
+{% include footer.html %}
+
+<!--
 <article>
   <section id='show-section'>
     <h1>{{ page.title }}</h1>
     <time>{{ page.date | date: '%d %B'}}</time>
     <span>{{ page.author }}</span>
+    <span>{{ page.description }}</span>
+
     {{ content }}
+ 
     <button onclick='suggest("{{ page.path }}")' id='suggest-button'>Suggest Changes</button>
   </section>
 
@@ -36,4 +101,9 @@ layout: default
     <button onclick='cancel()'>Cancel</button>
     <button onclick='logout()'>Logout</button>
   </section>
-</article>
+  </article>
+-->
+  
+  </body>
+  <script src="{{ site.baseurl }}/js/docs.js"></script>
+</html>

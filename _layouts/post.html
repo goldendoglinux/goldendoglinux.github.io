@@ -13,6 +13,17 @@ layout: page
 		</div> <!-- holitas cierra -->
 		{{ content }}
 
+		<div class="blog-navigation">
+			<a class="prev" href="{% if page.url contains '/es/' %}{{site.url}}/es/blog{% else %}{{site.url}}/blog{% endif %}">
+				{% if page.url contains '/es/' %}
+					<< Volver a Lista de Posts
+				{% else %}
+					<< Back to Post List
+				{% endif %}
+			</a>
+		</div>
+		
+		<!-- 
 		<div class="author">
 			{% assign author_id = page.author_staff_member | prepend: "/staff_members/" | append: "/" %}
 			{% assign author = site.staff_members | where: "url", author_id | first %}
@@ -21,7 +32,7 @@ layout: page
 			<p class="blurb">{{ author.blurb }}</p>
 
 		</div>
-
+		
 		<div class="blog-navigation">
 			{% if page.previous.url %}
 				<a class="prev" href="{% include relative-src.html src=page.previous.url %}">&laquo; {{ page.previous.title }}</a>
@@ -30,6 +41,7 @@ layout: page
 				<a class="next" href="{% include relative-src.html src=page.next.url %}">{{ page.next.title }} &raquo;</a>
 			{% endif %}
 		</div>
+		-->
 
 		{% if site.disqus_shortname and page.comments %}
 			<div id="disqus_thread"></div>

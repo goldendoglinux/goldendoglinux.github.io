@@ -1,19 +1,33 @@
-<div style="text-align: center;">
+<div class="languageSelection" style="text-align: center;">
     <a href="/es/" style="display: inline-block; margin-right: 10px;"><img src="/icons/es.png" class="imglang"></a>
     <a href="/" style="display: inline-block;"><img src="/icons/en.png" class="imglang2"></a>
 </div>
 <nav>
 	<a class="nav-toggle" id="open-nav" href="#">&#9776;</a>
 	<a class="editor-link btn" href="cloudcannon:collections/_data/navigation.yml" class="btn"><strong>&#9998;</strong> Edit navigation</a>
-	{% for link in site.data.navigation %}
-		{% assign class = "" %}
-		{% if link.highlight %}
-			{% assign class = class | append: " highlight" %}
-		{% endif %}
+	{% if page.url contains '/es/' %}
+		{% for link in site.data.navigation.infoEs %}
+			{% assign class = "" %}
+			{% if link.highlight %}
+				{% assign class = class | append: " highlight" %}
+			{% endif %}
 
-		{% if link.link == page.url %}
-			{% assign class = class | append: " active" %}
-		{% endif %}
+			{% if link.link == page.url %}
+				{% assign class = class | append: " active" %}
+			{% endif %}
 		<a href="{% include relative-src.html src=link.link %}" class="{{ class }}" {% if link.new_window %}target="_blank"{% endif %}>{{ link.name }}</a>
-	{% endfor %}
+		{% endfor %}
+	{% else %}
+		{% for link in site.data.navigation.info %}
+			{% assign class = "" %}
+			{% if link.highlight %}
+				{% assign class = class | append: " highlight" %}
+			{% endif %}
+
+			{% if link.link == page.url %}
+				{% assign class = class | append: " active" %}
+			{% endif %}
+		<a href="{% include relative-src.html src=link.link %}" class="{{ class }}" {% if link.new_window %}target="_blank"{% endif %}>{{ link.name }}</a>
+		{% endfor %}
+	{% endif %}
 </nav>

@@ -1,24 +1,50 @@
-- name: About
-  link: /about/
-  new_window: false
-  highlight: false
-- name: News
-  link: /blog/
-  new_window: false
-  highlight: false
-- name: Download
-  link: /download/
-  new_window: false
-  highlight: true
-- name: Community
-  link: /community/
-  new_window: false
-  highlight: false
-- name: Documentation
-  link: /docs/
-  new_window: false
-  highlight: false
-- name: Discord
-  link: /discord/
-  new_window: false
-  highlight: false
+info:
+  - name: About
+    link: /about/
+    new_window: false
+    highlight: false
+  - name: News
+    link: /blog/
+    new_window: false
+    highlight: false
+  - name: Download
+    link: /download/
+    new_window: false
+    highlight: true
+  - name: Community
+    link: /community/
+    new_window: false
+    highlight: false
+  - name: Documentation
+    link: /docs/
+    new_window: false
+    highlight: false
+  - name: Discord
+    link: https://discord.gg/3gCZP8YBDc
+    new_window: true
+    highlight: false
+infoEs:
+  - name: Acerca de
+    link: /es/about/
+    new_window: false
+    highlight: false
+  - name: Noticias
+    link: /es/blog/
+    new_window: false
+    highlight: false
+  - name: Descargas
+    link: /es/download/
+    new_window: false
+    highlight: true
+  - name: Comunidad
+    link: /es/community
+    new_window: false
+    highlight: false
+  - name: Documentación
+    link: /es/docs/
+    new_window: false
+    highlight: false
+  - name: Discord
+    link: https://discord.gg/3gCZP8YBDc
+    new_window: true
+    highlight: false

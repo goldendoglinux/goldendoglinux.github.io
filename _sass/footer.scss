@@ -70,8 +70,47 @@ footer {
 	padding: 50px 0 50px 0;
 	font-size: 1.1em;
 	position: relative;
-	background: #2b2b40;
 	color: #fff;
+	background: #2b2b40;
+
+
+	p{
+		color:#999;
+	}
+
+	.footer-support-images{
+		width: 100%;
+		display: flex;
+		margin-top:10px;
+		margin-bottom:10px;
+		align-items: center;
+		justify-content:center;
+		
+		a{
+			text-decoration: none;
+
+			img{
+				width:34px;
+				height: auto;
+				opacity:70%;
+				margin-left:8px;
+				filter: grayscale(1);
+				transition: 0.3s;
+				
+				&:hover{
+					opacity:100%;
+					filter: grayscale(0);
+					transition: 0.3s;
+				}
+			}
+
+			&:hover{
+				all:unset;
+				cursor:pointer;
+			}
+		}
+	}
+	
 
 	.copyright {
 		font-size: .8em;

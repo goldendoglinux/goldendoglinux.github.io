@@ -1,31 +1,82 @@
+info:
 - links:
-  - name: News
-    link: /news/
-  - name: Download
-    link: /download/
-  - name: About
-    link: /about/
-  - name: Community
-    link: /community/
+    - name: News
+      link: /news/
+    - name: Download
+      link: /download/
+    - name: About
+      link: /about/
+    - name: Community
+      link: /community/
 - links:
-  - name: Support
-    link: /docs/
-  - name: Discord
-    link: /discord/
+    - name: Support
+      link: /docs/
+    - name: Discord
+      link: /discord/
 - links:
-  - name: Github
-    link: https://github.com/alexiarstein
-    new_window: true
-    social_icon: Github
-  - name: Twitter
-    link: https://twitter.com/goldendoglinux/
-    social_icon: Twitter
-    new_window: true
-  - name: YouTube
-    link: https://youtube.com/@lachicadesistemas
-    social_icon: YouTube
-    new_window: true
-  - name: RSS
-    link: /feed.xml
-    social_icon: RSS
-    new_window: false
+    - name: Github
+      link: https://github.com/alexiarstein
+      new_window: true
+      social_icon: Github
+    - name: Twitter
+      link: https://twitter.com/goldendoglinux/
+      social_icon: Twitter
+      new_window: true
+    - name: YouTube
+      link: https://youtube.com/@lachicadesistemas
+      social_icon: YouTube
+      new_window: true
+    - name: RSS
+      link: /feed.xml
+      social_icon: RSS
+      new_window: false
+infoEs:
+- links:
+    - name: Noticias
+      link: /es/news/
+    - name: Descargas
+      link: /es/download/
+    - name: Acerca de
+      link: /es/about/
+    - name: Comunidad
+      link: /es/community/
+- links:
+    - name: Soporte
+      link: /es/docs/
+    - name: Discord
+      link: /es/discord/
+- links:
+    - name: Github
+      link: https://github.com/alexiarstein
+      new_window: true
+      social_icon: Github
+    - name: Twitter
+      link: https://twitter.com/goldendoglinux/
+      social_icon: Twitter
+      new_window: true
+    - name: YouTube
+      link: https://youtube.com/@lachicadesistemas
+      social_icon: YouTube
+      new_window: true
+    - name: RSS
+      link: /feed.xml
+      social_icon: RSS
+      new_window: false
+support:
+- images:
+    - name: kde
+      source: "/images/kde-logo.png"
+      link: http://kde.org
+      new_window: true
+    - name: debian
+      source: "/images/debian-logo.png"
+      link: https://www.debian.org/
+      new_window: true
+    - name: rocky
+      source: "/images/rocky-logo.png"
+      link: https://rockylinux.org/
+      new_window: true
+    - name: mozilla
+      source: "/images/mozilla-logo.png"
+      link: https://www.mozilla.org/
+      new_window: true

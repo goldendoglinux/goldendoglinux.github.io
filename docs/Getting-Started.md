@@ -1,10 +1,8 @@
 ---
-date: 2024-05-20
-title: Small Sneak Peak at the current State of GoldenDog Linux
-categories:
-  - devlog
-author_staff_member: alexia
+layout: docs
+prelink: /docs/index
 ---
+
 
 Hello Everybody! This is Alexia, your favourite benevolent dictator for life for GoldenDog Linux, and I thought it would be nice to share some of what's happening behind the scenes with GDL.
 
@@ -52,3 +50,8 @@ If you have any questions or would like to donate or sponsor the project, send m
 Much love,
 
 Alexia.
+
+
+
+
+  

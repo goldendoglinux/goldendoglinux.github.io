@@ -1,0 +1,6 @@
+<header>
+    <div class="container">
+        <div class="company-name"><a href="{% if page.url contains '/es/' %}{{ site.baseurl }}/es/{% else %}{{ site.baseurl }}/{% endif %}"><img src="{{ site.baseurl }}/images/logo.svg" alt="Hydra Logo" width="125" height="53" /></a></div>
+            {% include navigation.html %}
+    </div>
+</header>

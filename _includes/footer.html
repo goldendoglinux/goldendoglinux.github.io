@@ -1,0 +1,47 @@
+<footer>
+
+    <div class="container">
+        <p class="editor-link"><a href="cloudcannon:collections/_data/footer.yml" class="btn"><strong>&#9998;</strong>Edit footer</a></p>
+        
+        <div class="footer-columns">
+        {% if page.url contains '/es/' %}
+            {% for column in site.data.footer.infoEs %}
+                <ul class="footer-links">
+                {% for link in column.links %}
+                    <li><a {% if link.new_window %}target="_blank"{% endif %} href="{% include relative-src.html src=link.link %}" {% if link.social_icon %}class="{{ link.social_icon }}-icon"{% endif %}>
+                        {% if link.social_icon %}
+                            {% include social-icon.html icon=link.social_icon %}
+                        {% endif %}
+                        {{ link.name }}</a></li>
+                {% endfor %}
+                </ul>
+            {% endfor %}
+        {% else %}
+            {% for column in site.data.footer.info %}
+            <ul class="footer-links">
+                {% for link in column.links %}
+                    <li><a {% if link.new_window %}target="_blank"{% endif %} href="{% include relative-src.html src=link.link %}" {% if link.social_icon %}class="{{ link.social_icon }}-icon"{% endif %}>
+                        {% if link.social_icon %}
+                            {% include social-icon.html icon=link.social_icon %}
+                        {% endif %}
+                        {{ link.name }}</a></li>
+                {% endfor %}
+                </ul>
+            {% endfor %}
+        {% endif %}
+        </div>
+        
+
+        <div class="footer-support-images">	
+            {% for column in site.data.footer.support %}
+                {% for image in column.images %}
+                    <a href="{{image.link}}" {% if image.new_window %}target="_blank"{% endif %}><img src="{{image.source}}" alt="{{ image.name }}"></a>
+                    {% endfor %}
+                {% endfor %}
+        </div>
+
+
+    <p class="copyright">&copy; {{ site.time | date: '%Y' }} GoldenDog Linux • <a href="#">Terms</a> &amp; <a href="#">Privacy</a> • <a href="https://opensource.org/">Open Source</a></p>
+    </div>
+
+</footer>
