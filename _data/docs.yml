@@ -1,0 +1,20 @@
+info:
+  - name: General Information
+    url: /docs/general-information
+    route: general information
+  - name: Getting Started
+    url: /docs/getting-started
+    route: getting started
+  - name: News
+    url: /docs/news
+    route: news
+infoES:
+  - name: Guia Escencial
+    url: /docs/es/guia-escencial
+    route: guia escencial
+  - name: Informacion General
+    url: /docs/es/informacion-general
+    route: informacion general
+  - name: Novedades
+    url: /docs/es/novedades
+    route: novedades

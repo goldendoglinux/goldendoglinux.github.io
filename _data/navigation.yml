@@ -1,4 +1,8 @@
 info:
+  - name: Home
+    link: /
+    new_window: false
+    highlight: false
   - name: About
     link: /about/
     new_window: false
@@ -24,6 +28,10 @@ info:
     new_window: true
     highlight: false
 infoEs:
+  - name: Inicio
+    link: /es
+    new_window: false
+    highlight: false
   - name: Acerca de
     link: /es/about/
     new_window: false
@@ -41,7 +49,7 @@ infoEs:
     new_window: false
     highlight: false
   - name: Documentación
-    link: /es/docs/
+    link: /docs/es/
     new_window: false
     highlight: false
   - name: Discord

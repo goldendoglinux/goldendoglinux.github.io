@@ -32,8 +32,49 @@
 
 <aside>
   <div class="openClose"> < </div>
+
+  {% assign nombrepagina = page.url | replace: '/docs/', '' | replace: '/', '' %}
+
+  {% if page.url contains 'es'%}
+
+  <ul>
+    {% if page.url == "/docs/es/" %}
+      <h3 class="active"><a href="{{site.url}}/docs/es/">GoldenDog Linux: Introducción</a></h3>
+    {% else %}
+        <h3><a href="{{site.url}}/docs/es/">GoldenDog Linux</a></h3>
+    {% endif %}
+
+    {% for docs in site.data.docs.infoES %}
+        {% if docs.route == namepage %}
+          <li class="active"><a href="{{docs.url}}">{{docs.name}}</a></li>
+        {% else %}
+          <li><a href="{{docs.url}}">{{docs.name}}</a></li>
+        {% endif %}
+    {% endfor %}
+
+  </ul>
+  {% else %}
     <ul>
-     
+    {% if page.url == "/docs/" %}
+            <h3 class="active"><a href="{{site.url}}/docs">GoldenDog Linux: Introduction</a></h3>
+          {% else %}
+            <h3><a href="{{site.url}}/docs">GoldenDog Linux</a></h3>
+    {% endif %}
+
+    {% assign namepage = nombrepagina | replace: '-', ' ' %}
+
+    {% for docs in site.data.docs.info %}
+        {% if docs.route == namepage %}
+          <li class="active"><a href="{{docs.url}}">{{docs.name}}</a></li>
+        {% else %}
+          <li><a href="{{docs.url}}">{{docs.name}}</a></li>
+        {% endif %}
+    {% endfor %}
+    </ul>
+  {% endif %}
+    <!-- 
+    <ul>
+        
         {% if page.url == "/docs/" %}
           <h3 class="active"><a href="{{site.url}}/docs">GoldenDog Linux: Introduction</a></h3>
         {% else %}
@@ -53,6 +94,7 @@
         {% enddirectory %}
       
       </ul>
+      -->
 </aside>
 
   <section id='content-docs'>
