@@ -5,6 +5,9 @@ info:
   - name: Getting Started
     url: /docs/getting-started
     route: getting started
+  - name: How to Contribute
+    url: /docs/how-to-contribute
+    route: how to contribute
   - name: News
     url: /docs/news
     route: news
