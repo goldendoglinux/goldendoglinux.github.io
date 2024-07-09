@@ -72,29 +72,7 @@
     {% endfor %}
     </ul>
   {% endif %}
-    <!-- 
-    <ul>
-        
-        {% if page.url == "/docs/" %}
-          <h3 class="active"><a href="{{site.url}}/docs">GoldenDog Linux: Introduction</a></h3>
-        {% else %}
-          <h3><a href="{{site.url}}/docs">GoldenDog Linux</a></h3>
-        {% endif %}
-
-        {% assign  nombrepagina = page.url | replace: '/docs/', '' | replace: '/', '' %}
-        {% assign  nombrepaginalimpio = nombrepagina | replace: '%20', ' ' %}
-
-        {% directory path: docs %}
-        {% assign nombreArchivoLimpio = file.name | split: "." | first %}
-        {% if file.name != "index.md" and nombrepaginalimpio !=  nombreArchivoLimpio%}
-        <li><a href="{{ file.url | split: "." | first  }}">{{ file.name | replace: "-", " "  | split: "." | first }}</a></li>
-        {% elsif file.name != "index.md" %}
-        <li class="active"><a href="{{ file.url | split: "." | first  }}">{{ file.name | replace: "-", " "  | split: "." | first }}</a></li>
-        {% endif %}
-        {% enddirectory %}
-      
-      </ul>
-      -->
+  
 </aside>
 
   <section id='content-docs'>
