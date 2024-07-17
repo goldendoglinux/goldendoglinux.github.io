@@ -1,0 +1,9 @@
+#!/bin/bash
+### GoldenDog Linux Remote Install Script
+### Author: Alexia Michelle <alexia@goldendoglinux.org>
+mkfile=$(mktemp)
+echo -e "## GoldenDog Linux - Spotify Repository\ndeb http://repository.spotify.com/ stable non-free" > $mkfile
+sudo mv $mkfile /etc/apt/sources.list.d/spotify.list
+sudo apt update -y && sudo apt install spotify-client -y; clear
+echo "Spotify Client installed. Look for it in the start menu (Paw icon)"
+echo "To remove Spotify, type: sudo gdl remove spotify-client"
