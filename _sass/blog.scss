@@ -70,6 +70,7 @@
 		}
 
 		a {
+			
 			text-decoration: none;
 		}
 
@@ -87,6 +88,18 @@
 	.post-content {
 		.button {
 			margin: 30px 0 0 0;
+			
+			a{
+				color:#fff;
+				border-radius:20px;
+				background:#3e1c46;
+				transition:all 0.5s;
+				&:hover{
+					background:#4f2458;
+				}
+			}
+
+			
 		}
 	}
 }
@@ -98,7 +111,7 @@
 .blog-filter {
 	text-align: center;
 	a {
-		background: #eee;
+	background: #eee;
     padding: 3px 5px;
     font-size: .8em;
     border-radius: 5px;

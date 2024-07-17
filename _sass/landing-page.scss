@@ -11,8 +11,8 @@
 }
 
 .testimonial {
-	background: #f5f5f5;
-	margin: 0;
+	background: #e7e7e7;
+	margin-top: 30px;
 	padding: 100px 0;
 
 	.testimonial-block {
@@ -24,6 +24,7 @@
 			@include flexbox;
 
 			blockquote {
+				text-align: justify;
 				-webkit-flex: 1;
 				flex: 1;
 			}
@@ -40,6 +41,8 @@
 
 	p {
 		color: #fff;
+		font-size:1.8rem;
+		font-family: "EB Garamond", serif;
 	}
 }
 
@@ -50,13 +53,19 @@
 		align-items: center;
 		flex-direction: row;
 
+		.text{
+			font-size:15px;
+			text-align:justify;
+			font-family: "EB Garamond", serif;
+		}
+
 		.text, .image {
 			-webkit-flex: 1;
 			flex: 1;
 			padding: 0 20px;
 		}
 	}
-
+	
 	.content section:nth-child(even) .flex {
 		flex-direction: row-reverse;
 	}

@@ -1,66 +1,95 @@
 ---
-title: Acerca de GoldenDog
-description:
+title: Acerca de Golden Dog
 ---
 
-<strong>GoldenDog Linux</strong>es una Estación de Trabajo Linux que pretende ser amigable, simple de usar y, al mismo tiempo, proporcionar toda la integridad, estabilidad y fiabilidad que una plataforma como <strong>Debian Stable</strong> tiene para ofrecer.<br/>
+<h2>ACERCA DE GOLDENDOG</h2>
 
-<h3>¿Por qué Debian?</h3>
+<p class="textoCentrado"><span><strong>GoldenDog Linux</strong></span> es una Estación de Trabajo Linux que pretende ser amigable, simple de usar y, al mismo tiempo, proporcionar toda la integridad, estabilidad y fiabilidad que una plataforma como <span><strong>Debian Stable</strong></span> tiene para ofrecer.</span></p></br>
 
-Hubo algunas razones por las cuales. Principalmente porque he sido usuario de Debian durante la mayor parte de mi vida, comenzando alrededor de 2004, y lo usé como mi sistema principal hasta el año 2019, cuando comencé a usar Fedora también. Estos 15 años de experiencia me hicieron muy familiar con cómo funciona este sistema operativo. <br/>
+
+<span class="textoCentrado"><h3>¿Por qué Debian?</h3></span>
+
+</br>
+
+Hubo algunas razones por las cuales fue elegido, principalmente porque he sido usuario de Debian durante la mayor parte de mi vida, comenzando alrededor de 2004, y lo usé como mi sistema principal hasta el año 2019, cuando comencé a usar Fedora también. Estos 15 años de experiencia me hicieron muy familiar con cómo funciona este sistema operativo. <br/>
 
 GoldenDog no es el único trabajo que utiliza Debian como plataforma. Muchos sistemas populares como Ubuntu, Mint y Kali también lo utilizan. Esto se debe a que, en su núcleo, está muy meticulosamente planificado y mantenido, lo que lo convierte en una excelente opción para un motor fiable que se adapta a casi cualquier caso de uso.<br/><br/>
 
 Debian también fomenta trabajos derivados que usan su software para usar sus espejos oficiales. Es por eso que GoldenDog ejecuta exclusivamente software y espejos oficiales de Debian, aprovechando las frecuentes actualizaciones y parches que Debian proporciona, especialmente porque este es un proyecto de una sola persona en el que trabajo cuando el tiempo lo permite, y no podría empaquetar miles de paquetes .deb yo sola de forma regular. Usar solo paquetes oficiales de Debian hace feliz a todos.
+</br></br></br>
 
-<h3>Detalles Técnicos</h3>
+<span><h2>Detalles Técnicos</h2></span>
 
-<h4>Requisitos Mínimos</h4>
+<span><h4>Requisitos del Sistema</h4></span>
+<hr/>
+<span><h5>Mínimos</h5></span>
 <ul>
 <li>Memoria: 2GB</li>
 <li>Núcleos de CPU: 2</li>
 <li>Espacio en Disco: 50GB</li>
 </ul>
-<h4>Requisitos Recomendados</h4>
+
+<span><h5>Recomendados</h5></span>
 <ul>
 <li>Memoria: 8GB</li>
 <li>Núcleos de CPU: 4</li>
 <li>Espacio en Disco: 120GB</li>
 </ul>
 
-<h4>Soporte de Video</h4>
-GoldenDog utiliza los módulos de controladores de Debian, por lo que está disponible el soporte tanto para GPUs NVIDIA como AMD. 
-En una ventana de terminal, escribe:
-<p>Para NVIDIA: <code>sudo gdl install nvidia-driver</code></p>
-<p>Para AMD: <code>sudo gdl install amdgpu</code></p>
+</br>
 
-<h4>Soporte para Snap y Flatpak</h4>
+<span><h4>Soporte de Video</h4></span>
+<hr/>
+</br>
+GoldenDog utiliza los módulos de controladores de Debian, por lo que está disponible el soporte tanto para GPUs NVIDIA como AMD. 
+En una ventana de terminal, escribe:</br>
+
+<p><span><h5>Para NVIDIA:</h5></span></p>
+<code>sudo gdl install nvidia-driver</code>
+
+<p><span><h5>Para AMD:</h5></span></p>
+<code>sudo gdl install amdgpu</code>
+
+</br></br>
+
+<span><h4>Soporte para Snap & Flatpak</h4></span>
+<hr/>
 Por defecto, ni flatpak ni snap están instalados. Se pueden instalar fácilmente a través de gdl/apt desde una ventana de terminal.
 
-<p>Para Snapd: <code>sudo gdl install snapd</code></p>
-<p>Para Flatpak: <code>sudo gdl install flatpak</code></p>
+<p><span><h5>Para Snapd:</h5></span></p>
+<code>sudo gdl install snapd</code>
+<p><span><h5>Para Flatpak:</h5></span></p>
+<code>sudo gdl install flatpak</code>
 
-<h4>Gestor de paquetes gdl/apt</h4>
+</br>
+</br>
 
+<span><h4>Gestor de paquetes gdl/apt</h4></span>
+<hr/>
+<br/>
 Actualmente, GDL utiliza el gestor de paquetes APT. En este momento, gdl es simplemente un alias para apt. Puedes usarlos indistintamente.
 
-<h4>goldendog-update</h4> 
-Este comando es una interfaz de usuario de texto que lista los paquetes que podrían ser actualizados y te permite seleccionarlos individualmente. Podría ser 
+</br></br><code>goldendog-update</code></br>
+
+<p><span>Este comando es una interfaz de usuario de texto que lista los paquetes que podrían ser actualizados y te permite seleccionarlos individualmente. Podría ser 
 útil cuando no quieras realizar una actualización completa y seleccionar paquetes específicos en su lugar, por ejemplo, cuando deseas evitar actualizar a una cierta versión del kernel 
-o cualquier otra cosa.
+o cualquier otra cosa.</span></p>
 
-<h2>Ayuda y Soporte</h2>
-Actualmente, todo el soporte se maneja a través de tickets de problemas en GitHub. Por favor visita <a href="https://github.com/goldendoglinux/support/issues">https://github.com/goldendoglinux/support/issues</a><br/>
-El soporte es manejado por voluntarios, así que por favor ten paciencia para recibir una respuesta y sé amable con quienes ofrecen soporte. ¡Gracias!
+</br></br>
 
-<p>Alternativamente, puedes visitar la <a href="/es/community/">Sección de la Comunidad</a> para aprender cómo conectarte a mi servidor de <b>Discord</b>, y/o al canal IRC oficial de GoldenDog </p>
+<span><h3>Ayuda y Soporte</h3></span>
+<hr/>
+<p><span>Actualmente, todo el soporte se maneja a través de tickets de problemas en GitHub.</br> <a href="https://github.com/goldendoglinux/support/issues" target="_blank">Haz click aqui para reportar un error.</a><br/>
+El soporte es manejado por voluntarios, así que por favor ten paciencia para recibir una respuesta y sé amable con quienes ofrecen soporte. </br></br>¡Gracias!</span></p>
 
-<h3>Tengo curiosidad por el nombre, la historia detrás y tus otros proyectos y voluntariado</h3>
+<p class="aclaracion textoCentrado">Alternativamente, puedes visitar la sección <a href="/es/community/">comunidad</a> para aprender cómo conectarte a mi servidor de Discord, y/o al canal IRC.</p>
 
-Para saber más sobre cómo surgió el proyecto, los otros proyectos en los que hago voluntariado, como <strong>RockyLinux</strong> y <strong>OpenInfra</strong>, revisa <a href="https://lexi.lat">Mi Blog (en Español)</a>
-o la <a href="/es/news/">Sección de Noticias</a>, donde estaré publicando artículos, pensamientos, anécdotas y cosas relacionadas con el Código Abierto y Linux en general, regularmente. <br/><br/><br/>
+<p class="textoCentrado"><span>¡Únete a la comunidad!, tengo curiosidad por el nombre, la historia detrás y tus proyectos. </span></p>
 
-<p><b>¡Diviértete usando Goldendog!</b></p>
+<h5>Para saber más sobre cómo surgió el proyecto, los otros proyectos en los que hago voluntariado, como RockyLinux y OpenInfra, revisa <a href="https://lexi.lat">Mi Blog (en Español)</a>
+o la <a href="/es/news/">Sección de Noticias</a>, donde estaré publicando artículos, pensamientos, anécdotas y cosas relacionadas con el Código Abierto y Linux en general, regularmente.</h5><br/>
+
+<p class="textoCentrado"><b>¡Diviértete usando Goldendog!</b></p>
 
 <ul class="staff">
 	

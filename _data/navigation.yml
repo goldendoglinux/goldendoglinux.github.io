@@ -20,7 +20,7 @@ info:
     new_window: false
     highlight: false
   - name: Documentation
-    link: /docs/
+    link: #
     new_window: false
     highlight: false
   - name: Discord
@@ -49,7 +49,7 @@ infoEs:
     new_window: false
     highlight: false
   - name: Documentación
-    link: /docs/es/
+    link: #
     new_window: false
     highlight: false
   - name: Discord

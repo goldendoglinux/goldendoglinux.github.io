@@ -57,7 +57,7 @@ nav {
 			top: -22px;
 			font-size: 1.9em;
 			border: 0;
-
+			
 			@media #{$mid-point} {
 				display: none;
 			}
@@ -66,6 +66,7 @@ nav {
 				border: 0;
 			}
 		}
+		transition:all 0.5s;
 	}
 
 	a:hover {
@@ -76,12 +77,12 @@ nav {
 
 	@media #{$mid-point} {
 		a.highlight {
-			border: 1px #ccc solid;
-			border-radius: 5px;
-
+			border-radius:20px;
+			background:transparent;
+			transition:all 0.7s;
 			&:hover {
-				background: #fff;
-				color: $brand-color;
+				background: #bd6ce8;
+				color: #fff;
 			}
 		}
 	}

@@ -9,11 +9,6 @@ info:
     - name: Community
       link: /community/
 - links:
-    - name: Support
-      link: /docs/
-    - name: Discord
-      link: /discord/
-- links:
     - name: Github
       link: https://github.com/alexiarstein
       new_window: true
@@ -30,6 +25,11 @@ info:
       link: /feed.xml
       social_icon: RSS
       new_window: false
+- links:
+    - name: Support
+      link: /docs/
+    - name: Discord
+      link: /discord/
 infoEs:
 - links:
     - name: Noticias
@@ -41,11 +41,6 @@ infoEs:
     - name: Comunidad
       link: /es/community/
 - links:
-    - name: Soporte
-      link: /es/docs/
-    - name: Discord
-      link: /es/discord/
-- links:
     - name: Github
       link: https://github.com/alexiarstein
       new_window: true
@@ -62,6 +57,11 @@ infoEs:
       link: /feed.xml
       social_icon: RSS
       new_window: false
+- links:
+    - name: Soporte
+      link: /es/docs/
+    - name: Discord
+      link: /es/discord/
 support:
 - images:
     - name: kde
