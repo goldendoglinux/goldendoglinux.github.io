@@ -20,7 +20,7 @@ info:
     new_window: false
     highlight: false
   - name: Documentation
-    link: #
+    link: https://docs.goldendoglinux.org
     new_window: false
     highlight: false
   - name: Discord
@@ -49,7 +49,7 @@ infoEs:
     new_window: false
     highlight: false
   - name: Documentación
-    link: #
+    link: https://docs.goldendoglinux.org/#/es/
     new_window: false
     highlight: false
   - name: Discord
