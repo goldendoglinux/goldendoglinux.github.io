@@ -1,0 +1,85 @@
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+      background-color: #000; /* Black background */
+      color: #fff; /* White text */
+      line-height: 1.6;
+    }
+    a {
+      text-decoration: none;
+      color: #4a90e2; /* Purple-blue accent color */
+      font-weight: 600;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: #000; /* Matches the main background */
+    }
+    header div {
+      font-size: 1.5em;
+      font-weight: 700;
+      color: #fff;
+    }
+    header nav a {
+      margin: 0 15px;
+    }
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 100px 40px;
+    }
+    .hero .hero-text {
+      max-width: 50%;
+    }
+    .hero h1 {
+      font-size: 3em;
+      font-weight: 700;
+      margin-bottom: 20px;
+      background: linear-gradient(90deg, #4a90e2, #9a67ea);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+      color: #ddd; /* Slightly softer white for body text */
+    }
+    .hero .cta-btn {
+      display: inline-block;
+      padding: 15px 30px;
+      background: #4a90e2; /* Purple-blue accent */
+      color: #fff;
+      font-weight: 600;
+      border-radius: 5px;
+      margin: 10px 0;
+      transition: background 0.3s;
+    }
+    .hero .cta-btn:hover {
+      background: #9a67ea; /* Hover to a lighter shade */
+    }
+    .hero .hero-image img {
+      max-width: 90%;
+      border-radius: 10px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.8);
+    }
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+    footer a {
+      color: #4a90e2;
+      margin: 0 10px;
+    }
