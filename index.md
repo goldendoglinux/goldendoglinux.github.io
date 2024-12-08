@@ -1,13 +1,14 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: home
+---
+
 ### GoldenDog Linux
 
-Hello, I'm Alexia, the founder of GoldenDog. 
+Hello there I'm Alexia, creator of GoldenDog Linux. And now I'm trying to rebuild this website. 
 
-I am rebuilding this website all by myself, right now. And well, building websites is really not my thing, but I am sure I will have a lot of fun with this!
+Please be patient until I'm ready. I want to have it all sorted ahead of the public release of GDL. 
 
-Please bear with me in the meantime. 
-
-
-I want to make this a bit more functional and intuitive ahead of the public release of GDL. 
-
-
-Thank you for understanding. See you soon!
+Thank you for your patience!
