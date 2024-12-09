@@ -111,6 +111,7 @@
 /* que se yo, no me gusta que quede todo muy pegado al borde de la pantalla */
 margin-left:3rem;
 margin-right:3rem;
+padding: 0.9rem; 
 }
 
 .feature {
