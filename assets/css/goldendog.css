@@ -146,7 +146,7 @@
 /* Link styling for the logo up top */
 
 .volver {
-  text-decoration: none;
+  text-decoration: none !important ;
   color: #fff;
 }
 
@@ -155,6 +155,10 @@
   color: #fff;
 }
 .volver:visited {
+  text-decoration: none;
+  color: #fff;
+}
+.volver a {
   text-decoration: none;
   color: #fff;
 }
