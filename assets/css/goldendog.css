@@ -434,7 +434,7 @@ padding: 0.9rem;
 .post-preview {
   margin-bottom: 40px; /* Spacing between posts */
   padding-bottom: 20px; /* Padding inside each post */
-  border-bottom: 1px solid #333; /* Subtle separator between posts */
+  border-bottom: 1px dashed #fff; /* Subtle separator between posts */
 }
 
 /* Post Title Styling */
