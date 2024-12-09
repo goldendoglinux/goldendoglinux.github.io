@@ -31,11 +31,18 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#29043e",endCo
       color: #fff; /* White text */
       line-height: 1.6;
     }
-    a {
+   a {
       text-decoration: none;
       color: #8e4bff; /* Purple-blue accent color */
       font-weight: 600;
-    }
+  transition: color 0.3s ease; /* This will make the color transition take 0.3 seconds with an ease effect */
+}
+
+a:hover {
+  color: #fcba03;
+}
+
+
     header {
       display: flex;
       justify-content: space-between;
