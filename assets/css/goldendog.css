@@ -89,16 +89,35 @@ a:hover {
   color: #ddd; /* Slightly softer white for body text */
 }
 
-.hero .cta-btn {
+
+/* .hero .cta-btn {
   display: inline-block;
   padding: 15px 30px;
-  background: #4a90e2; /* Purple-blue accent */
+  background: #4a90e2; 
   color: #fff;
   font-weight: 600;
   border-radius: 5px;
   margin: 10px 0;
   transition: background 0.3s;
+} 
+*/
+
+.hero .cta-btn {
+  display: inline-block;
+  padding: 15px 30px;
+  background: transparent; /* Transparent background */
+  color: #fff; /* White text */
+  font-family: 'Roboto', sans-serif; /* Apply Roboto font */
+  font-weight: 200; /* Light weight for text */
+  text-transform: uppercase; /* Makes the text all caps */
+  border: 1px solid #fff; /* White border */
+  border-radius: 5px; /* Rounded corners */
+  margin: 10px 0;
+  text-align: center; /* Centers the text */
+  text-decoration: none; /* Removes underline from the link */
+  transition: background 0.3s, transform 0.2s; /* Smooth hover effect */
 }
+
 
 .hero .cta-btn:hover {
   background: #9a67ea; /* Hover to a lighter shade */
@@ -325,15 +344,33 @@ padding: 0.9rem;
 }
 
 /* Styling for the tags (links) */
-.blog-tags a {
+ .blog-tags a {
+/*
   display: inline-block;
-  padding: 8px 12px; /* Padding for a button-like appearance */
+  padding: 8px 12px; 
+  color: #fff;  
+  background-color: #4a90e2; 
+  border-radius: 5px; 
+  text-decoration: none; 
+  transition: background 0.3s ease, transform 0.2s ease; */
+
+  display: inline-block;
+  padding: 15px 30px;  
+  background: transparent; /* Transparent background */
   color: #fff; /* White text */
-  background-color: #4a90e2; /* Blue background for tags */
+  font-family: 'Roboto', sans-serif; /* Apply Roboto font */
+  font-weight: 200; /* Light weight for text */
+  text-transform: uppercase; /* Makes the text all caps */
+  border: 1px solid #fff; /* White border */
   border-radius: 5px; /* Rounded corners */
-  text-decoration: none; /* Remove underline */
-  transition: background 0.3s ease, transform 0.2s ease;
+  margin: 10px 0;
+  text-align: center; /* Centers the text */
+  text-decoration: none; /* Removes underline from the link */
+  transition: background 0.3s, transform 0.2s; /* Smooth hover effect */
+
+
 }
+
 
 /* Hover effect for tags */
 .blog-tags a:hover {
