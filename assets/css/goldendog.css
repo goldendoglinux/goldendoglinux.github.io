@@ -295,3 +295,42 @@ padding: 0.9rem;
   margin-right: 10px;
   font-size: 20px;
 }
+
+/* BLOG STYLING: Tags */
+/* Container for the tags */
+.blog-tags {
+  margin-top: 20px;
+  font-size: 1rem;
+}
+
+.blog-tags span {
+  font-weight: bold;
+  margin-right: 10px;
+  color: #ddd; /* Slightly softer white */
+}
+
+/* Make the tags display horizontally */
+.blog-tags a {
+  display: inline-block; /* Display tags inline */
+  margin: 5px 10px; /* Space between tags */
+  padding: 8px 12px; /* Padding inside each tag */
+  color: #fff; /* White text color */
+  background-color: #4a90e2; /* Blue background for tags */
+  border-radius: 5px; /* Rounded corners for tags */
+  text-decoration: none; /* Remove underline from links */
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Add hover effects for tags */
+.blog-tags a:hover {
+  background-color: #9a67ea; /* Lighter purple on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .blog-tags a {
+    font-size: 0.9rem; /* Slightly smaller text on small screens */
+    padding: 6px 10px; /* Adjust padding */
+  }
+}
