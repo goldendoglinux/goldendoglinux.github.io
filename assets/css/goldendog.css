@@ -10,10 +10,10 @@ repository: https://github.com/goldendoglinux/goldendoglinux.github.io
 --------------------------------*/
 
 .contenido {
-margin: 3rem; /* Center and space the post container */
+margin: 3rem auto; /* Center and space the post container */
 padding: 1.5rem; /* Space inside the post */
 max-width: 70%; /* Constrain the width */
-background: rgba(255, 255, 255, 0.01); /* Subtle background for readability */
+/*background: rgba(255, 255, 255, 0.01); /* Subtle background for readability */
 border-radius: 5px; /* Smooth edges */
 /*box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Shadow for better contrast */
 }
