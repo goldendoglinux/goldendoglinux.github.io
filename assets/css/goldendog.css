@@ -542,3 +542,28 @@ padding: 0.9rem;
   }
 }
 
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 10px 0;
+}
+
+.container-fluid {
+  width: 100%;
+  padding: 0 15px;
+}
+
+.container-md {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+ol, ul {
+  margin: 0;
+  padding: 0;
+}
+
+ol {
+  padding-left: 20px; /* Indent ordered lists */
+}
