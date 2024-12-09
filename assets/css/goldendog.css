@@ -143,3 +143,13 @@
     margin-bottom: 20px;
   }
 }
+
+.volver {
+  text-decoration: none;
+  color: #fff;
+}
+
+.volver:hover {
+  text-decoration: none;
+  color: #fff;
+}
