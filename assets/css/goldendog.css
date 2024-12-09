@@ -33,46 +33,61 @@
     header nav a {
       margin: 0 15px;
     }
-    .hero {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 100px 40px;
-    }
-    .hero .hero-text {
-      max-width: 50%;
-    }
-    .hero h1 {
-      font-size: 3em;
-      font-weight: 700;
-      margin-bottom: 20px;
-      background: linear-gradient(90deg, #4a90e2, #9a67ea);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    .hero p {
-      font-size: 1.2em;
-      margin-bottom: 30px;
-      color: #ddd; /* Slightly softer white for body text */
-    }
-    .hero .cta-btn {
-      display: inline-block;
-      padding: 15px 30px;
-      background: #4a90e2; /* Purple-blue accent */
-      color: #fff;
-      font-weight: 600;
-      border-radius: 5px;
-      margin: 10px 0;
-      transition: background 0.3s;
-    }
-    .hero .cta-btn:hover {
-      background: #9a67ea; /* Hover to a lighter shade */
-    }
-    .hero .hero-image img {
-      max-width: 90%;
-      border-radius: 10px;
-      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.8);
-    }
+
+
+.hero {
+  display: flex;
+  align-items: center; /* Vertically center text and image */
+  justify-content: center; /* Horizontally center the entire hero section */
+  gap: 40px; /* Add space between the text and image */
+  padding: 100px 20px; /* Reduce horizontal padding for better centering */
+}
+
+.hero-text, .hero-image {
+  flex: 1; /* Distribute space evenly between text and image */
+  text-align: center; /* Center-align the text */
+}
+
+.hero h1 {
+  font-size: 3em;
+  font-weight: 700;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, #4a90e2, #9a67ea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  color: #ddd; /* Slightly softer white for body text */
+}
+
+.hero .cta-btn {
+  display: inline-block;
+  padding: 15px 30px;
+  background: #4a90e2; /* Purple-blue accent */
+  color: #fff;
+  font-weight: 600;
+  border-radius: 5px;
+  margin: 10px 0;
+  transition: background 0.3s;
+}
+
+.hero .cta-btn:hover {
+  background: #9a67ea; /* Hover to a lighter shade */
+}
+
+.hero-image img {
+  max-width: 100%; /* Adjust the image size */
+  margin: 0 auto; /* Center the image in its container */
+  display: block; /* Ensure it's treated as a block element for centering */
+  border-radius: 10px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.8); /* Add shadow for a polished look */
+}
+
+
+
     footer {
       background: #111;
       text-align: center;
@@ -83,3 +98,48 @@
       color: #4a90e2;
       margin: 0 10px;
     }
+
+.features {
+  display: flex;
+  justify-content: space-around; /* Space between the feature blocks */
+  align-items: flex-start; /* Align icons and text at the top */
+  background-color: #000; /* Black background for consistency */
+  padding: 60px 40px; /* Add padding for spacing */
+  text-align: center; /* Center-align text in each feature block */
+}
+
+.feature {
+  max-width: 30%; /* Adjust the width of each feature */
+  flex: 1; /* Make the feature blocks evenly distributed */
+  padding: 20px; /* Space inside each block */
+  color: #ddd; /* Slightly softer white for descriptions */
+}
+
+.feature h3 {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin: 20px 0;
+  color: #fff; /* Bold white for titles */
+}
+
+.feature p {
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.feature-icon {
+  width: 50px; /* Adjust icon size */
+  margin-bottom: 15px; /* Space below the icon */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .features {
+    flex-direction: column; /* Stack features vertically on smaller screens */
+    padding: 40px 20px;
+  }
+  .feature {
+    max-width: 100%; /* Expand feature block to full width */
+    margin-bottom: 20px;
+  }
+}
