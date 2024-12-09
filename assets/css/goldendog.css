@@ -1,3 +1,15 @@
+/* -----------------------------
+
+GoldenDog Linux by Alexia Michelle
+Style Sheet (or something like that)
+Author: Alexia Michelle <alexia@goldendoglinux.org>
+for the goldendog layout for Jekyll.
+License: MIT
+repository: https://github.com/goldendoglinux/goldendoglinux.github.io
+
+--------------------------------*/
+
+
     /* General Reset */
     * {
       margin: 0;
@@ -10,8 +22,11 @@
     font-weight: 400;
     font-style: normal;
 
-background: rgb(0,0,0);
-background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(38,0,69,1) 100%);
+background: rgb(41,4,62);
+background: -moz-linear-gradient(0deg, rgba(41,4,62,1) 0%, rgba(0,0,0,1) 100%);
+background: -webkit-linear-gradient(0deg, rgba(41,4,62,1) 0%, rgba(0,0,0,1) 100%);
+background: linear-gradient(0deg, rgba(41,4,62,1) 0%, rgba(0,0,0,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#29043e",endColorstr="#000000",GradientType=1);
 /*      background-color: #000; /* Black background */
       color: #fff; /* White text */
       line-height: 1.6;
