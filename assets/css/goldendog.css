@@ -107,6 +107,11 @@
   padding: 60px 40px; /* Add padding for spacing */
   text-align: center; /* Center-align text in each feature block */
 }
+.changelog {
+/* que se yo, no me gusta que quede todo muy pegado al borde de la pantalla */
+margin-left:2rem;
+margin-right:2rem;
+}
 
 .feature {
   max-width: 30%; /* Adjust the width of each feature */
