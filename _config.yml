@@ -14,6 +14,7 @@ github_username:  alexiarstein
 theme: minima
 plugins:
   - jekyll-feed
+permalink: /:year-:month-:day-:title.html
 
 # Exclude from processing.
 # The following items will not be processed, by default.
