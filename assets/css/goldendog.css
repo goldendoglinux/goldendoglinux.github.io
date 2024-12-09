@@ -567,3 +567,17 @@ ol, ul {
 ol {
   padding-left: 20px; /* Indent ordered lists */
 }
+
+.blog-post p {
+    margin: 1em 0; /* Agrega separación entre párrafos */
+    line-height: 1.6; /* Mejora la legibilidad */
+}
+
+.blog-post ul, .blog-post ol {
+    margin: 1em 0;
+    padding-left: 1.5em; /* Indenta listas */
+}
+
+.blog-post h1, .blog-post h2, .blog-post h3 {
+    margin-top: 2em; /* Da más espacio antes de los encabezados */
+}
