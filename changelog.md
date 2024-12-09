@@ -1,5 +1,9 @@
 ---
 layout: default
+title: CHANGELOG
+permalink: /changelog/
+---
+
 ---
 ## 2024-12-08 - GDL 1.6.20
 - Added pip
