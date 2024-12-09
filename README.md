@@ -1,10 +1,14 @@
 # goldendog
 
-Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes`, your sass files in `_sass` and any other assets in `assets`.
+Welcome to the GoldenDog Linux Jekyll Layout. 
+This is a layout I built for the [GoldenDog Linux Official Homepage](https://www.goldendoglinux.org)
 
-To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
+If you find it useful and would like to deploy this layout on your github pages account, the easiest thing to do would be to just fork this project and do all the changes that you like.
 
-TODO: Delete this and the text above, and describe your gem
+This layout is MIT licensed. You don't even need to credit myself (Alexia) or GoldenDog, but it is always nice if you do :3 
+
+Also, It would make me really happy to know if you are running this somewhere. It's the first time I try to build a complete Jekyll Theme. 
+
 
 ## Installation
 
