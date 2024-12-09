@@ -162,3 +162,69 @@
   text-decoration: none;
   color: #fff;
 }
+/* -------------------- MOBILE FRIENDLINESS AND STUFF ------------------- */
+
+@media (max-width: 768px) {
+  /* Header Navigation */
+  header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  header nav a {
+    margin: 5px 0;
+    font-size: 1em;
+  }
+
+  /* Hero Section */
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .hero h1 {
+    font-size: 2em;
+  }
+
+  .hero p {
+    font-size: 1em;
+  }
+
+  .hero .cta-btn {
+    font-size: 0.9em;
+    padding: 10px 20px;
+  }
+
+  .hero-image img {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /* Features Section */
+  .features {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 20px;
+  }
+
+  .feature {
+    max-width: 90%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .feature-icon {
+    width: 40px;
+    margin-bottom: 10px;
+  }
+
+  /* Footer */
+  footer p {
+    margin: 10px 0;
+    font-size: 0.8em;
+  }
+}
+
