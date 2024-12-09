@@ -143,6 +143,7 @@
     margin-bottom: 20px;
   }
 }
+/* Link styling for the logo up top */
 
 .volver {
   text-decoration: none;
@@ -150,6 +151,10 @@
 }
 
 .volver:hover {
+  text-decoration: none;
+  color: #fff;
+}
+.volver:visited {
   text-decoration: none;
   color: #fff;
 }
