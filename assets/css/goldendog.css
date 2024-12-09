@@ -359,55 +359,104 @@ padding: 0.9rem;
 
 /* BLOG PREVIEW STYLE */
 
-/* Post Title Styling */
-.blog-post h2 {
-  font-size: 1.8rem; /* Larger font size for better emphasis */
-  font-weight: 700; /* Make the title bold */
-  margin-bottom: 10px; /* Space below the title */
-  color: #e91e63; /* Vibrant pink for the titles */
-  text-transform: capitalize; /* Capitalize each word for readability */
-}
-
-/* Title hover effect */
-.blog-post h2 a {
-  color: inherit; /* Keep the same color as the parent */
-  text-decoration: none; /* Remove underline for cleaner look */
-  transition: color 0.3s ease; /* Smooth color change */
-}
-
-.blog-post h2 a:hover {
-  color: #9a67ea; /* Subtle purple when hovered */
-}
-
-/* Subtitle Styling */
-.blog-post h3 {
-  font-size: 1.3rem; /* Slightly smaller than the title */
-  font-weight: 500; /* Medium weight */
-  margin-bottom: 5px; /* Small spacing */
-  color: #fff; /* White color for subtitles */
-}
-
-/* Remove Bullets from Post Titles */
-.blog-post ul {
-  list-style: none; /* Remove the bullets */
+/* General Styling for Post List */
+.posts-list {
+  list-style: none; /* Remove default bullets */
   padding: 0; /* Remove default padding */
   margin: 0; /* Remove default margin */
 }
 
-/* General Styling for Post Previews */
-.blog-post {
-  margin-bottom: 40px; /* Add spacing between posts */
-  border-bottom: 1px solid #333; /* Separator between posts */
-  padding-bottom: 20px; /* Space inside post previews */
+/* Individual Post Previews */
+.post-preview {
+  margin-bottom: 40px; /* Spacing between posts */
+  padding-bottom: 20px; /* Padding inside each post */
+  border-bottom: 1px solid #333; /* Subtle separator between posts */
 }
 
-/* Responsive Adjustments for Post Titles */
+/* Post Title Styling */
+.post-title {
+  font-size: 1.8rem; /* Larger font size for emphasis */
+  font-weight: 700; /* Bold title */
+  margin: 0; /* Remove default margins */
+  color: #e91e63; /* Vibrant pink color */
+  text-transform: capitalize; /* Capitalize titles */
+}
+
+/* Hover Effect for Post Titles */
+.post-title:hover,
+.post-title a:hover {
+  color: #9a67ea; /* Change color to purple on hover */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Post Subtitle Styling */
+.post-subtitle {
+  font-size: 1.2rem; /* Smaller than the title */
+  font-weight: 500; /* Medium weight */
+  margin: 5px 0; /* Space above and below */
+  color: #ddd; /* Soft white */
+}
+
+/* Post Metadata Styling */
+.post-meta {
+  font-size: 0.9rem; /* Smaller text for meta info */
+  color: #bbb; /* Subtle gray color */
+  margin-top: 10px; /* Spacing above metadata */
+}
+
+/* Styling for the Blog Tags Section */
+.blog-tags {
+  margin-top: 15px;
+}
+
+.blog-tags span {
+  font-weight: bold;
+  margin-right: 10px;
+  color: #ddd; /* Softer white for "Tags:" label */
+}
+
+/* Tags as Inline Links */
+.blog-tags ul {
+  list-style: none; /* Remove default bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+  display: flex; /* Arrange tags horizontally */
+  flex-wrap: wrap; /* Wrap to next line if necessary */
+}
+
+.blog-tags li {
+  margin-right: 10px; /* Space between tags */
+}
+
+.blog-tags a {
+  display: inline-block;
+  padding: 8px 12px; /* Button-like appearance */
+  color: #fff; /* White text */
+  background-color: #4a90e2; /* Blue background */
+  border-radius: 5px; /* Rounded corners */
+  text-decoration: none; /* No underline */
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover Effect for Tags */
+.blog-tags a:hover {
+  background-color: #9a67ea; /* Lighter purple */
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Responsive Adjustments for Titles and Tags */
 @media (max-width: 768px) {
-  .blog-post h2 {
-    font-size: 1.5rem; /* Adjust size for small screens */
+  .post-title {
+    font-size: 1.5rem; /* Adjust size for smaller screens */
   }
-  .blog-post h3 {
-    font-size: 1.1rem; /* Adjust subtitle size */
+
+  .post-subtitle {
+    font-size: 1rem; /* Adjust subtitle size */
+  }
+
+  .blog-tags a {
+    font-size: 0.9rem; /* Slightly smaller text */
+    padding: 6px 10px; /* Adjust padding */
   }
 }
 
