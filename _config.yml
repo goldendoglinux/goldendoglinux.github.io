@@ -14,6 +14,8 @@ github_username:  alexiarstein
 theme: minima
 plugins:
   - jekyll-feed
+# Quick fix so the path to goldendog.css does not break. 
+# Plus, permalinks look prettier this way huh? :)
 permalink: /:year-:month-:day-:title.html
 
 # Exclude from processing.

@@ -25,7 +25,9 @@ Es por eso que decidí hacer algunas cositas:
 Ahora si, paso a contarles un poquito acerca de las noticias:
 
 
+
 ### ¿Por qué no está disponible GoldenDog aun? 
+
 
 Por varios motivos. El principal: _**Infraestructura**_. 
 
