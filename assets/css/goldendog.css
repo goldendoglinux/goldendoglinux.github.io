@@ -581,3 +581,11 @@ ol {
 .blog-post h1, .blog-post h2, .blog-post h3 {
     margin-top: 2em; /* Da más espacio antes de los encabezados */
 }
+.blog-post {
+  margin: 2rem auto; /* Center and space the post container */
+  padding: 1.5rem; /* Space inside the post */
+  max-width: 800px; /* Constrain the width */
+  background: rgba(255, 255, 255, 0.05); /* Subtle background for readability */
+  border-radius: 10px; /* Smooth edges */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Shadow for better contrast */
+}
