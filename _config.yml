@@ -18,6 +18,12 @@ plugins:
 # Plus, permalinks look prettier this way huh? :)
 permalink: /:year-:month-:day-:title.html
 
+# Markdown Format Fix (Github-like)
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
