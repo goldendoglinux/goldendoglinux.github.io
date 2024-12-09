@@ -355,3 +355,59 @@ padding: 0.9rem;
   padding: 0; /* Remove padding */
   margin: 0; /* Remove margin */
 }
+
+
+/* BLOG PREVIEW STYLE */
+
+/* Post Title Styling */
+.blog-post h2 {
+  font-size: 1.8rem; /* Larger font size for better emphasis */
+  font-weight: 700; /* Make the title bold */
+  margin-bottom: 10px; /* Space below the title */
+  color: #e91e63; /* Vibrant pink for the titles */
+  text-transform: capitalize; /* Capitalize each word for readability */
+}
+
+/* Title hover effect */
+.blog-post h2 a {
+  color: inherit; /* Keep the same color as the parent */
+  text-decoration: none; /* Remove underline for cleaner look */
+  transition: color 0.3s ease; /* Smooth color change */
+}
+
+.blog-post h2 a:hover {
+  color: #9a67ea; /* Subtle purple when hovered */
+}
+
+/* Subtitle Styling */
+.blog-post h3 {
+  font-size: 1.3rem; /* Slightly smaller than the title */
+  font-weight: 500; /* Medium weight */
+  margin-bottom: 5px; /* Small spacing */
+  color: #fff; /* White color for subtitles */
+}
+
+/* Remove Bullets from Post Titles */
+.blog-post ul {
+  list-style: none; /* Remove the bullets */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+/* General Styling for Post Previews */
+.blog-post {
+  margin-bottom: 40px; /* Add spacing between posts */
+  border-bottom: 1px solid #333; /* Separator between posts */
+  padding-bottom: 20px; /* Space inside post previews */
+}
+
+/* Responsive Adjustments for Post Titles */
+@media (max-width: 768px) {
+  .blog-post h2 {
+    font-size: 1.5rem; /* Adjust size for small screens */
+  }
+  .blog-post h3 {
+    font-size: 1.1rem; /* Adjust subtitle size */
+  }
+}
+
