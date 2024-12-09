@@ -104,15 +104,16 @@ a:hover {
 
 .hero .cta-btn {
   display: inline-block;
-  padding: 15px 30px;
+/*  padding: 15px 30px; */
+padding: 0.4rem 1rem;
   background: transparent; /* Transparent background */
   color: #fff; /* White text */
   font-family: 'Roboto', sans-serif; /* Apply Roboto font */
-  font-weight: 200; /* Light weight for text */
+  font-weight: 300; /* Light weight for text */
   text-transform: uppercase; /* Makes the text all caps */
   border: 1px solid #fff; /* White border */
-  border-radius: 5px; /* Rounded corners */
-  margin: 10px 0;
+  border-radius: 6px; /* Rounded corners */
+  margin: 5px 0;
   text-align: center; /* Centers the text */
   text-decoration: none; /* Removes underline from the link */
   transition: background 0.3s, transform 0.2s; /* Smooth hover effect */
@@ -355,14 +356,15 @@ padding: 0.9rem;
   transition: background 0.3s ease, transform 0.2s ease; */
 
   display: inline-block;
-  padding: 15px 30px;  
+/*  padding: 15px 30px;  */
+  padding: 0.4rem; 1rem;
   background: transparent; /* Transparent background */
   color: #fff; /* White text */
   font-family: 'Roboto', sans-serif; /* Apply Roboto font */
-  font-weight: 200; /* Light weight for text */
+  font-weight: 300; /* Light weight for text */
   text-transform: uppercase; /* Makes the text all caps */
   border: 1px solid #fff; /* White border */
-  border-radius: 5px; /* Rounded corners */
+  border-radius: 7px; /* Rounded corners */
   margin: 10px 0;
   text-align: center; /* Centers the text */
   text-decoration: none; /* Removes underline from the link */
@@ -374,7 +376,7 @@ padding: 0.9rem;
 
 /* Hover effect for tags */
 .blog-tags a:hover {
-  background-color: #9a67ea; /* Lighter purple on hover */
+/*  background-color: #9a67ea; /* Lighter purple on hover */
   transform: scale(1.05); /* Slight enlargement on hover */
 }
 
