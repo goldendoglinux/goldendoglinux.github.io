@@ -179,28 +179,40 @@
   }
 
   /* Hero Section */
+
   .hero {
-    flex-direction: column;
-    text-align: center;
-    gap: 20px;
+    flex-direction: column; /* Stack the hero text and image vertically */
+    text-align: center; /* Center-align content */
+    gap: 20px; /* Add spacing between the text and image */
+    padding: 40px 20px; /* Adjust padding for mobile screens */
+  }
+
+  .hero-text {
+    order: 1; /* Ensure text comes first */
+    margin-bottom: 20px; /* Add spacing below the text */
+  }
+
+  .hero-image {
+    order: 2; /* Ensure image comes after text */
   }
 
   .hero h1 {
-    font-size: 2em;
+    font-size: 2em; /* Reduce the heading size for smaller screens */
   }
 
   .hero p {
-    font-size: 1em;
+    font-size: 1em; /* Adjust font size for readability */
   }
 
   .hero .cta-btn {
-    font-size: 0.9em;
-    padding: 10px 20px;
+    font-size: 0.9em; /* Slightly smaller button */
+    padding: 10px 20px; /* Adjust padding inside the button */
   }
 
   .hero-image img {
-    width: 100%;
-    margin: 0 auto;
+    width: 100%; /* Ensure image fits the screen */
+    max-width: 400px; /* Optional: Limit the maximum size of the image */
+    margin: 0 auto; /* Center the image */
   }
 
   /* Features Section */
