@@ -13,14 +13,14 @@ repository: https://github.com/goldendoglinux/goldendoglinux.github.io
 margin: 3rem; /* Center and space the post container */
 padding: 1.5rem; /* Space inside the post */
 max-width: 80%; /* Constrain the width */
-background: rgba(255, 255, 255, 0.05); /* Subtle background for readability */
+background: rgba(255, 255, 255, 0.02); /* Subtle background for readability */
 border-radius: 10px; /* Smooth edges */
-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Shadow for better contrast */
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow for better contrast */
 }
 
 .contenido h1 h2 h3 h4 h5 {
-margin-top: 2rem;
-margin-bottom: 1.5rem;
+margin-top: 2.3rem;
+margin-bottom: 2rem;
 }
 
 .contenido p {
