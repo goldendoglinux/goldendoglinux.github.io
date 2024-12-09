@@ -25,3 +25,7 @@ The official discord channel (also bridged to irc) is hosted on my personal disc
 In any case, bear in mind that the conversations might be predominantly in Spanish. Feel free to request help in English, though. Both languages are accepted.
 
 
+
+# Contributing to the development of GoldenDog
+
+Right now I am the sole developer and maintainer, feel free to reach out to me over IRC in case you can help me with the development or organize teams. It's a work in progress still.
