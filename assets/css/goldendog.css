@@ -109,8 +109,8 @@
 }
 .changelog {
 /* que se yo, no me gusta que quede todo muy pegado al borde de la pantalla */
-margin-left:2rem;
-margin-right:2rem;
+margin-left:3rem;
+margin-right:3rem;
 }
 
 .feature {
