@@ -319,6 +319,31 @@ padding: 0.9rem;
 /* BLOG STYLING: Tags */
 
 
+.tag-btn {
+  margin: 0.3125rem;
+}
+
+#full-tags-list {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#full-tags-list .tag-entry {
+  margin: 0 0 0.9375rem 1.5625rem;
+}
+
+#full-tags-list .tag-entry a {
+  font-size: 1.25rem;
+}
+
+#full-tags-list .tag-entry .entry-date {
+  color: #808080;
+  font-style: italic;
+  font-size: 1rem;
+}
+
+
+
+
 /* General styling for the tags container */
 .blog-tags {
   margin-top: 20px;
