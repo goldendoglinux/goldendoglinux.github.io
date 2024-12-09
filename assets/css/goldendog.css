@@ -297,7 +297,9 @@ padding: 0.9rem;
 }
 
 /* BLOG STYLING: Tags */
-/* Container for the tags */
+
+
+/* General styling for the tags container */
 .blog-tags {
   margin-top: 20px;
   font-size: 1rem;
@@ -306,31 +308,50 @@ padding: 0.9rem;
 .blog-tags span {
   font-weight: bold;
   margin-right: 10px;
-  color: #ddd; /* Slightly softer white */
+  color: #ddd; /* Softer white for "Tags:" label */
 }
 
-/* Make the tags display horizontally */
+/* Make tags display horizontally */
+.blog-tags ul {
+  list-style: none; /* Remove the bullets */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  display: flex; /* Arrange list items in a row */
+  flex-wrap: wrap; /* Allow wrapping to the next line for small screens */
+}
+
+.blog-tags li {
+  margin-right: 10px; /* Space between tags */
+}
+
+/* Styling for the tags (links) */
 .blog-tags a {
-  display: inline-block; /* Display tags inline */
-  margin: 5px 10px; /* Space between tags */
-  padding: 8px 12px; /* Padding inside each tag */
-  color: #fff; /* White text color */
+  display: inline-block;
+  padding: 8px 12px; /* Padding for a button-like appearance */
+  color: #fff; /* White text */
   background-color: #4a90e2; /* Blue background for tags */
-  border-radius: 5px; /* Rounded corners for tags */
-  text-decoration: none; /* Remove underline from links */
+  border-radius: 5px; /* Rounded corners */
+  text-decoration: none; /* Remove underline */
   transition: background 0.3s ease, transform 0.2s ease;
 }
 
-/* Add hover effects for tags */
+/* Hover effect for tags */
 .blog-tags a:hover {
   background-color: #9a67ea; /* Lighter purple on hover */
-  transform: scale(1.05); /* Slightly enlarge on hover */
+  transform: scale(1.05); /* Slight enlargement on hover */
 }
 
-/* Responsive behavior */
+/* Responsive adjustment for tags */
 @media (max-width: 768px) {
   .blog-tags a {
-    font-size: 0.9rem; /* Slightly smaller text on small screens */
+    font-size: 0.9rem; /* Smaller font size on small screens */
     padding: 6px 10px; /* Adjust padding */
   }
+}
+
+/* Remove bullets from the clickable post titles */
+.blog-post ul {
+  list-style: none; /* Remove list bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
 }
