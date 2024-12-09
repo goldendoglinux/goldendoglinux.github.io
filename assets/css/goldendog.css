@@ -377,7 +377,7 @@ padding: 0.9rem;
 /* Hover effect for tags */
 .blog-tags a:hover {
 /*  background-color: #9a67ea; /* Lighter purple on hover */
-  transform: scale(1.05); /* Slight enlargement on hover */
+/*  transform: scale(1.05); /* Slight enlargement on hover */
 }
 
 /* Responsive adjustment for tags */
@@ -468,19 +468,37 @@ padding: 0.9rem;
 }
 
 .blog-tags a {
-  display: inline-block;
-  padding: 8px 12px; /* Button-like appearance */
-  color: #fff; /* White text */
-  background-color: #4a90e2; /* Blue background */
-  border-radius: 5px; /* Rounded corners */
-  text-decoration: none; /* No underline */
+ /* display: inline-block;
+  padding: 8px 12px; 
+  color: #fff; 
+  background-color: #4a90e2; 
+  border-radius: 5px; 
+  text-decoration: none; 
   transition: background 0.3s ease, transform 0.2s ease;
+*/
+
+  display: inline-block;
+/*  padding: 15px 30px;  */
+  padding: 0.4rem; 1rem;
+  background: transparent; /* Transparent background */
+  color: #fff; /* White text */
+  font-family: 'Roboto', sans-serif; /* Apply Roboto font */
+  font-weight: 300; /* Light weight for text */
+  text-transform: uppercase; /* Makes the text all caps */
+  border: 1px solid #fff; /* White border */
+  border-radius: 7px; /* Rounded corners */
+  margin: 10px 0;
+  text-align: center; /* Centers the text */
+  text-decoration: none; /* Removes underline from the link */
+  transition: background 0.3s, transform 0.2s; /* Smooth hover effect */
+
+
 }
 
 /* Hover Effect for Tags */
 .blog-tags a:hover {
   background-color: #9a67ea; /* Lighter purple */
-  transform: scale(1.05); /* Slight zoom on hover */
+/*  transform: scale(1.05); /* Slight zoom on hover */
 }
 
 /* Responsive Adjustments for Titles and Tags */
