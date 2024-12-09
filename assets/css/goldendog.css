@@ -272,3 +272,26 @@ padding: 0.9rem;
   }
 }
 
+.alert {
+  padding: 15px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  color: #333;
+  position: relative;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.success {
+  display: flex;
+  align-items: center;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+  color: #155724;
+}
+
+/* Icon styling */
+.alert i {
+  margin-right: 10px;
+  font-size: 20px;
+}

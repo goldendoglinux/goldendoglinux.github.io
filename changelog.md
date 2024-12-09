@@ -13,8 +13,10 @@ permalink: /changelog/
 - Added kernel 6.1.0-28-amd64
 
 
-### Important, maybe:
-
+<div class="alert success">
+<i class="fas fa-check-circle"></i>
+ 
+ <p>Important, perhaps: 
 I used to keep a very untidy register of the first days, weeks months of development.
 Unfortunately I don't have a date record for these logs. But I still wanted to import them as they were, for historical (and evolutionary, hah) reasons.
 
@@ -22,6 +24,9 @@ Live and learn, I guess.
 
 - Alexia.
 
+</p>
+  <span class="close-btn">&times;</span>
+</div>
 
 # GoldenDog Linux 1.6.19-rc6
 
