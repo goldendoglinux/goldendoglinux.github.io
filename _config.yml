@@ -7,7 +7,7 @@ title: GoldenDog Linux
 email: alexia@goldendoglinux.org
 description: "The Only Good Boy in the Linux World!"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://goldendoglinux.org" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  alexiarstein
 
 # Build settings
@@ -34,3 +34,4 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
