@@ -9,7 +9,10 @@
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-      background-color: #000; /* Black background */
+
+background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(38,0,69,1) 100%);
+/*      background-color: #000; /* Black background */
       color: #fff; /* White text */
       line-height: 1.6;
     }
