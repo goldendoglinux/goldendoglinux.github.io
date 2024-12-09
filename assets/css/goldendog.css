@@ -105,7 +105,7 @@ a:hover {
 .hero .cta-btn {
   display: inline-block;
 /*  padding: 15px 30px; */
-padding: 0.4rem 1rem;
+padding: 1.4rem 1rem;
   background: transparent; /* Transparent background */
   color: #fff; /* White text */
   font-family: 'Roboto', sans-serif; /* Apply Roboto font */
