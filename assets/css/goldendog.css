@@ -479,14 +479,14 @@ padding: 0.9rem;
 
   display: inline-block;
 /*  padding: 15px 30px;  */
-  padding: 0.4rem; 1rem;
+  padding: 0.3rem; 1rem;
   background: transparent; /* Transparent background */
   color: #fff; /* White text */
   font-family: 'Roboto', sans-serif; /* Apply Roboto font */
   font-weight: 300; /* Light weight for text */
   text-transform: uppercase; /* Makes the text all caps */
   border: 1px solid #fff; /* White border */
-  border-radius: 7px; /* Rounded corners */
+  border-radius: 8px; /* Rounded corners */
   margin: 10px 0;
   text-align: center; /* Centers the text */
   text-decoration: none; /* Removes underline from the link */
