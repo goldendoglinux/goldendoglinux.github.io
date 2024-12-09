@@ -11,35 +11,36 @@ repository: https://github.com/goldendoglinux/goldendoglinux.github.io
 
 
     /* General Reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-    font-family: "League Spartan", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+  
+body {
+	font-family: "League Spartan", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	background: rgb(41,4,62);
+	background: -moz-linear-gradient(0deg, rgba(41,4,62,1) 0%, rgba(0,0,0,1) 100%);
+	background: -webkit-linear-gradient(0deg, rgba(41,4,62,1) 0%, rgba(0,0,0,1) 100%);
+	background: linear-gradient(0deg, rgba(41,4,62,1) 0%, rgba(0,0,0,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#29043e",endColorstr="#000000",GradientType=1);
+	color: #fff; /* White text */
+	line-height: 1.6;
+}
 
-background: rgb(41,4,62);
-background: -moz-linear-gradient(0deg, rgba(41,4,62,1) 0%, rgba(0,0,0,1) 100%);
-background: -webkit-linear-gradient(0deg, rgba(41,4,62,1) 0%, rgba(0,0,0,1) 100%);
-background: linear-gradient(0deg, rgba(41,4,62,1) 0%, rgba(0,0,0,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#29043e",endColorstr="#000000",GradientType=1);
-/*      background-color: #000; /* Black background */
-      color: #fff; /* White text */
-      line-height: 1.6;
-    }
-   a {
-      text-decoration: none;
-      color: #8e4bff; /* Purple-blue accent color */
-      font-weight: 600;
-  transition: color 0.3s ease; /* This will make the color transition take 0.3 seconds with an ease effect */
+
+a {
+	text-decoration: none;
+	color: #8e4bff; /* Purple-blue accent color */
+	font-weight: 600;
+	transition: color 0.5s ease; /* This will make the color transition take 0.3 seconds with an ease effect */
 }
 
 a:hover {
-  color: #fcba03;
+	color: #fcba03;
 }
 
 
