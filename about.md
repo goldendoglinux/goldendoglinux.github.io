@@ -18,23 +18,15 @@ Así que una persona podía instalar YDL en una macbook antigua, en una iMac, o 
 
 Aquí viene: En algún momento dije que iba a revivir a YellowDog pero para arquitecturas AMD64. Claramente nunca lo hice, ¿O sí?
 
-Con el transcurso de los años la idea siempre me dió vueltas en la cabeza, hasta que un día comencé así de buenas a primeras a jugar con una .iso de CentOS 7, la desarmé y comencé a hacerle el debranding y demás,
-por que pensé: YellowDog estaba basada en RedHat, así que podría utilizar un CentOS, que era, básicamente, un RedHat gratuíto y sin licencia, y empezar a jugar y aprender allí con CentOS como plataforma.
+Con el transcurso de los años la idea siempre me dió vueltas en la cabeza, hasta que un día comencé así de buenas a primeras a jugar con una .iso de CentOS 7, la desarmé y comencé a hacerle el 
+debranding y demás, por que pensé: YellowDog estaba basada en RedHat, así que podría utilizar un CentOS, que era, básicamente, un RedHat gratuíto y sin licencia, y empezar a jugar y aprender allí 
+con CentOS como plataforma. Esta idea no prosperó por que ninguna distro del ecosistema redhat posee mucho software, y eso hubiese significado que yo sola debía empaquetar en .rpm y mantener 
+cientos de paquetes... ¡Imposible!
 
 
-Pasó el tiempo y se me complicaba mucho manipular bien Anaconda, el script que había hecho en kickstart no estaba mal pero tampoco terminaba de cerrarme, así que lo abandoné al proyecto, pero lo que rescato de esos pocos días donde me puse a hacer un rebuild de CentOS fue que aprendí mucho acerca de como desarmar una .iso, desarmar una imagen de initramfs, y como reconstruirlas, obvio. 
-
-Me familiaricé un poquito con el firmado de paquetes de software y construí algunos .rpm para la distro.
-
-
-### RockyLinux
-
-Pasaron unos cuantos años del primer intento. Cada tanto me agarraban ganas de volver a encarar un proyecto así. Pero para este entonces ya CentOS había caducado y CentOS stream no era stable. Así que busqué alternativas gratuítas
-a RHEL y así fue como dí con RockyLinux. 
-
-El primer rebuild de GoldenDog lo hice sobre RockyLinux, y funcionó. Logré instalarle plasma vía EPEL, y más o menos quedó, pero ahí me encontré con otro problema: Que los sistemas de la familia RedHat no tienen tanto software.
-
-Yo necesitaba drivers de video para mi sistema, quería que minimamente pudiera realizar las siguientes tareas:
+Por otro lado, yo tenía una idea un poco clara de lo que quería para GDL: Fundamentalmente iba a ser una estación de trabajo, y a traves de la cual se pudiera hacer practicamente todo. En cuanto a 
+disponibilidad de software, algo que funcionara. Recuerdo que en algún momento comencé a decir: Quiero apretar el botón de power y que todo funcione. No quiero renegar. No quiero que sea tedioso instalar cosas. Es decir, lo empecé a pensar desde una necesidad. Mi necesidad. Quería que tuviera todo lo que generalmente necesito de un sistema para mi PC, y sin tanta vuelta.
+En resúmen, la meta inicial era:
 
 - Tener drivers para placas NVIDIA
 - Poder correr Steam Linux
@@ -43,19 +35,33 @@ Yo necesitaba drivers de video para mi sistema, quería que minimamente pudiera 
 - Poder tener Visual Studio Code y otras herramientas de desarrollo
 - Poder tener todos los compilers e interpretes que utilizo, desde gcc hasta ruby.
 
-Más o menos esa era la meta inicial, y con RockyLinux se hacía dificil lograrlo.
 
-Después, por otros motivos totalmente ajenos a GoldenDog (Estaba buscando material para hacer un video sobre OpenELA para mi [Canal de Youtube](https://youtube.com/@lachicadesistemas), terminé conociendo a la gente de rockylinux 
-y me invitaron a unirme al proyecto.
+## Debian Stable 
+
+Algo que ya conté varias veces a lo largo de mi vida fue que he usado muy pocas distros. Mi primera distro fue slackware y luego me pasé a Debian en el 2004, más o menos. Desde el 2004 y hasta 
+fines del 2019 usé Debian hasta que por motivos puntuales (estaba cursando el RHCSA) me pasé a la dupla fedora-redhat. Obvio que me duró poco por que ya en el 2023 volví a Debian y fue allí cuando 
+decidí retomar una vez más el proyecto GoldenDog. 
+
+No sabía si iba a volver a abandonarlo, pero sabía que cada vez que lo retomé llegué un poquito más lejos, así que esta vez quizáss funcionaría.
+
+## Goldendog 1.0.0
+
+Con esta versión comencé a organizar un poco mejor el flujo de trabajo. Si bien es un hobby, tenía que organizar mi estructura de trabajo. ¿Cual sería la mejor manera de desarrollar? ¿Donde 
+guardar los archivos? ¡Tantas cosas por resolver! La mayoría de las aplicaciones y scripts que publiqué han sido generalmente muy pequeños. Relativamente faciles de corregir y expandir. 
+Una distro Linux no se parece en nada a eso. Son millones de archivos, es dificil trackear y documentar todo lo que se hace. Pero necesario ya que un mínimo error puede pasar desapercibido y estallar más tarde complicando todo y no sabiendo muy bien desde donde viene.
+
+Si hay algo que aprendí con esta versión es que confiar ciegamente en mi memoria es un error, y que debía documentar, versionar los cambios y siempre tener la forma de volver para atrás si algo no sale bien. Esto es debido a la naturaleza de la construcción de una distro.
+
+Es decir, no se puede estar buildeando la .iso por cada cambio minusculo que hacemos. Tenemos que hacer cambios, evaluar que impacto va a tener, luego hacer otro, y luego cuando hay una serie de cambios, si buildear la .iso y testear.
+
+## Goldendog 1.2.0 
+
+Esta versión fue la primera en implementar un git interno, donde comencé a trabajar contra el repositorio. Sin embargo, como goldendog desarmado pesa alrededor de 20Gigas, era imposible subirlo 
+todo a github. El repositorio lo tengo en un server privado en mi red local parte de mi laboratorio.
 
 
-## Debian Stable
+## Goldendog 1.5
 
-Yo, que venía de usar fedora y me resultaba muy tedioso tener un sistema útil que pudiera correr todo lo que necesitaba. Terminaba compilando mucho software a mano, haciendo scripts para suplir cosas que fedora no resolvía de una manera eficiente, y bueno, el cansancio me ganó y volví a Debian, que fue, luego de Slackware, el sistema que más he utilizado.
-
-Así que de repente un día pensé: ¿Y si hago GoldenDog pero arriba de Debian?  Y así un fin de semana me puse, es más creo que arranqué una tarde con el rebuild y al otro día ya tenía una .iso más o menos funcional. El resto han sido rebuilds consecutivos corrigiendo cosas, agregandole software y demás.
-
-En algún momento cometí un error grave y cambié todos los permisos de mi directorio de build, y arruiné la distro básicamente. Empecé a tener errores de permisos en todos lados y allí entendí que era un proyecto muchísimo más grande que cualquier otro en el que estuve anteiormente. Generalmente el software que escribo son scripts sencillos, o aplicaciones muy pequeñas, tengo mucho control y es facil seguirle el hilo, pero esto son miles y miles de archivos y un cambio involuntario puede ser caótico. En fin, comencé a revisar directorio por directorio, comparando los permisos contra un debian stable puro, y fui corrigiendo las root uids, y demás. Fue un trabajo muy tedioso pero logré recuperar el directorio de build. 
-
-Ahí también comencé a implementar un sistema de versionado de cambios (git) por que ya se me estaba yendo de las manos la cosa, y también un sistema de tickets internos para poder llevar un registro preciso de la cantidad de cosas que se van haciendo y completando, lo que falta resolver y demás, con tags del estilo "bug" "feature" "improvement" etc
+Esta fue la primera versión que algunas personas por fuera de mi laboratorio de pruebas, probaron. Es la que incluye la patita como icono de arranque y la barra translucida de plasma.
+Duró poco por que hice tantos patches y fixes que subió de versión a la 1.6
 
