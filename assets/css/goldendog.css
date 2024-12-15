@@ -103,10 +103,13 @@ a:hover {
 }
 
 .hero h1 {
+  font-family: 'Roboto', sans-serif; /* Apply Roboto font */
+  text-transform: uppercase; /* Makes the text all caps */
   font-size: 3em;
   font-weight: 700;
-  margin-bottom: 20px;
-  background: linear-gradient(90deg, #4a90e2, #9a67ea);
+  margin-bottom: 0.5rem;
+ 
+ background: linear-gradient(90deg, #4a90e2, #9a67ea);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
