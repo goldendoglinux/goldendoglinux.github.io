@@ -50,21 +50,32 @@ body {
 	font-optical-sizing: auto;
 	font-weight: 400;
 	font-style: normal;
+    /* old gradient
 	background: rgb(41,4,62);
 	background: -moz-linear-gradient(0deg, rgba(41,4,62,1) 0%, rgba(0,0,0,1) 100%);
 	background: -webkit-linear-gradient(0deg, rgba(41,4,62,1) 0%, rgba(0,0,0,1) 100%);
 	background: linear-gradient(0deg, rgba(41,4,62,1) 0%, rgba(0,0,0,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#29043e",endColorstr="#000000",GradientType=1);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#29043e",endColorstr="#000000",GradientType=1);background: rgb(27,27,84);
+	*/
+    background: -moz-linear-gradient(0deg, rgba(27,27,84,1) 0%, rgba(0,0,0,1) 83%);
+    background: -webkit-linear-gradient(0deg, rgba(27,27,84,1) 0%, rgba(0,0,0,1) 83%);
+    background: linear-gradient(0deg, rgba(27,27,84,1) 0%, rgba(0,0,0,1) 83%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1b1b54",endColorstr="#000000",GradientType=1);
 	color: #fff; /* White text */
 	line-height: 1.6;
 }
 
 
 a {
+    font-family: 'Roboto', sans-serif; /* Apply Roboto font */
+    text-transform: uppercase; /* Makes the text all caps */
+    font-size: 1rem;
+    font-weight: 380;
 	text-decoration: none;
 	color: #8e4bff; /* Purple-blue accent color */
-	font-weight: 600;
 	transition: color 0.5s ease; /* This will make the color transition take 0.3 seconds with an ease effect */
+padding:0px;
+
 }
 
 a:hover {
@@ -85,7 +96,7 @@ a:hover {
       color: #fff;
     }
     header nav a {
-      margin: 0 15px;
+      margin: 0 5px;
     }
 
 
@@ -105,14 +116,17 @@ a:hover {
 .hero h1 {
   font-family: 'Roboto', sans-serif; /* Apply Roboto font */
   text-transform: uppercase; /* Makes the text all caps */
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 350;
 line-height: 1;
-  margin-bottom: 0.2rem;
- 
+  margin-bottom: 2rem;
+  color:#7331f7;
+/* gradient for the header.
  background: linear-gradient(90deg, #4a90e2, #9a67ea);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+*/
+
 }
 
 .hero p {
@@ -230,7 +244,11 @@ padding: 0.9rem;
 /* Link styling for the logo up top */
 
 .volver {
+  	font-family: "League Spartan", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 600;
   text-decoration: none !important ;
+  font-size: 2rem;
   color: #fff;
 }
 
