@@ -107,7 +107,7 @@ a:hover {
   text-transform: uppercase; /* Makes the text all caps */
   font-size: 2rem;
   font-weight: 350;
-line-height: 0.5;
+line-height: 1;
   margin-bottom: 0.2rem;
  
  background: linear-gradient(90deg, #4a90e2, #9a67ea);
