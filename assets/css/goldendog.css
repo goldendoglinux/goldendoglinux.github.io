@@ -181,13 +181,14 @@ padding: 0.4rem 1rem;
 
 
     footer {
-background: linear-gradient(180deg,#05070d, #1d1d41);
+background: #0b0f1a;
       text-align: center;
       padding: 20px;
       font-size: 0.9em;
     }
     footer a {
       color: #4a90e2;
+      text-transform: none;
       margin: 0 0.2rem; /* achicamos el espacio horizontal de los links */
     }
 
