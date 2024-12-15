@@ -105,8 +105,9 @@ a:hover {
 .hero h1 {
   font-family: 'Roboto', sans-serif; /* Apply Roboto font */
   text-transform: uppercase; /* Makes the text all caps */
-  font-size: 3rem;
-  font-weight: 500;
+  font-size: 2rem;
+  font-weight: 350;
+line-height: 0.5;
   margin-bottom: 0.2rem;
  
  background: linear-gradient(90deg, #4a90e2, #9a67ea);
