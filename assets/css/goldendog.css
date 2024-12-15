@@ -170,7 +170,7 @@ padding: 0.4rem 1rem;
     }
     footer a {
       color: #4a90e2;
-      margin: 0 10px;
+      margin: 0 0.2rem; /* achicamos el espacio horizontal de los links */
     }
 
 .features {
