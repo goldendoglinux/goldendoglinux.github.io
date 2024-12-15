@@ -67,10 +67,10 @@ body {
 
 
 a {
-    font-family: 'Roboto', sans-serif; /* Apply Roboto font */
-    text-transform: uppercase; /* Makes the text all caps */
+  	font-family: "League Spartan", sans-serif;
+	font-optical-sizing: auto;
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 450;
 	text-decoration: none;
 	color: #8e4bff; /* Purple-blue accent color */
 	transition: color 0.5s ease; /* This will make the color transition take 0.3 seconds with an ease effect */
@@ -184,11 +184,12 @@ padding: 0.4rem 1rem;
 background: #0b0f1a;
       text-align: center;
       padding: 20px;
-      font-size: 0.9em;
+      font-size: 0.9rem;
     }
     footer a {
       color: #4a90e2;
       text-transform: none;
+      font-size: 0.9rem;
       margin: 0 0.2rem; /* achicamos el espacio horizontal de los links */
     }
 
@@ -247,8 +248,9 @@ padding: 0.9rem;
 .volver {
   	font-family: "League Spartan", sans-serif;
 	font-optical-sizing: auto;
+    text-transform: none;
 	font-weight: 600;
-  text-decoration: none !important ;
+  text-decoration: capitalize !important ;
   font-size: 1.8rem;
   color: #fff;
 }
