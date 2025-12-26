@@ -1,41 +1,14 @@
-# Website
+# Bienvenidos al proyecto GoldenDog Linux. 
+## Este repo sólo contiene el sitio web. 
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
-## Installation
+Este sitio está hecho con [Docusaurus](https://docusaurus.io/), un generador de sitios web estáticos moderno.
 
-```bash
-yarn
-```
 
-## Local Development
 
-```bash
-yarn start
-```
+Goldendog utiliza [Debian](https://www.debian.org/) como base. y [KDE Plasma](https://plasma.kde.org/) como escritorio.
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+También depende directamente de proyectos como [Wayland](https://wayland.freedesktop.org/), [X11](https://www.x.org/), [GDM](https://www.gnome.org/projects/gdm/), [KDE Frameworks](https://frameworks.kde.org/), [KDE Applications](https://apps.kde.org/), y por supuesto de las herramientas del proyecto [GNU](https://www.gnu.org/).
 
-## Build
+Opcionales se puede usar la herramienta mia [Kernel Install](https://github.com/alexiarstein/kernelinstall) para instalar el ultimo kernel stable preconfigurado para debian/goldendog.
 
-```bash
-yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-## Deployment
-
-Using SSH:
-
-```bash
-USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```bash
-GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.

@@ -63,10 +63,8 @@
 }
 
 .footer {
-  background-color: var(--ifm-footer-background-color);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  background: radial-gradient(circle at center, #4f1c51 0%, #210f37 60%, #080112 100%);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
   text-align: center;
   padding: 4rem 0;
 }
