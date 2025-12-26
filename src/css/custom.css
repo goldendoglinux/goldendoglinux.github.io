@@ -4,47 +4,62 @@
  * work well for content-centric websites.
  */
 
-/* You can override the default Infima variables here. */
+/* Override Infima variables for n8n.io inspired dark theme */
 :root {
-  /* Aurora Inspired - Deep Purple/Blue Palette */
+  /* Primary color - deep purple */
   --ifm-color-primary: #8e44ad;
-  /* Amethyst Purple */
   --ifm-color-primary-dark: #7d3c98;
   --ifm-color-primary-darker: #763990;
   --ifm-color-primary-darkest: #612e76;
   --ifm-color-primary-light: #9b59b6;
   --ifm-color-primary-lighter: #a569bd;
   --ifm-color-primary-lightest: #bb8fce;
+
+  /* Typography */
+  --ifm-font-family-base: 'Inter', sans-serif;
+  --ifm-font-color-base: #f8f9fa;
+  /* Light text */
+
+  /* Code */
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-  --ifm-font-color-base: #f8f9fa;
-  /* Very light grey/white */
 }
 
-/* Aurora Inspired - Dark Mode Optimization */
+/* Dark mode overrides */
 [data-theme='dark'] {
+  --ifm-background-color: #0b0118;
+  /* Near‑black purple */
+  --ifm-navbar-background-color: #090113;
+  --ifm-footer-background-color: #06010d;
+
   --ifm-color-primary: #a29bfe;
-  /* Light Purple for contrast */
   --ifm-color-primary-dark: #8179f8;
   --ifm-color-primary-darker: #7167f7;
   --ifm-color-primary-darkest: #4333f4;
   --ifm-color-primary-light: #c3befd;
   --ifm-color-primary-lighter: #d4d0fe;
   --ifm-color-primary-lightest: #f1f0ff;
+
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
-
-  /* Deep Space Backgrounds */
-  --ifm-background-color: #0b0118;
-  /* Near-black purple */
-  --ifm-navbar-background-color: #090113;
-  --ifm-footer-background-color: #06010d;
-  /* Removes the grey look */
-
-  --ifm-contents-border-color: #1e053a;
-  --ifm-blockquote-color: #9c88ff;
 }
 
-/* Custom polishing */
+/* Global element tweaks */
+a {
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.85;
+}
+
+/* Buttons */
+.button {
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+/* Footer */
 footer {
   border-top: 1px solid #1e053a;
 }
