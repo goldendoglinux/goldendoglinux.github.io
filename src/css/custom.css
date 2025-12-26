@@ -6,32 +6,45 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  /* Bold Hues - Light Mode (using darker versions for readability) */
-  --ifm-color-primary: #D1007E;
-  --ifm-color-primary-dark: #B8006F;
-  --ifm-color-primary-darker: #AD0069;
-  --ifm-color-primary-darkest: #8F0057;
-  --ifm-color-primary-light: #EB008E;
-  --ifm-color-primary-lighter: #F50094;
-  --ifm-color-primary-lightest: #FF1BA4;
+  /* Aurora Inspired - Deep Purple/Blue Palette */
+  --ifm-color-primary: #8e44ad;
+  /* Amethyst Purple */
+  --ifm-color-primary-dark: #7d3c98;
+  --ifm-color-primary-darker: #763990;
+  --ifm-color-primary-darkest: #612e76;
+  --ifm-color-primary-light: #9b59b6;
+  --ifm-color-primary-lighter: #a569bd;
+  --ifm-color-primary-lightest: #bb8fce;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-font-color-base: #f8f9fa;
+  /* Very light grey/white */
 }
 
-/* Bold Hues - Dark Mode (Vibrant colors) */
+/* Aurora Inspired - Dark Mode Optimization */
 [data-theme='dark'] {
-  --ifm-color-primary: #FF1B8D;
-  /* Vibrant Pink */
-  --ifm-color-primary-dark: #E6007A;
-  --ifm-color-primary-darker: #D90073;
-  --ifm-color-primary-darkest: #B3005F;
-  --ifm-color-primary-light: #FF4DA6;
-  --ifm-color-primary-lighter: #FF66B3;
-  --ifm-color-primary-lightest: #FF99CC;
+  --ifm-color-primary: #a29bfe;
+  /* Light Purple for contrast */
+  --ifm-color-primary-dark: #8179f8;
+  --ifm-color-primary-darker: #7167f7;
+  --ifm-color-primary-darkest: #4333f4;
+  --ifm-color-primary-light: #c3befd;
+  --ifm-color-primary-lighter: #d4d0fe;
+  --ifm-color-primary-lightest: #f1f0ff;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 
-  /* Adding some gradients and background colors from the palette */
-  --ifm-background-color: #0d001a;
-  --ifm-navbar-background-color: #1a0033;
-  --ifm-footer-background-color: #0b0014;
+  /* Deep Space Backgrounds */
+  --ifm-background-color: #0b0118;
+  /* Near-black purple */
+  --ifm-navbar-background-color: #090113;
+  --ifm-footer-background-color: #06010d;
+  /* Removes the grey look */
+
+  --ifm-contents-border-color: #1e053a;
+  --ifm-blockquote-color: #9c88ff;
+}
+
+/* Custom polishing */
+footer {
+  border-top: 1px solid #1e053a;
 }
