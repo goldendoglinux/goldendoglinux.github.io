@@ -2,7 +2,7 @@
 // `@type` JSDoc annotations allow editor autocompletion and type checking
 // (when paired with `@ts-check`).
 
-import {themes as prismThemes} from 'prism-react-renderer';
+import { themes as prismThemes } from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -27,7 +27,19 @@ const config = {
 
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'es'],
+    localeConfigs: {
+      en: {
+        label: 'English',
+        direction: 'ltr',
+        htmlLang: 'en-US',
+      },
+      es: {
+        label: 'Español',
+        direction: 'ltr',
+        htmlLang: 'es-ES',
+      },
+    },
   },
 
   presets: [
@@ -62,6 +74,10 @@ const config = {
     ({
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
+      colorMode: {
+        defaultMode: 'dark',
+        respectPrefersColorScheme: false,
+      },
       navbar: {
         title: 'GoldenDog Linux',
         logo: {
@@ -75,10 +91,14 @@ const config = {
             position: 'left',
             label: 'Documentation',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {to: '/community', label: 'Community', position: 'left'},
-          {to: '/about', label: 'About', position: 'right'},
-          {to: '/changelog', label: 'Changelog', position: 'right'},
+          { to: '/blog', label: 'Blog', position: 'left' },
+          { to: '/community', label: 'Community', position: 'left' },
+          { to: '/about', label: 'About', position: 'right' },
+          { to: '/changelog', label: 'Changelog', position: 'right' },
+          {
+            type: 'localeDropdown',
+            position: 'right',
+          },
           {
             href: 'https://github.com/goldendoglinux/goldendoglinux.github.io',
             label: 'GitHub',

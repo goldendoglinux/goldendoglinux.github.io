@@ -6,25 +6,32 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #fcc203; /* Golden Yellow */
-  --ifm-color-primary-dark: #e3af03;
-  --ifm-color-primary-darker: #d6a503;
-  --ifm-color-primary-darkest: #b08802;
-  --ifm-color-primary-light: #fcd236;
-  --ifm-color-primary-lighter: #fcdb4f;
-  --ifm-color-primary-lightest: #fdee9c;
+  /* Bold Hues - Light Mode (using darker versions for readability) */
+  --ifm-color-primary: #D1007E;
+  --ifm-color-primary-dark: #B8006F;
+  --ifm-color-primary-darker: #AD0069;
+  --ifm-color-primary-darkest: #8F0057;
+  --ifm-color-primary-light: #EB008E;
+  --ifm-color-primary-lighter: #F50094;
+  --ifm-color-primary-lightest: #FF1BA4;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* Bold Hues - Dark Mode (Vibrant colors) */
 [data-theme='dark'] {
-  --ifm-color-primary: #fcc203;
-  --ifm-color-primary-dark: #e3af03;
-  --ifm-color-primary-darker: #d6a503;
-  --ifm-color-primary-darkest: #b08802;
-  --ifm-color-primary-light: #fcd236;
-  --ifm-color-primary-lighter: #fcdb4f;
-  --ifm-color-primary-lightest: #fdee9c;
+  --ifm-color-primary: #FF1B8D;
+  /* Vibrant Pink */
+  --ifm-color-primary-dark: #E6007A;
+  --ifm-color-primary-darker: #D90073;
+  --ifm-color-primary-darkest: #B3005F;
+  --ifm-color-primary-light: #FF4DA6;
+  --ifm-color-primary-lighter: #FF66B3;
+  --ifm-color-primary-lightest: #FF99CC;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+
+  /* Adding some gradients and background colors from the palette */
+  --ifm-background-color: #0d001a;
+  --ifm-navbar-background-color: #1a0033;
+  --ifm-footer-background-color: #0b0014;
 }
