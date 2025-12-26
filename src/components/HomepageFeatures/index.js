@@ -28,8 +28,8 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        We leverage modern technologies to provide an accessible and friendly
-        experience for both newcomers and power users.
+        GoldenDog gets the best out of Debian Stable and uses official Debian
+        repositories to provide a modern, accessible, and rock-solid experience.
       </>
     ),
   },
