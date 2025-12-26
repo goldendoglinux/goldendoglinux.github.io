@@ -17,12 +17,15 @@
 
   /* Typography - Clean & Modern */
   --ifm-font-family-base: 'Outfit', 'Inter', system-ui, -apple-system, sans-serif;
-  --ifm-font-color-base: #e9ecef;
-  --ifm-heading-color: #ffffff;
+  --ifm-font-color-base: #1a1a1b;
+  /* Dark text for Light Mode */
+  --ifm-heading-color: #080112;
+  /* Nearly black headings */
 
   /* Code & Details */
   --ifm-code-font-size: 90%;
   --docusaurus-highlighted-code-line-bg: rgba(155, 89, 182, 0.1);
+  --ifm-background-color: #ffffff;
 }
 
 /* Premium Dark overrides */
@@ -31,6 +34,9 @@
   /* Deepest Purple/Black */
   --ifm-navbar-background-color: #09021a;
   --ifm-footer-background-color: #05010b;
+
+  --ifm-font-color-base: #e9ecef;
+  --ifm-heading-color: #ffffff;
 
   --ifm-color-primary: #a29bfe;
   --ifm-color-primary-dark: #8179f8;
@@ -57,6 +63,15 @@
 
 .footer {
   border-top: 1px solid rgba(255, 255, 255, 0.05);
+  text-align: center;
+}
+
+.footer__links {
+  justify-content: center;
+}
+
+.footer__col {
+  text-align: center;
 }
 
 .button--primary {
