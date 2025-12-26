@@ -33,8 +33,8 @@
   --ifm-background-color: #080112;
   /* Deepest Purple/Black */
   --ifm-navbar-background-color: #09021a;
-  --ifm-footer-background-color: #0c021b;
-  /* Tinted deep purple to follow palette */
+  --ifm-footer-background-color: #09021a;
+  /* Matches navbar for cohesion */
 
   --ifm-font-color-base: #e9ecef;
   --ifm-heading-color: #ffffff;
@@ -63,6 +63,9 @@
 }
 
 .footer {
+  background-color: var(--ifm-footer-background-color);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border-top: 1px solid rgba(255, 255, 255, 0.05);
   text-align: center;
   padding: 4rem 0;

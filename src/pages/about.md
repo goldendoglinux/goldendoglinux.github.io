@@ -19,7 +19,7 @@ Today, GoldenDog releases follow the Debian Stable cycle:
 
 We use official Debian repositories with security patches and backports enabled by default. This ensures you have the rock-solid stability of Debian with the flexibility to install newer kernels and software when you need them.
 
-## The Future: GoldenDog Server 🚀
+## The Future: GoldenDog Server
 
 With the full refactor of GoldenDog 2, I am finally working on a long-time goal: **GoldenDog Server**. 
 

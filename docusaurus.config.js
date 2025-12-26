@@ -96,6 +96,11 @@ const config = {
           { to: '/about', label: 'About', position: 'right' },
           { to: '/changelog', label: 'Changelog', position: 'right' },
           {
+            href: 'https://github.com/goldendoglinux/support/issues',
+            label: 'Support',
+            position: 'right',
+          },
+          {
             type: 'localeDropdown',
             position: 'right',
           },
