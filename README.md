@@ -1,54 +1,41 @@
-# goldendog
+# Website
 
-Welcome to the GoldenDog Linux Jekyll Layout. 
-This is a layout I built for the [GoldenDog Linux Official Homepage](https://www.goldendoglinux.org)
-
-If you find it useful and would like to deploy this layout on your github pages account, the easiest thing to do would be to just fork this project and do all the changes that you like.
-
-This layout is MIT licensed. You don't even need to credit myself (Alexia) or GoldenDog, but it is always nice if you do :3 
-
-Also, It would make me really happy to know if you are running this somewhere. It's the first time I try to build a complete Jekyll Theme. 
-
+This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
 ## Installation
 
-Add this line to your Jekyll site's `Gemfile`:
-
-```ruby
-gem "goldendog"
+```bash
+yarn
 ```
 
-And add this line to your Jekyll site's `_config.yml`:
+## Local Development
 
-```yaml
-theme: goldendog
+```bash
+yarn start
 ```
 
-And then execute:
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
-    $ bundle
+## Build
 
-Or install it yourself as:
+```bash
+yarn build
+```
 
-    $ gem install goldendog
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
-## Usage
+## Deployment
 
-TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
+Using SSH:
 
-## Contributing
+```bash
+USE_SSH=true yarn deploy
+```
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/goldendog. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](https://www.contributor-covenant.org/) code of conduct.
+Not using SSH:
 
-## Development
+```bash
+GIT_USER=<Your GitHub username> yarn deploy
+```
 
-To set up your environment to develop this theme, run `bundle install`.
-
-Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
-
-When your theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
-To add a custom directory to your theme-gem, please edit the regexp in `goldendog.gemspec` accordingly.
-
-## License
-
-The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
