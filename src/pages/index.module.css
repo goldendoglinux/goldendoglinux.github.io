@@ -4,12 +4,27 @@
  */
 
 .heroBanner {
-  padding: 5rem 0;
+  padding: 8rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg, #0b0118, #090113);
-  color: var(--ifm-font-color-base);
+  background: radial-gradient(circle at center, #1a0233 0%, #080112 100%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.heroBanner :global(.hero__title) {
+  font-size: 4rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+}
+
+.heroBanner :global(.hero__subtitle) {
+  font-size: 1.5rem;
+  color: #a0aec0;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  font-weight: 400;
 }
 
 

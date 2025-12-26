@@ -4,33 +4,33 @@
  * work well for content-centric websites.
  */
 
-/* Override Infima variables for n8n.io inspired dark theme */
+/* Override Infima variables for Premium Dark theme */
 :root {
-  /* Primary color - deep purple */
-  --ifm-color-primary: #8e44ad;
-  --ifm-color-primary-dark: #7d3c98;
-  --ifm-color-primary-darker: #763990;
-  --ifm-color-primary-darkest: #612e76;
-  --ifm-color-primary-light: #9b59b6;
-  --ifm-color-primary-lighter: #a569bd;
-  --ifm-color-primary-lightest: #bb8fce;
+  /* Primary color - Deep Amethyst */
+  --ifm-color-primary: #9b59b6;
+  --ifm-color-primary-dark: #8e44ad;
+  --ifm-color-primary-darker: #8842a5;
+  --ifm-color-primary-darkest: #703688;
+  --ifm-color-primary-light: #a569bd;
+  --ifm-color-primary-lighter: #bb8fce;
+  --ifm-color-primary-lightest: #d2b4de;
 
-  /* Typography */
-  --ifm-font-family-base: 'Inter', sans-serif;
-  --ifm-font-color-base: #f8f9fa;
-  /* Light text */
+  /* Typography - Clean & Modern */
+  --ifm-font-family-base: 'Outfit', 'Inter', system-ui, -apple-system, sans-serif;
+  --ifm-font-color-base: #e9ecef;
+  --ifm-heading-color: #ffffff;
 
-  /* Code */
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  /* Code & Details */
+  --ifm-code-font-size: 90%;
+  --docusaurus-highlighted-code-line-bg: rgba(155, 89, 182, 0.1);
 }
 
-/* Dark mode overrides */
+/* Premium Dark overrides */
 [data-theme='dark'] {
-  --ifm-background-color: #0b0118;
-  /* Near‑black purple */
-  --ifm-navbar-background-color: #090113;
-  --ifm-footer-background-color: #06010d;
+  --ifm-background-color: #080112;
+  /* Deepest Purple/Black */
+  --ifm-navbar-background-color: #09021a;
+  --ifm-footer-background-color: #05010b;
 
   --ifm-color-primary: #a29bfe;
   --ifm-color-primary-dark: #8179f8;
@@ -40,26 +40,25 @@
   --ifm-color-primary-lighter: #d4d0fe;
   --ifm-color-primary-lightest: #f1f0ff;
 
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-contents-border-color: rgba(255, 255, 255, 0.05);
+  --ifm-toc-border-color: rgba(255, 255, 255, 0.05);
+
+  /* Modern Depth */
+  --glow-accent: rgba(162, 155, 254, 0.15);
 }
 
-/* Global element tweaks */
-a {
-  color: var(--ifm-color-primary);
-  text-decoration: none;
+/* Layout Polish */
+.navbar {
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-a:hover {
-  opacity: 0.85;
+.footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-/* Buttons */
-.button {
-  border-radius: 8px;
-  transition: background-color 0.2s ease;
-}
-
-/* Footer */
-footer {
-  border-top: 1px solid #1e053a;
+.button--primary {
+  box-shadow: 0 4px 14px 0 var(--glow-accent);
 }

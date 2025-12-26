@@ -1,26 +1,41 @@
 .features {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 2rem;
-  padding: 2rem 0;
+  display: flex;
+  align-items: center;
+  padding: 6rem 0;
+  width: 100%;
 }
 
 .featureCard {
-  background: var(--ifm-background-color);
-  border: 1px solid #1e053a;
-  border-radius: 8px;
-  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 2.5rem;
   text-align: center;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  height: 100%;
 }
 
 .featureCard:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-8px);
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(162, 155, 254, 0.3);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
 
 .featureSvg {
-  height: 120px;
-  width: 120px;
+  height: 80px;
+  width: 80px;
+  margin-bottom: 2rem;
+  filter: drop-shadow(0 0 10px rgba(162, 155, 254, 0.2));
+}
+
+.featureCard h3 {
+  font-weight: 700;
   margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.featureCard p {
+  line-height: 1.6;
+  color: #a0aec0;
 }
