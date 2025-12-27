@@ -15,10 +15,10 @@ All notable changes to the GoldenDog Linux project will be documented in this fi
 ### Note
 - **Website Refactoring**: Continued improvements to the Docusaurus platform.
 - **New Articles**: Added comprehensive guides for:
-  - [Creating Installation Media](./installation-guide.md)
-  - [Installation Guide](./installing-goldendog.md)
-  - [Popular Applications](./popular-apps.md)
-  - [NVIDIA Driver Installation](./nvidia-drivers.md)
+  - [Creating Installation Media](/docs/installation-guide)
+  - [Installation Guide](/docs/installing-goldendog)
+  - [Popular Applications](/docs/popular-apps)
+  - [NVIDIA Driver Installation](/docs/nvidia-drivers)
 
 ## [2.0.0] "Golden Retriever" - 2025-12-26
 
