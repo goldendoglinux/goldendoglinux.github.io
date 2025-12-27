@@ -1,0 +1,15 @@
+#!/bin/bash
+## INSTALL SPOTIFY - REMOTE SCRIPT
+
+# Install dependencies (gpg might be needed)
+sudo apt install gpg -y
+
+# Add Spotify GPG key
+curl -sS https://download.spotify.com/debian/pubkey_5384CE82BA52C83A.asc | sudo gpg --dearmor --yes -o /etc/apt/trusted.gpg.d/spotify.gpg
+
+# Add Repository
+echo "deb https://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list > /dev/null
+
+# Install
+sudo apt update
+sudo apt install spotify-client -y
