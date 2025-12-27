@@ -63,8 +63,8 @@
 }
 
 .footer {
-  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.03) 0%, rgba(26, 2, 51, 0.4) 30%, #080112 100%);
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.015) 0%, rgba(155, 89, 182, 0.08) 50%, #080112 100%);
+  border-top: 1px solid rgba(255, 255, 255, 0.03);
   text-align: center;
   padding: 4rem 0;
 }
