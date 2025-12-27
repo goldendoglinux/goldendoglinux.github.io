@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # Bienvenido a la Documentación de GoldenDog Linux
 
 Bienvenido a la plataforma oficial de documentación de **GoldenDog Linux**. Tanto si es un recién llegado que busca instalar su primera distribución Linux como si es un usuario experimentado que desea optimizar su configuración, aquí encontrará todo lo que necesita.

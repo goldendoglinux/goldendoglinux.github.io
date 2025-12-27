@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 5
 title: Aplicaciones Populares
 description: Guía para instalar aplicaciones de terceros en Goldendog.
 ---
