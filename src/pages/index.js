@@ -1,6 +1,7 @@
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import Translate, { translate } from '@docusaurus/Translate';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 
@@ -15,12 +16,18 @@ function HomepageHeader() {
         <Heading as="h1" className="hero__title">
           {siteConfig.title}
         </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <p className="hero__subtitle">
+          <Translate id="homepage.tagline" description="The tagline of the homepage">
+            Built to stay out of your way.
+          </Translate>
+        </p>
         <div className={styles.buttons}>
           <Link
             className="button button--primary button--lg"
             to="/docs/intro">
-            Get Started 🐶
+            <Translate id="homepage.getStarted" description="The Get Started button on the homepage">
+              Get Started 🐶
+            </Translate>
           </Link>
         </div>
       </div>
@@ -32,8 +39,16 @@ export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={translate({
+        id: 'homepage.title',
+        message: `Hello from ${siteConfig.title}`,
+        description: 'The title of the homepage',
+      })}
+      description={translate({
+        id: 'homepage.description',
+        message: 'Description will go into a meta tag in <head />',
+        description: 'The description of the homepage',
+      })}>
       <HomepageHeader />
       <main>
         <HomepageFeatures />

@@ -2,6 +2,24 @@
 
 Todos los cambios notables en el proyecto GoldenDog Linux se documentarán en este archivo.
 
+## [2.0.1] - 2025-12-27
+
+### Añadido
+- **Cockpit**: Se incluye Cockpit, la herramienta web de administración. Para acceder, abra Firefox y vaya a la URL `localhost:9090`, luego inicie sesión con su usuario y contraseña del sistema.
+- **Soporte de Fastfetch**: ¡Los desarrolladores de `fastfetch` han añadido soporte oficial para GoldenDog! Al instalar `fastfetch`, ahora se mostrará el logo de GoldenDog Linux.
+- **Rebranding de Logos**: Logos actualizados para pixmaps, logo por defecto y de seguridad.
+
+### Cambiado
+- **Menú GRUB UEFI**: Se corrigió el menú GRUB para instalaciones UEFI para mostrar las opciones "Install GoldenDog (Graphical)" e "Install GoldenDog (Text)", siguiendo el mismo estilo que el menú de instalación BIOS.
+
+### Nota
+- **Refactorización del Sitio**: Mejoras continuas en la plataforma Docusaurus.
+- **Nuevos Artículos**: Se han añadido guías completas para:
+  - [Crear Medios de Instalación](./installation-guide.md)
+  - [Guía de Instalación](./installing-goldendog.md)
+  - [Aplicaciones Populares](./popular-apps.md)
+  - [Instalación de Controladores NVIDIA](./nvidia-drivers.md)
+
 ## [2.0.0] "Golden Retriever" - 2025-12-26
 
 ### Añadido

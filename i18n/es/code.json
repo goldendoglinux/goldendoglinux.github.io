@@ -325,5 +325,45 @@
   "theme.tags.tagsPageTitle": {
     "message": "Etiquetas",
     "description": "The title of the tag list page"
+  },
+  "homepage.tagline": {
+    "message": "Construido para no estorbar.",
+    "description": "The tagline of the homepage"
+  },
+  "homepage.getStarted": {
+    "message": "Comenzar 🐶",
+    "description": "The Get Started button on the homepage"
+  },
+  "homepage.title": {
+    "message": "Hola desde GoldenDog Linux",
+    "description": "The title of the homepage"
+  },
+  "homepage.description": {
+    "message": "Descripción de la página principal",
+    "description": "The description of the homepage"
+  },
+  "homepage.features.performance.title": {
+    "message": "Rendimiento de Buen Chico",
+    "description": "Title for performance feature"
+  },
+  "homepage.features.performance.description": {
+    "message": "GoldenDog Linux está optimizado para la velocidad y la estabilidad, garantizando que su sistema se mantenga rápido y confiable bajo cualquier carga de trabajo.",
+    "description": "Description for performance feature"
+  },
+  "homepage.features.community.title": {
+    "message": "Impulsado por la Comunidad",
+    "description": "Title for community feature"
+  },
+  "homepage.features.community.description": {
+    "message": "Construido por la comunidad, para la comunidad. GoldenDog es una manada donde todos son bienvenidos a contribuir y crecer.",
+    "description": "Description for community feature"
+  },
+  "homepage.features.modern.title": {
+    "message": "Moderno y Accesible",
+    "description": "Title for modern feature"
+  },
+  "homepage.features.modern.description": {
+    "message": "GoldenDog saca lo mejor de Debian Stable y utiliza los repositorios oficiales de Debian para proporcionar una experiencia moderna, accesible y sólida como una roca.",
+    "description": "Description for modern feature"
   }
 }

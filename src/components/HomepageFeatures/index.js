@@ -1,36 +1,46 @@
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
+import Translate from '@docusaurus/Translate';
 import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Good Boy Performance',
+    title: (
+      <Translate id="homepage.features.performance.title" description="Title for performance feature">
+        Good Boy Performance
+      </Translate>
+    ),
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
-      <>
-        GoldenDog Linux is optimized for speed and stability, ensuring your
-        system stays fast and reliable under any workload.
-      </>
+      <Translate id="homepage.features.performance.description" description="Description for performance feature">
+        GoldenDog Linux is optimized for speed and stability, ensuring your system stays fast and reliable under any workload.
+      </Translate>
     ),
   },
   {
-    title: 'Community Driven',
+    title: (
+      <Translate id="homepage.features.community.title" description="Title for community feature">
+        Community Driven
+      </Translate>
+    ),
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
-      <>
-        Built by the community, for the community. GoldenDog is a pack where
-        everyone is welcome to contribute and grow.
-      </>
+      <Translate id="homepage.features.community.description" description="Description for community feature">
+        Built by the community, for the community. GoldenDog is a pack where everyone is welcome to contribute and grow.
+      </Translate>
     ),
   },
   {
-    title: 'Modern & Accessible',
+    title: (
+      <Translate id="homepage.features.modern.title" description="Title for modern feature">
+        Modern & Accessible
+      </Translate>
+    ),
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
-      <>
-        GoldenDog gets the best out of Debian Stable and uses official Debian
-        repositories to provide a modern, accessible, and rock-solid experience.
-      </>
+      <Translate id="homepage.features.modern.description" description="Description for modern feature">
+        GoldenDog gets the best out of Debian Stable and uses official Debian repositories to provide a modern, accessible, and rock-solid experience.
+      </Translate>
     ),
   },
 ];
