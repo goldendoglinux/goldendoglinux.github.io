@@ -8,7 +8,7 @@
     "description": "The alt text of navbar logo"
   },
   "item.label.Documentation": {
-    "message": "Documentation",
+    "message": "Documentación",
     "description": "Navbar item with label Documentation"
   },
   "item.label.Blog": {
@@ -16,15 +16,15 @@
     "description": "Navbar item with label Blog"
   },
   "item.label.Community": {
-    "message": "Community",
+    "message": "Comunidad",
     "description": "Navbar item with label Community"
   },
   "item.label.About": {
-    "message": "About",
+    "message": "Acerca de",
     "description": "Navbar item with label About"
   },
   "item.label.Changelog": {
-    "message": "Changelog",
+    "message": "Cambios",
     "description": "Navbar item with label Changelog"
   },
   "item.label.Support": {

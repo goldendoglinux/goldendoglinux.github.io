@@ -2,12 +2,12 @@
 slug: felices-fiestas
 title: Felices fiestas
 authors: [alexia]
-tags: [felices fiestas]
+tags: [blog, news]
 ---
 
-Aquí la mente detrás de Goldendog Linux. En estos últimos dos años tanto en instagram como en youtube creo que el comentario más recurrente ha sido "¿Cuándo sale GoldenDog Linux?"
+Hola a todos, aquí Alexia, esta es la mente detrás de GoldenDog Linux. En estos últimos dos años tanto en Instagram como en YouTube creo que el comentario más recurrente ha sido "¿Cuándo sale GoldenDog Linux?"
 
-Y creanme que cada vez que veía ese comentario, pensaba: Algún dia tendré que lanzar una versión pública.
+Y créanme que cada vez que veía ese comentario, pensaba: Algún día tendré que lanzar una versión pública.
 
 Si vieron la página [Acerca de](/about) donde cuento un poco acerca de la historia de GoldenDog Linux, seguramente se darán cuenta que es un proyecto que ha estado en desarrollo durante años. ¡Muchos!
 
