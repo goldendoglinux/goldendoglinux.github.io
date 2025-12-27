@@ -2,7 +2,7 @@
 
 All notable changes to the GoldenDog Linux project will be documented in this file.
 
-## [2.0.1] - 2025-12-27
+## [2.0.1] "Golden Retriever" - 2025-12-27
 
 ### Added
 - **Cockpit**: Included the Cockpit web-based administration tool. To access it, open Firefox and go to `localhost:9090`, then login with your machine's user account and password.
