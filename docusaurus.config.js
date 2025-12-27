@@ -8,7 +8,7 @@ import { themes as prismThemes } from 'prism-react-renderer';
 const config = {
   title: 'GoldenDog Linux',
   tagline: 'Built to stay out of your way.',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/logo.svg',
 
   // Set the production url of your site here
   url: 'https://goldendoglinux.github.io',
