@@ -10,6 +10,12 @@ Unlike AMD or Intel, NVIDIA does not open-source its drivers to the Linux kernel
 
 The binary provided by NVIDIA on their official website is essentially the same as the one found in the Debian/GoldenDog `nvidia-driver` package. However, installing it through the official repositories offers a massive advantage: **Stability during updates.**
 
+Furthermore, the official package ensures seamless integration with the core system components, including:
+- **DKMS**: Automatically rebuilds modules for new kernels.
+- **APT**: Manages dependencies and security updates.
+- **Secure Boot**: Handles signing requirements.
+- **Initramfs**: Ensures the driver is correctly loaded at the earliest boot stage.
+
 ### The "Manual Install" Trap
 If you install the driver manually using a `.run` file from NVIDIA's website:
 1. The driver compiles a kernel module specifically for your **current** kernel version.
@@ -28,6 +34,7 @@ We strongly recommend **against** installing NVIDIA drivers using the `.run` fil
 For users who want the best performance, the latest driver features, and better support for **Wayland**, we recommend using the backports repository. This ensures you have both the latest kernel and the latest compatible driver.
 
 ```bash
+sudo apt update
 sudo apt -t trixie-backports install nvidia-driver linux-image-amd64 linux-headers-amd64 -y
 ```
 
@@ -35,6 +42,7 @@ sudo apt -t trixie-backports install nvidia-driver linux-image-amd64 linux-heade
 If you prefer to stay on the standard stable version (fully tested and updated alongside your current kernel), run:
 
 ```bash
+sudo apt update
 sudo apt install nvidia-driver
 ```
 

@@ -8,7 +8,13 @@ A diferencia de AMD o Intel, NVIDIA no abre su código ni al kernel de Linux ni 
 
 ## ¿Por qué usar los paquetes del repositorio?
 
-El binario que se descarga de la página oficial de NVIDIA es esencialmente el mismo que se ofrece en el paquete `nvidia-driver` de Debian/GoldenDog. Sin embargo, instalarlo desde los repositorios oficiales ofrece una ventaja crucial: **Estabilidad durante las actualizaciones.**
+El binario que se descarga de la página oficial de NVIDIA es exactamente el mismo que se ofrece en el paquete `nvidia-driver` de Debian/GoldenDog. Sin embargo, instalarlo desde los repositorios oficiales ofrece una ventaja crucial: **Estabilidad durante las actualizaciones.**
+
+Además, el paquete oficial garantiza una integración perfecta con los componentes principales del sistema:
+- **DKMS**: Recompila automáticamente los módulos para nuevos kernels.
+- **APT**: Gestiona dependencias y actualizaciones de seguridad.
+- **Secure Boot**: Maneja los requisitos de firma digital.
+- **Initramfs**: Asegura que el controlador se cargue correctamente desde la etapa inicial del arranque.
 
 ### La trampa de la "Instalación Manual"
 Si instalas el controlador manualmente usando un archivo `.run` del sitio de NVIDIA:
@@ -28,6 +34,7 @@ No se recomienda bajo ningún concepto instalar el controlador NVIDIA utilizando
 Para los usuarios que buscan el mejor rendimiento, las funciones más recientes del controlador y un mejor soporte para **Wayland**, recomendamos utilizar el repositorio de *backports*. Esto garantiza que tengas tanto el kernel más reciente como el último controlador compatible.
 
 ```bash
+sudo apt update
 sudo apt -t trixie-backports install nvidia-driver linux-image-amd64 linux-headers-amd64 -y
 ```
 
@@ -35,6 +42,7 @@ sudo apt -t trixie-backports install nvidia-driver linux-image-amd64 linux-heade
 Si prefieres mantenerte en la versión estable estándar (probada y actualizada siempre junto con tu kernel actual), ejecuta:
 
 ```bash
+sudo apt update
 sudo apt install nvidia-driver
 ```
 
