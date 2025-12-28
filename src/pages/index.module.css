@@ -8,46 +8,10 @@
   text-align: center;
   position: relative;
   overflow: hidden;
-  background: var(--ifm-background-color);
+  background: radial-gradient(circle at 50% 120%, #1a0233 0%, #06010d 100%);
 }
 
 
-.heroBanner::before,
-.heroBanner::after {
-  content: '';
-  position: absolute;
-  width: 500px;
-  height: 500px;
-  border-radius: 50%;
-  filter: blur(100px);
-  z-index: 0;
-  opacity: 0.15;
-  pointer-events: none;
-}
-
-.heroBanner::before {
-  background: var(--ifm-color-primary);
-  top: -100px;
-  left: -100px;
-  animation: drift 20s infinite alternate ease-in-out;
-}
-
-.heroBanner::after {
-  background: #6a00f4;
-  bottom: -100px;
-  right: -100px;
-  animation: drift 25s infinite alternate-reverse ease-in-out;
-}
-
-@keyframes drift {
-  from {
-    transform: translate(0, 0) scale(1);
-  }
-
-  to {
-    transform: translate(100px, 50px) scale(1.1);
-  }
-}
 
 .heroBanner :global(.container) {
   position: relative;
