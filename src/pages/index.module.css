@@ -11,6 +11,18 @@
   background: radial-gradient(circle at 50% 120%, #120124 0%, #030107 100%);
 }
 
+.heroBanner::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 150px;
+  background: linear-gradient(to bottom, transparent, #050507);
+  pointer-events: none;
+  z-index: 2;
+}
+
 
 
 .heroBanner :global(.container) {
@@ -28,7 +40,10 @@
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  line-height: 1.1;
+  line-height: 1.25;
+  /* Increased to prevent clipping of 'g' descenders */
+  padding-bottom: 0.1em;
+  /* Extra breathing room */
 }
 
 

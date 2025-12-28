@@ -29,11 +29,11 @@
 }
 
 /* Premium Dark overrides */
-[data-theme='dark'] {
-  --ifm-background-color: #050507;
-  /* Even deeper charcoal background */
-  --ifm-navbar-background-color: rgba(5, 5, 7, 0.7);
-  --ifm-footer-background-color: #050507;
+html[data-theme='dark'] {
+  --ifm-background-color: #020203;
+  /* Deepest midnight background */
+  --ifm-navbar-background-color: rgba(2, 2, 3, 0.75);
+  --ifm-footer-background-color: #020203;
   /* Unified with background */
 
   --ifm-font-color-base: #eceef2;
@@ -66,6 +66,12 @@
   -webkit-backdrop-filter: var(--glass-blur);
   border-bottom: 1px solid var(--glass-border);
   background: var(--ifm-navbar-background-color);
+}
+
+.navbar__title {
+  font-weight: 600;
+  padding-bottom: 2px;
+  /* Prevent 'g' clipping */
 }
 
 
