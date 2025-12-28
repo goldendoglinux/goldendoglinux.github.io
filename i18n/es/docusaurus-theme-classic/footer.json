@@ -32,7 +32,7 @@
     "description": "The label of footer link with label=About linking to /about"
   },
   "copyright": {
-    "message": "Copyright © 2025 GoldenDog Linux. Hosteado en <a href=\"https://github.com/goldendoglinux\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a> - Creado con <a href=\"https://docusaurus.io/\" target=\"_blank\" rel=\"noopener noreferrer\">Docusaurus</a>. Linux(TM) es propiedad de Linus Torvalds gestionada por <a href=\"https://www.linuxfoundation.org/\" target=\"_blank\" rel=\"noopener noreferrer\">The Linux Foundation</a>. GoldenDog depende enteramente del Proyecto <a href=\"https://www.debian.org/\" target=\"_blank\" rel=\"noopener noreferrer\">The Debian GNU/Linux</a>.",
+    "message": "© 2025 GoldenDog Linux<br/>Construido por la comunidad. Impulsado por Debian GNU/Linux.",
     "description": "The footer copyright"
   }
 }

@@ -8,7 +8,7 @@
   text-align: center;
   position: relative;
   overflow: hidden;
-  background: radial-gradient(circle at 50% 120%, #1a0233 0%, #06010d 100%);
+  background: radial-gradient(circle at 50% 120%, #120124 0%, #030107 100%);
 }
 
 
@@ -99,7 +99,7 @@
   transform: translateX(-50%);
   width: 200%;
   height: 2000px;
-  background: radial-gradient(circle at 50% 10%, rgba(175, 115, 255, 0.04) 0%, transparent 60%);
+  background: radial-gradient(circle at 50% 10%, rgba(175, 115, 255, 0.02) 0%, transparent 60%);
   pointer-events: none;
   z-index: 0;
 }

@@ -150,7 +150,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} GoldenDog Linux. Hosted on <a href="https://github.com/goldendoglinux" target="_blank" rel="noopener noreferrer">GitHub</a> - Built with <a href="https://docusaurus.io/" target="_blank" rel="noopener noreferrer">Docusaurus</a>. Linux(TM) is property of Linus Torvalds handled by <a href="https://www.linuxfoundation.org/" target="_blank" rel="noopener noreferrer">The Linux Foundation</a>. GoldenDog depends entirely on <a href="https://www.debian.org/" target="_blank" rel="noopener noreferrer">The Debian GNU/Linux</a> Project.`,
+        copyright: `© ${new Date().getFullYear()} GoldenDog Linux<br/>Built by the community. Powered by Debian GNU/Linux.`,
       },
       prism: {
         theme: prismThemes.github,

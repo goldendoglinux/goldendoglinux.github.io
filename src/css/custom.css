@@ -30,10 +30,10 @@
 
 /* Premium Dark overrides */
 [data-theme='dark'] {
-  --ifm-background-color: #08080a;
-  /* Refined charcoal background */
-  --ifm-navbar-background-color: rgba(8, 8, 10, 0.7);
-  --ifm-footer-background-color: #08080a;
+  --ifm-background-color: #050507;
+  /* Even deeper charcoal background */
+  --ifm-navbar-background-color: rgba(5, 5, 7, 0.7);
+  --ifm-footer-background-color: #050507;
   /* Unified with background */
 
   --ifm-font-color-base: #eceef2;
