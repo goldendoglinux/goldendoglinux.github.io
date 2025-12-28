@@ -30,11 +30,11 @@
 
 /* Premium Dark overrides */
 [data-theme='dark'] {
-  --ifm-background-color: #080112;
-  /* Deepest Purple/Black */
-  --ifm-navbar-background-color: #09021a;
-  --ifm-footer-background-color: #09021a;
-  /* Matches navbar for cohesion */
+  --ifm-background-color: #06010d;
+  /* Even deeper dark */
+  --ifm-navbar-background-color: #06010d;
+  --ifm-footer-background-color: #030005;
+  /* Deepest footer */
 
   --ifm-font-color-base: #e9ecef;
   --ifm-heading-color: #ffffff;
@@ -47,8 +47,8 @@
   --ifm-color-primary-lighter: #d4d0fe;
   --ifm-color-primary-lightest: #f1f0ff;
 
-  --ifm-contents-border-color: rgba(255, 255, 255, 0.05);
-  --ifm-toc-border-color: rgba(255, 255, 255, 0.05);
+  --ifm-contents-border-color: rgba(255, 255, 255, 0.03);
+  --ifm-toc-border-color: rgba(255, 255, 255, 0.03);
 
   /* Modern Depth */
   --glow-accent: rgba(162, 155, 254, 0.15);
@@ -56,18 +56,17 @@
 
 /* Layout Polish */
 .navbar {
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
 }
 
 .footer {
-  /* Softer gradient using #4F1C51 tone at center fading to dark */
-  background: radial-gradient(circle at center, rgba(79, 28, 81, 0.25) 0%, rgba(33, 15, 55, 0.95) 70%, #09021a 100%);
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  background: var(--ifm-footer-background-color);
+  border-top: 1px solid rgba(255, 255, 255, 0.03);
   text-align: center;
-  padding: 4rem 0;
+  padding: 5rem 0;
 }
 
 .footer__links {
