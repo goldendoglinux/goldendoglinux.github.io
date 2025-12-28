@@ -35,6 +35,78 @@ function HomepageHeader() {
   );
 }
 
+function HomepageScreenshot() {
+  return (
+    <section className={styles.screenshotSection}>
+      <div className="container">
+        <div className="row">
+          <div className="col col--12 text--center">
+            <Heading as="h2">
+              <Translate id="homepage.screenshotTitle">
+                Beautiful, Stable, and Familiar
+              </Translate>
+            </Heading>
+            <p className="margin-bottom--lg">
+              <Translate id="homepage.screenshotSubtitle">
+                A clean KDE Plasma experience powered by the rock-solid Debian base.
+              </Translate>
+            </p>
+            <img
+              src="/img/desktop-screenshot.png"
+              alt="GoldenDog Linux Desktop"
+              className={styles.desktopScreenshot}
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function CockpitSection() {
+  return (
+    <section className={clsx(styles.cockpitSection, 'padding-vert--xl')}>
+      <div className="container">
+        <div className="row row--align-center">
+          <div className="col col--6">
+            <Heading as="h2">
+              <Translate id="homepage.cockpitTitle">
+                Server Management Made Easy
+              </Translate>
+            </Heading>
+            <p>
+              <Translate id="homepage.cockpitDesc">
+                GoldenDog Linux comes pre-configured with Cockpit, giving you a powerful web-based interface to manage your system, monitor performance, and handle updates with zero effort.
+              </Translate>
+            </p>
+            <Link
+              className="button button--secondary button--lg"
+              to="/docs/popular-apps">
+              <Translate id="homepage.learnMore">
+                Learn More
+              </Translate>
+            </Link>
+          </div>
+          <div className="col col--6">
+            <div className={styles.cockpitImageGrid}>
+              <img
+                src="/img/cockpit-login.png"
+                alt="Cockpit Login"
+                className={styles.cockpitImageSmall}
+              />
+              <img
+                src="/img/cockpit-dashboard.png"
+                alt="Cockpit Dashboard"
+                className={styles.cockpitImageLarge}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   return (
@@ -46,12 +118,14 @@ export default function Home() {
       })}
       description={translate({
         id: 'homepage.description',
-        message: 'Description will go into a meta tag in <head />',
+        message: 'A stable, KDE-based distribution for every user.',
         description: 'The description of the homepage',
       })}>
       <HomepageHeader />
       <main>
+        <HomepageScreenshot />
         <HomepageFeatures />
+        <CockpitSection />
       </main>
     </Layout>
   );
