@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Gestión de GoldenDog con la Consola Web
 
-GoldenDog Linux incluye **Cockpit** preinstalado, una potente interfaz basada en web que le permite gestionar su equipo con facilidad. Ya sea un administrador de servidores o un usuario de escritorio, la Consola Web proporciona una visión clara del estado y el rendimiento de su sistema.
+GoldenDog Linux incluye **Cockpit** preinstalado, una potente herramienta, que, a través de una interfaz web, le permite gestionar su equipo con facilidad. Ya sea un administrador de servidores o un usuario de escritorio, la Consola Web proporciona una visión clara del estado y el rendimiento de su sistema.
 
 ![Inicio de sesión en Cockpit](/img/cockpit-login.png)
 
