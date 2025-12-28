@@ -6,21 +6,28 @@
 }
 
 .featureCard {
-  background: rgba(255, 255, 255, 0.02);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  border-radius: 16px;
-  padding: 2.5rem;
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border);
+  border-radius: 20px;
+  padding: 3rem 2rem;
   text-align: center;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+
 .featureCard:hover {
-  transform: translateY(-8px);
-  background: rgba(255, 255, 255, 0.04);
-  border-color: rgba(162, 155, 254, 0.3);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  transform: translateY(-12px);
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(175, 115, 255, 0.4);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5), 0 0 30px rgba(175, 115, 255, 0.2);
 }
+
 
 .featureSvg {
   height: 80px;

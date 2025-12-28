@@ -30,44 +30,69 @@
 
 /* Premium Dark overrides */
 [data-theme='dark'] {
-  --ifm-background-color: #06010d;
-  /* Even deeper dark */
-  --ifm-navbar-background-color: #06010d;
-  --ifm-footer-background-color: #030005;
-  /* Deepest footer */
+  --ifm-background-color: #08080a;
+  /* Refined charcoal background */
+  --ifm-navbar-background-color: rgba(8, 8, 10, 0.7);
+  --ifm-footer-background-color: #08080a;
+  /* Unified with background */
 
-  --ifm-font-color-base: #e9ecef;
+  --ifm-font-color-base: #eceef2;
   --ifm-heading-color: #ffffff;
 
-  --ifm-color-primary: #a29bfe;
-  --ifm-color-primary-dark: #8179f8;
-  --ifm-color-primary-darker: #7167f7;
-  --ifm-color-primary-darkest: #4333f4;
-  --ifm-color-primary-light: #c3befd;
-  --ifm-color-primary-lighter: #d4d0fe;
-  --ifm-color-primary-lightest: #f1f0ff;
+  /* More vibrant accents */
+  --ifm-color-primary: #af73ff;
+  --ifm-color-primary-dark: #9646ff;
+  --ifm-color-primary-darker: #8930ff;
+  --ifm-color-primary-darkest: #6a00f4;
+  --ifm-color-primary-light: #c8a2ff;
+  --ifm-color-primary-lighter: #d4b8ff;
+  --ifm-color-primary-lightest: #f0e6ff;
 
-  --ifm-contents-border-color: rgba(255, 255, 255, 0.03);
-  --ifm-toc-border-color: rgba(255, 255, 255, 0.03);
+  --ifm-contents-border-color: rgba(255, 255, 255, 0.06);
+  --ifm-toc-border-color: rgba(255, 255, 255, 0.06);
 
-  /* Modern Depth */
-  --glow-accent: rgba(162, 155, 254, 0.15);
+  /* Modern Depth & Glassmorphism */
+  --glow-accent: rgba(175, 115, 255, 0.25);
+  --glass-bg: rgba(255, 255, 255, 0.03);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-blur: blur(12px);
 }
+
 
 /* Layout Polish */
 .navbar {
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border-bottom: 1px solid var(--glass-border);
+  background: var(--ifm-navbar-background-color);
 }
 
+
 .footer {
-  background: var(--ifm-footer-background-color);
-  border-top: 1px solid rgba(255, 255, 255, 0.03);
+  background-color: var(--ifm-background-color) !important;
+  border-top: none !important;
   text-align: center;
-  padding: 5rem 0;
+  padding: 8rem 0;
+  /* More padding for a premium feel */
+  position: relative;
+  overflow: hidden;
 }
+
+
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--ifm-color-primary), transparent);
+  opacity: 0.2;
+}
+
+
 
 .footer__links {
   justify-content: center;

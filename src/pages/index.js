@@ -122,11 +122,12 @@ export default function Home() {
         description: 'The description of the homepage',
       })}>
       <HomepageHeader />
-      <main>
+      <main className={styles.mainBackground}>
         <HomepageScreenshot />
         <CockpitSection />
         <HomepageFeatures />
       </main>
+
     </Layout>
   );
 }

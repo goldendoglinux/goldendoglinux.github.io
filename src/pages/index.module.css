@@ -4,31 +4,79 @@
  */
 
 .heroBanner {
-  padding: 10rem 0;
+  padding: 12rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
-  background: radial-gradient(circle at 50% 120%, #1a0233 0%, #06010d 100%);
+  background: var(--ifm-background-color);
 }
 
+
+.heroBanner::before,
+.heroBanner::after {
+  content: '';
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  filter: blur(100px);
+  z-index: 0;
+  opacity: 0.15;
+  pointer-events: none;
+}
+
+.heroBanner::before {
+  background: var(--ifm-color-primary);
+  top: -100px;
+  left: -100px;
+  animation: drift 20s infinite alternate ease-in-out;
+}
+
+.heroBanner::after {
+  background: #6a00f4;
+  bottom: -100px;
+  right: -100px;
+  animation: drift 25s infinite alternate-reverse ease-in-out;
+}
+
+@keyframes drift {
+  from {
+    transform: translate(0, 0) scale(1);
+  }
+
+  to {
+    transform: translate(100px, 50px) scale(1.1);
+  }
+}
+
+.heroBanner :global(.container) {
+  position: relative;
+  z-index: 1;
+}
+
+
 .heroBanner :global(.hero__title) {
-  font-size: 5rem;
-  font-weight: 800;
-  letter-spacing: -0.04em;
-  margin-bottom: 1rem;
-  background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0.7) 100%);
+  font-size: 5.5rem;
+  font-weight: 850;
+  letter-spacing: -0.05em;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(to bottom, #fff 30%, #a29bfe 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  line-height: 1.1;
 }
 
+
 .heroBanner :global(.hero__subtitle) {
-  font-size: 1.5rem;
-  color: #a0aec0;
-  max-width: 800px;
-  margin: 0 auto 3rem;
+  font-size: 1.6rem;
+  color: #94a3b8;
+  max-width: 650px;
+  margin: 0 auto 3.5rem;
   font-weight: 400;
+  line-height: 1.6;
 }
+
 
 
 @media screen and (max-width: 996px) {
@@ -48,41 +96,60 @@
 }
 
 .screenshotSection {
-  background: var(--ifm-background-color);
-  padding: 4rem 0;
+  background: transparent;
+  padding: 6rem 0;
   position: relative;
 }
+
 
 .desktopScreenshot {
   max-width: 1000px;
   width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.8), 0 0 20px rgba(162, 155, 254, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  margin-top: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.9), 0 0 40px rgba(175, 115, 255, 0.05);
+  border: 1px solid var(--glass-border);
+  margin-top: 3rem;
   position: relative;
   z-index: 2;
+  background: rgba(255, 255, 255, 0.01);
+  backdrop-filter: var(--glass-blur);
 }
 
-/* Central glow effect behind images */
-.screenshotSection::before,
-.cockpitSection::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 80%;
-  height: 80%;
-  background: radial-gradient(circle, rgba(162, 155, 254, 0.08) 0%, transparent 70%);
-  pointer-events: none;
-  z-index: 1;
-}
 
-.cockpitSection {
+
+/* Unified background for all sections below hero */
+.mainBackground {
   background: var(--ifm-background-color);
   position: relative;
+  overflow: hidden;
+  margin-top: -1px;
+  /* Remove any potential sub-pixel gaps */
 }
+
+.mainBackground::before {
+  content: '';
+  position: absolute;
+  top: -200px;
+  /* Overlap with hero for seamless glow */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200%;
+  height: 2000px;
+  background: radial-gradient(circle at 50% 10%, rgba(175, 115, 255, 0.04) 0%, transparent 60%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+
+
+
+
+
+.cockpitSection {
+  background: transparent;
+  position: relative;
+}
+
 
 .cockpitImageGrid {
   position: relative;
