@@ -71,7 +71,7 @@ function CockpitSection() {
           <div className="col col--6">
             <Heading as="h2">
               <Translate id="homepage.cockpitTitle">
-                Server Management Made Easy
+                Management Made Easy
               </Translate>
             </Heading>
             <p>
@@ -81,7 +81,7 @@ function CockpitSection() {
             </p>
             <Link
               className="button button--secondary button--lg"
-              to="/docs/popular-apps">
+              to="/docs/tweaking-goldendog/web-console">
               <Translate id="homepage.learnMore">
                 Learn More
               </Translate>
@@ -124,8 +124,8 @@ export default function Home() {
       <HomepageHeader />
       <main>
         <HomepageScreenshot />
-        <HomepageFeatures />
         <CockpitSection />
+        <HomepageFeatures />
       </main>
     </Layout>
   );

@@ -365,5 +365,20 @@
   "homepage.features.modern.description": {
     "message": "GoldenDog saca lo mejor de Debian Stable y utiliza los repositorios oficiales de Debian para proporcionar una experiencia moderna, accesible y sólida como una roca.",
     "description": "Description for modern feature"
+  },
+  "homepage.screenshotTitle": {
+    "message": "Hermoso, Estable y Familiar"
+  },
+  "homepage.screenshotSubtitle": {
+    "message": "Una experiencia limpia de KDE Plasma impulsada por la base sólida de Debian."
+  },
+  "homepage.cockpitTitle": {
+    "message": "Gestión Facilitada"
+  },
+  "homepage.cockpitDesc": {
+    "message": "GoldenDog Linux viene preconfigurado con Cockpit, lo que le brinda una potente interfaz basada en web para administrar su sistema, monitorear el rendimiento y manejar las actualizaciones sin esfuerzo."
+  },
+  "homepage.learnMore": {
+    "message": "Saber Más"
   }
 }
