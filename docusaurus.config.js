@@ -134,6 +134,10 @@ const config = {
                 label: 'GitHub',
                 href: 'https://github.com/goldendoglinux',
               },
+              {
+                label: 'Bluesky',
+                href: 'https://bsky.app/profile/goldendoglinux.org',
+              },
             ],
           },
           {

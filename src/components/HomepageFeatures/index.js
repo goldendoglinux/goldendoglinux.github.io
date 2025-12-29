@@ -7,13 +7,13 @@ const FeatureList = [
   {
     title: (
       <Translate id="homepage.features.performance.title" description="Title for performance feature">
-        Good Boy Performance
+        Reliable Performance
       </Translate>
     ),
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <Translate id="homepage.features.performance.description" description="Description for performance feature">
-        GoldenDog Linux is optimized for speed and stability, ensuring your system stays fast and reliable under any workload.
+        GoldenDog Linux is tuned for speed and stability, delivering consistent performance you can trust across everyday tasks and demanding workloads.
       </Translate>
     ),
   },
@@ -26,7 +26,7 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <Translate id="homepage.features.community.description" description="Description for community feature">
-        Built by the community, for the community. GoldenDog is a pack where everyone is welcome to contribute and grow.
+        Developed openly by the community, GoldenDog welcomes contributors and users alike to shape a distribution that grows through collaboration.
       </Translate>
     ),
   },

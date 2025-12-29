@@ -13,8 +13,10 @@ Puedes instalar GoldenDog en:
 - **Máquinas Virtuales**: Para una prueba rápida y fácil, puedes usar **[Spin VM de Alexia](https://github.com/alexiarstein/spin-vm)**. Crea una VM instantánea con un disco virtual de 20GB, lo cual es perfecto para probar GoldenDog.
 
 :::info Arquitectura Soportada
-GoldenDog Linux actualmente solo soporta arquitecturas **amd64** (Intel/AMD de 64 bits). No es compatible con Raspberry Pi ni RISC-V. 
+Por el momento, GoldenDog sólo soporta arquitecturas **amd64** (Intel/AMD de 64 bits). No es compatible con Raspberry Pi ni RISC-V. 
 Si necesitas esas versiones, consulta los [Puertos de Debian](https://wiki.debian.org/Ports/riscv64) o las [imágenes para Raspberry Pi](https://raspi.debian.net/tested-images/).
+
+Asimismo, está en los planes lanzar una versión ARM64. Proximamente se realizarán los anuncios. 
 :::
 
 ## Pasos de Instalación

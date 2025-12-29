@@ -343,11 +343,11 @@
     "description": "The description of the homepage"
   },
   "homepage.features.performance.title": {
-    "message": "Rendimiento de Buen Chico",
+    "message": "Rendimiento Confiable",
     "description": "Title for performance feature"
   },
   "homepage.features.performance.description": {
-    "message": "GoldenDog Linux está optimizado para la velocidad y la estabilidad, garantizando que su sistema se mantenga rápido y confiable bajo cualquier carga de trabajo.",
+    "message": "GoldenDog Linux está optimizado para ofrecer velocidad y estabilidad, brindando un rendimiento constante en el que puedes confiar, tanto en tareas cotidianas como en cargas de trabajo exigentes.",
     "description": "Description for performance feature"
   },
   "homepage.features.community.title": {
@@ -355,7 +355,7 @@
     "description": "Title for community feature"
   },
   "homepage.features.community.description": {
-    "message": "Construido por la comunidad, para la comunidad. GoldenDog es una manada donde todos son bienvenidos a contribuir y crecer.",
+    "message": "Desarrollado de forma abierta por la comunidad, GoldenDog recibe a colaboradores y usuarios por igual para dar forma a una distribución que crece mediante la colaboración.",
     "description": "Description for community feature"
   },
   "homepage.features.modern.title": {
