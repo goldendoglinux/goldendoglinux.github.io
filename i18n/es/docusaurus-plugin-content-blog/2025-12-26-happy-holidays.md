@@ -9,6 +9,8 @@ Hola a todos, aquí Alexia, esta es la mente detrás de GoldenDog Linux. En esto
 
 Y créanme que cada vez que veía ese comentario, pensaba: Algún día tendré que lanzar una versión pública.
 
+<!-- truncate -->
+
 Si vieron la página [Acerca de](/about) donde cuento un poco acerca de la historia de GoldenDog Linux, seguramente se darán cuenta que es un proyecto que ha estado en desarrollo durante años. ¡Muchos!
 
 Y si bien nunca ha estado abandonado, si ha pasado por etapas donde mi atención no estuvo enfocada en él. 

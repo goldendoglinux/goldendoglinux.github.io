@@ -85,13 +85,19 @@
   max-width: 1000px;
   width: 100%;
   border-radius: 16px;
-  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.9), 0 0 40px rgba(175, 115, 255, 0.05);
-  border: 1px solid var(--glass-border);
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.9), 0 0 40px rgba(175, 115, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   margin-top: 3rem;
   position: relative;
   z-index: 2;
   background: rgba(255, 255, 255, 0.01);
   backdrop-filter: var(--glass-blur);
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.6s ease;
+}
+
+.desktopScreenshot:hover {
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: 0 50px 120px rgba(0, 0, 0, 1), 0 0 60px rgba(175, 115, 255, 0.25);
 }
 
 
@@ -142,30 +148,31 @@
 .cockpitImageSmall {
   position: absolute;
   width: 65%;
-  border-radius: 8px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6), 0 0 20px rgba(175, 115, 255, 0.1);
   top: 10%;
   left: 0;
   z-index: 1;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .cockpitImageLarge {
   position: absolute;
   width: 85%;
-  border-radius: 8px;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8), 0 0 30px rgba(175, 115, 255, 0.15);
   bottom: 0%;
   right: 0;
   z-index: 2;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .cockpitImageSmall:hover,
 .cockpitImageLarge:hover {
-  transform: translateY(-10px) scale(1.02);
+  transform: translateY(-15px) scale(1.03);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.9), 0 0 50px rgba(175, 115, 255, 0.3);
   z-index: 3;
 }
 

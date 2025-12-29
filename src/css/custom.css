@@ -26,6 +26,11 @@
   --ifm-code-font-size: 90%;
   --docusaurus-highlighted-code-line-bg: rgba(155, 89, 182, 0.1);
   --ifm-background-color: #ffffff;
+
+  /* GoldenDog Fuchsia */
+  --goldendog-fuchsia: #ff00ff;
+  --ifm-link-hover-color: var(--goldendog-fuchsia);
+  --ifm-link-hover-decoration: none;
 }
 
 /* Premium Dark overrides */
@@ -56,6 +61,10 @@ html[data-theme='dark'] {
   --glass-bg: rgba(255, 255, 255, 0.03);
   --glass-border: rgba(255, 255, 255, 0.08);
   --glass-blur: blur(12px);
+
+  /* Override links in dark mode too */
+  --ifm-link-hover-color: #ff33ff;
+  /* Slightly brighter for dark mode */
 }
 
 
@@ -83,6 +92,44 @@ html[data-theme='dark'] {
   /* More padding for a premium feel */
   position: relative;
   overflow: hidden;
+  color: var(--ifm-font-color-base);
+  /* Ensure text color is inherited clearly */
+}
+
+/* Fix footer link contrast in light mode */
+html:not([data-theme='dark']) .footer__link-item {
+  color: #333 !important;
+  font-weight: 500;
+}
+
+html:not([data-theme='dark']) .footer__link-item:hover {
+  color: var(--goldendog-fuchsia) !important;
+}
+
+/* Sophisticated Screenshot Styling */
+article img,
+.markdown img {
+  border-radius: 12px;
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+html[data-theme='dark'] article img,
+html[data-theme='dark'] .markdown img {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 20px rgba(255, 0, 255, 0.05), 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+article img:hover,
+.markdown img:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+html[data-theme='dark'] article img:hover,
+html[data-theme='dark'] .markdown img:hover {
+  box-shadow: 0 0 30px rgba(255, 0, 255, 0.15), 0 15px 50px rgba(0, 0, 0, 0.5);
 }
 
 
