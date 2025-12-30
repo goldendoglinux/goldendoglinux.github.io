@@ -162,6 +162,26 @@ html[data-theme='dark'] .markdown img:hover {
   opacity: 0.7;
 }
 
+.footer__social-links {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.footer__social-link {
+  color: var(--ifm-font-color-base);
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.footer__social-link:hover {
+  color: var(--goldendog-fuchsia) !important;
+  transform: translateY(-3px);
+  text-decoration: none;
+}
+
 .button--primary {
   box-shadow: 0 4px 14px 0 var(--glow-accent);
 }
