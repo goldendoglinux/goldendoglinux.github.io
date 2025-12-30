@@ -2,15 +2,15 @@
 sidebar_position: 4
 ---
 
-# Installing goldendog on a macbook
+# Installing GoldenDog on a Macbook
 
 This guide is aimed at Intel Macbooks.
 
-The installation process is similar to installing goldendog on any Intel/AMD machines. After installation, some users report that the audio speakers of the Macbook produce no sound.
+The installation process is similar to installing GoldenDog on any Intel/AMD machines. After installation, some users report that the audio speakers of the Macbook produce no sound.
 
 ## Audio Workaround
 
-A workaround to get the audio working on goldendog installed on Apple Macbook Intel hardware is the following:
+A workaround to get the audio working on GoldenDog installed on Apple Macbook Intel hardware is the following:
 
 1. Open the terminal and type:
    ```bash
@@ -36,7 +36,12 @@ A workaround to get the audio working on goldendog installed on Apple Macbook In
    ```
    *(Note: Replace `6.12.57` with your actual kernel version obtained in the previous step.)*
 
-The new driver should be compiled and audio should play normally.
+5. Finally, reboot your machine for the changes to take effect:
+   ```bash
+   sudo reboot
+   ```
+
+The new driver should be compiled and audio should play normally after the reboot.
 
 ## Verification
 

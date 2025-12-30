@@ -2,15 +2,15 @@
 sidebar_position: 4
 ---
 
-# Instalando goldendog en una macbook
+# Instalando GoldenDog en una Macbook
 
-Esta guía está dirigida a las macbooks Intel.
+Esta guía está dirigida a las Macbooks Intel.
 
-El proceso de instalación es similar a la instalación de goldendog en cualquier máquina Intel/AMD. Después de la instalación, algunos usuarios informan que los altavoces de la macbook no producen sonido.
+El proceso de instalación es similar a la instalación de GoldenDog en cualquier máquina Intel/AMD. Después de la instalación, algunos usuarios informan que los altavoces de la Macbook no producen sonido.
 
 ## Solución para el Audio
 
-Una solución para que el audio funcione en goldendog instalado en hardware Intel de Apple macbook es la siguiente:
+Una solución para que el audio funcione en GoldenDog instalado en hardware Intel de Apple Macbook es la siguiente:
 
 1. Abra la terminal y escriba:
    ```bash
@@ -36,7 +36,12 @@ Una solución para que el audio funcione en goldendog instalado en hardware Inte
    ```
    *(Nota: Reemplace `6.12.57` con su versión real del kernel obtenida en el paso anterior.)*
 
-El nuevo controlador debería compilarse y el audio debería reproducirse con normalidad.
+5. Finalmente, reinicie su máquina para que los cambios surtan efecto:
+   ```bash
+   sudo reboot
+   ```
+
+El nuevo controlador debería compilarse y el audio debería reproducirse con normalidad después del reinicio.
 
 ## Verificación
 
