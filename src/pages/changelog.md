@@ -2,6 +2,19 @@
 
 All notable changes to the GoldenDog Linux project will be documented in this file.
 
+## [2.0.2] "Golden Retriever" - 2025-12-31
+
+### Added
+- **Desktop**: Added a trash link to the desktop.
+- **Branding**: Added `/etc/issue` and `/etc/issue.net` files to reflect GoldenDog Linux branding.
+
+### Changed
+- **Installation**: Sanitized directory creation process after installation.
+- **System**: Cleaned up old references to Calamares from the terminal icon.
+
+### Fixed
+- **Localization**: Fixed localization issues in KDE Plasma.
+
 ## [2.0.1] "Golden Retriever" - 2025-12-27
 
 ### Added

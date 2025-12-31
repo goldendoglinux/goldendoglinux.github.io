@@ -2,6 +2,19 @@
 
 Todos los cambios notables en el proyecto GoldenDog Linux se documentarán en este archivo.
 
+## [2.0.2] "Golden Retriever" - 2025-12-31
+
+### Añadido
+- **Escritorio**: Se añadió un enlace a la papelera en el escritorio.
+- **Identidad**: Se añadieron los archivos `/etc/issue` e `/etc/issue.net` para reflejar GoldenDog Linux (branding).
+
+### Cambiado
+- **Instalación**: Se saneó el proceso de creación de directorios después de la instalación.
+- **Sistema**: Se limpiaron las antiguas referencias a Calamares del icono de la terminal.
+
+### Corregido
+- **Localización**: Se corrigieron los problemas de localización en KDE Plasma.
+
 ## [2.0.1] "Golden Retriever" - 2025-12-27
 
 ### Añadido
