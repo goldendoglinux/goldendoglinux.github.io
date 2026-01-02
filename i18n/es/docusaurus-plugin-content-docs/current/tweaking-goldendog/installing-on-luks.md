@@ -6,8 +6,9 @@ sidebar_position: 5
 
 Esta guía proporciona un paso a paso para instalar GoldenDog en una partición cifrada con LUKS ya existente. Este es un proceso manual que requiere el uso de la terminal durante la instalación.
 
-> [!WARNING]
-> Este proceso implica el particionamiento manual del disco y comandos de terminal. No hay garantías; proceda bajo su propia responsabilidad. Asegúrese de tener una copia de seguridad de sus datos.
+:::warning
+Este proceso implica el particionamiento manual del disco y comandos de terminal. No hay garantías; proceda bajo su propia responsabilidad. Asegúrese de tener una copia de seguridad de sus datos.
+:::
 
 ## Particionado Manual
 

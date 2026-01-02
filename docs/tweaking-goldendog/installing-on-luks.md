@@ -6,8 +6,9 @@ sidebar_position: 5
 
 This guide provides a step-by-step walkthrough for installing GoldenDog on a pre-existing LUKS encrypted partition. This is a manual process that requires using the terminal during the installation.
 
-> [!WARNING]
-> This process involves manual disk partitioning and terminal commands. There are no guarantees; proceed at your own risk. Ensure you have a backup of your data.
+:::warning
+This process involves manual disk partitioning and terminal commands. There are no guarantees; proceed at your own risk. Ensure you have a backup of your data.
+:::
 
 ## Manual Partitioning
 
