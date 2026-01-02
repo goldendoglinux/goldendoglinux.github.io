@@ -24,7 +24,7 @@ El instalador de Debian puede no detectar las particiones cifradas automáticame
 1. Abra una consola con `Ctrl+Alt+F2`.
 2. Use la siguiente orden para cerrar/resetear el estado si es necesario (según el reporte del contribuidor):
    ```bash
-   cryptsetup luksClose /dev/sda6
+   cryptsetup luksOpen /dev/sda6
    ```
    *(Nota: Sustituya `sda6` por la partición que corresponda en cada caso).*
 

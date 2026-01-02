@@ -26,7 +26,6 @@ The Debian installer might not detect encrypted partitions automatically. Follow
    ```bash
    cryptsetup luksOpen /dev/sda6 sda6_crypt
    ```
-   *(Note: The contributor originally suggested `luksClose`, but the context implies opening or resetting the state to detect it. If you need to close it first, use `luksClose` then `luksOpen`. Following the contributor's flow of "Detecting disks" later suggests we just need the modules loaded.)*
 
 3. Return to the installer by pressing `Ctrl+Alt+F5` (or `F1/F7` depending on the system).
 4. Click the **Go Back** button.
