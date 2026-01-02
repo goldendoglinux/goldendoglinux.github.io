@@ -22,11 +22,10 @@ El instalador de Debian puede no detectar las particiones cifradas automáticame
 ## Abrir el Volumen Cifrado
 
 1. Abra una consola con `Ctrl+Alt+F2`.
-2. Use la siguiente orden para cerrar/resetear el estado si es necesario (según el reporte del contribuidor):
+2. Use la siguiente orden para abrir la partición (sustituya `sda6` por la partición que corresponda):
    ```bash
-   cryptsetup luksOpen /dev/sda6
+   cryptsetup luksOpen /dev/sda6 nombre_del_volumen
    ```
-   *(Nota: Sustituya `sda6` por la partición que corresponda en cada caso).*
 
 3. Vuelva al instalador con `Ctrl+Alt+F5` (o `F1/F7` dependiendo del sistema).
 4. Haga clic en el botón **Retroceder**.

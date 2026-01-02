@@ -24,7 +24,7 @@ The Debian installer might not detect encrypted partitions automatically. Follow
 1. Open a console by pressing `Ctrl+Alt+F2`.
 2. Run the following command to open the partition (replace `sda6` with your partition):
    ```bash
-   cryptsetup luksOpen /dev/sda6 sda6_crypt
+   cryptsetup luksOpen /dev/sda6 volume_name
    ```
 
 3. Return to the installer by pressing `Ctrl+Alt+F5` (or `F1/F7` depending on the system).
