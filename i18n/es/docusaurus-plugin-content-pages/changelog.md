@@ -1,6 +1,25 @@
 # Registro de Cambios
 
 Todos los cambios notables en el proyecto GoldenDog Linux se documentarán en este archivo.
+ 
+## [2.0.3] "Golden Retriever" - 2026-01-02
+
+### Añadido
+- **GRUB**: Tiempo de espera de 15 segundos con cuenta regresiva visible.
+- **Escritorio**: Icono de papelera con localización automática según el idioma de instalación.
+- **Iconos**: Pack de iconos experimentales de GoldenDog (disponible en Preferencias de Plasma > Iconos > Goldendog2).
+- **Construcción de ISO**: Rendimiento optimizado durante el build (goldendog-builder) mediante el uso de hardlinks para reducir duplicados, disminuyendo considerablemente el tamaño de la ISO a un promedio de **820MB**.
+
+
+### Corregido
+- **Instalador**: Se eliminó el logo duplicado en el menú de arranque UEFI.
+- **Instalador**: El logo de GoldenDog ahora está perfectamente centrado durante la inicialización.
+- **Localización**: Los directorios del sistema y carpetas de Plasma ahora muestran correctamente sus nombres locales en idiomas distintos al inglés.
+- **Sistema**: Sanitización y limpieza completa de SDDM en todos los niveles de ejecución.
+
+### Nota
+- **Sitio Web**: Se corrigió la visibilidad del menú móvil en modo oscuro.
+- **Documentación**: Se han actualizado las guías de instalación y uso. Se agregó documentación para instalar GoldenDog en un sistema con un disco LUKS en la sección _Tweaking GoldenDog_
 
 ## [2.0.2] "Golden Retriever" - 2025-12-31
 

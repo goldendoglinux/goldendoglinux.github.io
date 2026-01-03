@@ -1,6 +1,28 @@
 # Changelog
 
 All notable changes to the GoldenDog Linux project will be documented in this file.
+ 
+## [2.0.3] "Golden Retriever" - 2026-01-02
+
+### Added
+- **GRUB**: 15 second timeout with a visible countdown.
+- **Desktop**: Trash icon with automatic localization based on the installed language.
+- **Icons**: Experimental GoldenDog icon pack (available in Plasma Settings > Icons > Goldendog2).
+- **ISO Build**: Optimized performance during build using hardlinks to reduce duplicates, significantly reducing the ISO size to approximately **820MB**.
+
+### Fixed
+- **Installer**: Removed double logo in UEFI boot menu.
+- **Installer**: Perfectly centered the GoldenDog logo during initialization.
+- **Localization**: System directories and Plasma folders now correctly use local names for non-English languages.
+- **System**: Complete sanitization and cleaning of SDDM across all runlevels.
+
+### Note
+
+- **Website**: Fixed mobile menu visibility in dark mode.
+- **Documentation**: Added documentation for installing GoldenDog in a system with a LUKS encrypted disk in the _Tweaking GoldenDog_ section.
+
+Happy New Year! — Alexia
+
 
 ## [2.0.2] "Golden Retriever" - 2025-12-31
 
