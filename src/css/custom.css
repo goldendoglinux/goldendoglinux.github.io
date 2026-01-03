@@ -65,6 +65,22 @@ html[data-theme='dark'] {
   /* Override links in dark mode too */
   --ifm-link-hover-color: #ff00ff;
   /* Pure GoldenDog Fuchsia */
+
+  /* Fix for Mobile Menu Sidebar in Dark Mode */
+  --ifm-navbar-sidebar-background-color: #020203;
+}
+
+/* Ensure mobile sidebar has solid background and visible items in dark mode */
+html[data-theme='dark'] .navbar-sidebar {
+  background-color: #020203 !important;
+}
+
+html[data-theme='dark'] .navbar-sidebar__item {
+  color: #eceef2 !important;
+}
+
+html[data-theme='dark'] .navbar-sidebar__item:hover {
+  color: var(--goldendog-fuchsia) !important;
 }
 
 
