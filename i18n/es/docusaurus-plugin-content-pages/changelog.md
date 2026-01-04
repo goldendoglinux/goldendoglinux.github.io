@@ -2,6 +2,22 @@
 
 Todos los cambios notables en el proyecto GoldenDog Linux se documentarán en este archivo.
  
+## [2.0.4] "Golden Retriever" - 2026-01-04
+
+### Añadido
+- **Pantalla de Bienvenida**: Nueva pantalla de bienvenida de Goldendog que integra el EULA, el Debian Popularity Contest y la Telemetría de Plasma en un único diálogo de control. `goldendog-welcome` es un paquete independiente y de código abierto.
+- **Localización**: Añadido soporte para 8 idiomas en la pantalla de bienvenida de Goldendog.
+- **Política**: Nueva regla de política que permite a los usuarios activos habilitar/deshabilitar la telemetría de Debian sin elevar permisos.
+- **Fuentes**: Añadido paquete de fuentes de Ubuntu (con licencia).
+- **Instalador**: Añadido el repositorio `non-free` al instalador.
+
+### Eliminado
+- **Plasma Welcome**: Deshabilitada y eliminada la pantalla de bienvenida predeterminada de Plasma de todos los runlevels.
+- **EULA**: Eliminado el antiguo diálogo de EULA independiente.
+
+### Corregido
+- **Instalador**: Corregido el menú GRUB para instalaciones UEFI.
+
 ## [2.0.3] "Golden Retriever" - 2026-01-02
 
 ### Añadido
