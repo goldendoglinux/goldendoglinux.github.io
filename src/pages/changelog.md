@@ -2,6 +2,24 @@
 
 All notable changes to the GoldenDog Linux project will be documented in this file.
  
+## [2.0.5] "Golden Retriever" - 2026-01-08
+
+### Added
+- **Repository**: Added the official `goldendoglinux` repository (`deb.goldendoglinux.org`) along with its signed key.
+- **Tools**: Added `neofetch-c` .deb package to the new repository (a modern version of neofetch written in C by Alexia - [GitHub](https://github.com/alexiarstein/neofetch-c)).
+
+### Removed
+- **Tools**: Removed the old `neofetch` bash script as it is now obsolete. The 'neofetch' command is now replaced by the modern neofetch tool. To use neofetch it must be installed with ```sudo apt update && sudo apt install neofetch-c``` and then run with ```neofetch```
+
+### Note
+
+> We are very close to entering alpha status!!! Core system is almost fully functional. 
+> 
+> In alpha state the roadmap will be about selecting packages to be preinstalled, beautiying the plasma interface further and enhancing user experience related features. 
+> 
+> Have a happy summer! (or winter if you are in the northern hemisphere) 
+> -- Alexia
+
 ## [2.0.4] "Golden Retriever" - 2026-01-04
 
 ### Added
