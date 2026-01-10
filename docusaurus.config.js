@@ -159,6 +159,10 @@ const config = {
                 label: 'About',
                 to: '/about',
               },
+              {
+                label: 'Credits',
+                to: '/credits',
+              },
             ],
           },
         ],
