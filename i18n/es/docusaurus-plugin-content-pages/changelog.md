@@ -2,6 +2,28 @@
 
 Todos los cambios notables en el proyecto GoldenDog Linux se documentarán en este archivo.
  
+## [2.0.6] "Golden Retriever" - 2026-01-10
+
+### Añadido
+- **Instalador**: Ahora muestra la versión de GoldenDog en la esquina inferior derecha para ayudar a los testers a confirmar que están instalando la versión correcta (evitando problemas de ISOs cacheadas en máquinas virtuales).
+- **Fuentes**: Se añadió `fontconfig/fonts.conf` para permitir una forma mucho más limpia de configurar las fuentes del sistema.
+- **Barra de tareas**: Se añadió el icono de Firefox a la barra de estado de Plasma, reemplazando a Konqueror.
+
+### Cambiado
+- **Fuentes**: Plasma ahora usa por defecto el conjunto de fuentes de Ubuntu (licencia Canonical).
+- **Identidad**: Se reemplazó el logo de GoldenDog en la pantalla de inicio de sesión de GDM por el logo tradicional que coincide con el estilo del instalador.
+- **Menú de Inicio**: El menú de inicio de Plasma ahora muestra las aplicaciones al pasar el ratón por la categoría de la izquierda de forma predeterminada.
+- **Navegador**: Se eliminó el navegador Konqueror; se reemplazó el navegador predeterminado por Firefox ESR.
+
+### Eliminado
+- **Fondo de pantalla**: Se eliminó el splash de GoldenDog de la sección de fondos de pantalla por estar obsoleto, reduciendo el espacio en disco.
+
+### Nota
+
+> La mayoría de estos cambios no son correcciones de errores sino mejoras en la interfaz. Muchos formaban parte de la hoja de ruta alpha, lo que significa que estamos muy cerca del lanzamiento público. ¡Siiii!
+>
+> -- Alexia
+
 ## [2.0.5] "Golden Retriever" - 2026-01-08
 
 ### Añadido
