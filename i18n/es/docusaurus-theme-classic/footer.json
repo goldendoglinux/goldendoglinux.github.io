@@ -31,6 +31,10 @@
     "message": "Acerca de",
     "description": "The label of footer link with label=About linking to /about"
   },
+  "link.item.label.Credits": {
+    "message": "Créditos",
+    "description": "The label of footer link with label=Credits linking to /credits"
+  },
   "copyright": {
     "message": "© 2025 GoldenDog Linux<br/>Construido por la comunidad. Impulsado por Debian GNU/Linux.",
     "description": "The footer copyright"

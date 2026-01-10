@@ -1,6 +1,6 @@
 # Créditos
 
-GoldenDog Linux es un esfuerzo comunitario y se basa en muchos proyectos y activos de código abierto. Nos gustaría agradecer a los siguientes creadores por sus contribuciones al ecosistema.
+GoldenDog Linux es un esfuerzo comunitario y se basa en muchos proyectos y elementos de código abierto. Nos gustaría agradecer a los siguientes creadores por sus contribuciones al ecosistema.
 
 | Activo | Nombre Original | Autor | Licencia |
 | :--- | :--- | :--- | :--- |
