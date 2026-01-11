@@ -2,6 +2,19 @@
 
 Todos los cambios notables en el proyecto GoldenDog Linux se documentarán en este archivo.
  
+## [2.0.7] "Golden Retriever" - 2026-01-11
+
+### Añadido
+- **Instalador**: Se añadió el modo oscuro al instalador de texto para todos los initrds UEFI, BIOS y XEN.
+- **Paquetes**: Paquetes base actualizados a Debian Trixie 13.3.
+- **Paquetes**: Se añadió el paquete `nano` 8.7 (última versión) al repositorio oficial de GoldenDog.
+- **Plasma**: Se añadió el tema dark-plasma para Plasma 6 (corrigiendo el tamaño del icono del menú de inicio).
+- **Software**: Se añadió soporte para Flatpak, repositorio Flathub y el plugin de Flatpak para Discover.
+
+### Eliminado
+- **Instalador**: Se eliminó `tzsetup.udeb` ya que ha sido parcheado upstream en Debian.
+- **Plasma**: Se eliminó el antiguo tema dark-plasma (Plasma 5) por estar obsoleto.
+
 ## [2.0.6] "Golden Retriever" - 2026-01-10
 
 ### Añadido
