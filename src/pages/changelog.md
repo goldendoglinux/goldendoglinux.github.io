@@ -2,6 +2,25 @@
 
 All notable changes to the GoldenDog Linux project will be documented in this file.
  
+## [2.0.8] "Golden Retriever" - 2026-01-11
+
+### Changed
+- **Repository**: Restructured the repository to match the codename (`goldenretriever`) to facilitate future system upgrades to GoldenDog 3.
+- **Packages**: Re-added all packages to the new repository structure.
+- **System**: Fixed `goldendog.sources` in `/etc/apt/apt.sources.d/` to point to the current version.
+
+### Added
+- **Packages**: Created the `goldendoglinux` metapackage (v2.0.0), enabling seamless system migration to GoldenDog 3 without reinstallation.
+- **Installation**: Preinstalled the `goldendoglinux` metapackage in the current build (2.0.8).
+
+### Note
+
+> The `goldendoglinux` metapackage enables live delivery of security updates, bugfixes, and simplified system-wide upgrades.
+>
+> This is the last update of the pre-alpha phase—we're one step closer to the public release!
+> 
+> -- Alexia
+
 ## [2.0.7] "Golden Retriever" - 2026-01-11
 
 ### Added
