@@ -2,7 +2,20 @@
 
 Todos los cambios notables en el proyecto GoldenDog Linux se documentarán en este archivo.
  
+## [2.0.8a] "Golden Retriever" - 2026-01-12
+
+### Añadido
+- **Seguridad**: Ahora GoldenDog puede ejecutarse en modo SecureBoot.
+- **Paquetes**: `nano` 8.7 ya está disponible en el repositorio de GoldenDog. Se puede actualizar desde la versión de Debian ejecutando `sudo apt update && sudo apt upgrade`.
+
+### Cambiado
+- **GoldenDog Builder**: Se rediseñó el constructor (builder) para generar ISOs con flags de seguridad similares a los que usa Debian.
+
+### Corregido
+- **Permisos**: Se corrigieron los permisos en el directorio personal (homedir) tras los cambios en el constructor.
+
 ## [2.0.8] "Golden Retriever" - 2026-01-11
+
 
 ### Cambiado
 - **Repositorio**: Se reestructuró el repositorio para coincidir con el codename (`goldenretriever`), facilitando futuras actualizaciones del sistema a GoldenDog 3.
