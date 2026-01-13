@@ -2,6 +2,10 @@
 
 ¡Únete a la comunidad!
 
+import NewsletterForm from '@site/src/components/NewsletterForm';
+
+<NewsletterForm />
+
 ## Canales
 *   **IRC**: irc.libera.chat #goldendog (puenteado con Discord)
 *   **Discord**: [Únete](https://goldendoglinux.org/discord)

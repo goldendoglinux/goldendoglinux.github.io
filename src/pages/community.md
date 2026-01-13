@@ -2,6 +2,10 @@
 
 Join the community!
 
+import NewsletterForm from '@site/src/components/NewsletterForm';
+
+<NewsletterForm />
+
 ## Channels
 *   **IRC**: irc.libera.chat #goldendoglinux (bridged to Discord)
 *   **Discord**: [Join us](https://goldendoglinux.org/discord)
