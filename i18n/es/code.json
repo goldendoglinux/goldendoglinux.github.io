@@ -416,5 +416,11 @@
   },
   "newsletter.placeholder": {
     "message": "tu@correo.com"
+  },
+  "newsletter.list.news.uuid": {
+    "message": "fadf16f3-eaa3-4549-9f34-8aa3af8d45c2"
+  },
+  "newsletter.list.security.uuid": {
+    "message": "8a189f90-84b7-4f2c-8784-49509c895c54"
   }
 }

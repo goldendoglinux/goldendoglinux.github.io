@@ -13,11 +13,17 @@ export default function NewsletterForm() {
 
     const lists = {
         news: {
-            uuid: '90163d3c-64bb-4910-aa3e-dd71e0944cf6',
+            uuid: translate({
+                id: 'newsletter.list.news.uuid',
+                message: '90163d3c-64bb-4910-aa3e-dd71e0944cf6',
+            }),
             label: <Translate id="newsletter.list.news">General News</Translate>,
         },
         security: {
-            uuid: '57977cb6-60a6-465b-98f0-0b626847ed0d',
+            uuid: translate({
+                id: 'newsletter.list.security.uuid',
+                message: '57977cb6-60a6-465b-98f0-0b626847ed0d',
+            }),
             label: <Translate id="newsletter.list.security">Security Updates</Translate>,
         },
     };
