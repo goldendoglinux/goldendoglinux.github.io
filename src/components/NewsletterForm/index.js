@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styles from './styles.module.css';
-import Translate from '@docusaurus/Translate';
+import Translate, { translate } from '@docusaurus/Translate';
 
 export default function NewsletterForm() {
     const [email, setEmail] = useState('');
@@ -38,7 +38,12 @@ export default function NewsletterForm() {
 
         if (uuids.length === 0) {
             setStatus('error');
-            setMessage('Please select at least one list.');
+            setMessage(
+                translate({
+                    id: 'newsletter.error.noList',
+                    message: 'Please select at least one list.',
+                })
+            );
             return;
         }
 
@@ -61,15 +66,31 @@ export default function NewsletterForm() {
             if (response.ok) {
                 setStatus('success');
                 setEmail('');
-                setMessage('Thanks for subscribing! Please check your email to confirm.');
+                setMessage(
+                    translate({
+                        id: 'newsletter.success.message',
+                        message: 'Thanks for subscribing! Please check your email to confirm.',
+                    })
+                );
             } else {
                 const data = await response.json();
                 setStatus('error');
-                setMessage(data.message || 'Something went wrong. Please try again.');
+                setMessage(
+                    data.message ||
+                    translate({
+                        id: 'newsletter.error.generic',
+                        message: 'Something went wrong. Please try again.',
+                    })
+                );
             }
         } catch (err) {
             setStatus('error');
-            setMessage('Failed to connect to the subscription service. Please check your connection or CORS settings.');
+            setMessage(
+                translate({
+                    id: 'newsletter.error.network',
+                    message: 'Failed to connect to the subscription service. Please check your connection or CORS settings.',
+                })
+            );
         }
     };
 
@@ -88,7 +109,10 @@ export default function NewsletterForm() {
                     <div className={styles.inputGroup}>
                         <input
                             type="email"
-                            placeholder="your@email.com"
+                            placeholder={translate({
+                                id: 'newsletter.placeholder',
+                                message: 'your@email.com',
+                            })}
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
                             required

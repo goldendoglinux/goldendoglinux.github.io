@@ -14,5 +14,13 @@
   "sidebar.tutorialSidebar.category.Tutorial - Extras": {
     "message": "Tutorial - Extras",
     "description": "The label for category 'Tutorial - Extras' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Tweaking GoldenDog": {
+    "message": "Tweaking GoldenDog",
+    "description": "The label for category 'Tweaking GoldenDog' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Tweaking GoldenDog.link.generated-index.description": {
+    "message": "Guides for advanced configurations and system tweaks.",
+    "description": "The generated-index page description for category 'Tweaking GoldenDog' in sidebar 'tutorialSidebar'"
   }
 }

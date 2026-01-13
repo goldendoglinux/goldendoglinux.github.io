@@ -1,46 +1,118 @@
 {
+  "homepage.tagline": {
+    "message": "Built to stay out of your way.",
+    "description": "The tagline of the homepage"
+  },
+  "homepage.getStarted": {
+    "message": "Get Started 🐶",
+    "description": "The Get Started button on the homepage"
+  },
+  "homepage.screenshotTitle": {
+    "message": "Beautiful, Stable, and Familiar"
+  },
+  "homepage.screenshotSubtitle": {
+    "message": "A clean KDE Plasma experience powered by the rock-solid Debian base."
+  },
+  "homepage.cockpitTitle": {
+    "message": "Management Made Easy"
+  },
+  "homepage.cockpitDesc": {
+    "message": "GoldenDog Linux comes pre-configured with Cockpit, giving you a powerful web-based interface to manage your system, monitor performance, and handle updates with zero effort."
+  },
+  "homepage.learnMore": {
+    "message": "Learn More"
+  },
+  "homepage.description": {
+    "message": "A stable, KDE-based distribution for every user.",
+    "description": "The description of the homepage"
+  },
+  "homepage.features.performance.title": {
+    "message": "Reliable Performance",
+    "description": "Title for performance feature"
+  },
+  "homepage.features.performance.description": {
+    "message": "GoldenDog Linux is tuned for speed and stability, delivering consistent performance you can trust across everyday tasks and demanding workloads.",
+    "description": "Description for performance feature"
+  },
+  "homepage.features.community.title": {
+    "message": "Community Driven",
+    "description": "Title for community feature"
+  },
+  "homepage.features.community.description": {
+    "message": "Developed openly by the community, GoldenDog welcomes contributors and users alike to shape a distribution that grows through collaboration.",
+    "description": "Description for community feature"
+  },
+  "homepage.features.modern.title": {
+    "message": "Modern & Accessible",
+    "description": "Title for modern feature"
+  },
+  "homepage.features.modern.description": {
+    "message": "GoldenDog gets the best out of Debian Stable and uses official Debian repositories to provide a modern, accessible, and rock-solid experience.",
+    "description": "Description for modern feature"
+  },
+  "newsletter.list.news": {
+    "message": "General News"
+  },
+  "newsletter.list.security": {
+    "message": "Security Updates"
+  },
+  "newsletter.title": {
+    "message": "Join our Newsletter"
+  },
+  "newsletter.description": {
+    "message": "Stay updated with the latest releases, security updates, and community news."
+  },
+  "newsletter.loading": {
+    "message": "Subscribing..."
+  },
+  "newsletter.success": {
+    "message": "Done!"
+  },
+  "newsletter.button": {
+    "message": "Subscribe"
+  },
   "theme.ErrorPageContent.title": {
-    "message": "Esta página ha fallado.",
+    "message": "This page crashed.",
     "description": "The title of the fallback page when the page crashed"
   },
   "theme.BackToTopButton.buttonAriaLabel": {
-    "message": "Volver al principio",
+    "message": "Scroll back to top",
     "description": "The ARIA label for the back to top button"
   },
   "theme.blog.archive.title": {
-    "message": "Archivo",
+    "message": "Archive",
     "description": "The page & hero title of the blog archive page"
   },
   "theme.blog.archive.description": {
-    "message": "Archivo",
+    "message": "Archive",
     "description": "The page & hero description of the blog archive page"
   },
   "theme.blog.paginator.navAriaLabel": {
-    "message": "Navegación por la página de la lista de blogs ",
+    "message": "Blog list page navigation",
     "description": "The ARIA label for the blog pagination"
   },
   "theme.blog.paginator.newerEntries": {
-    "message": "Entradas más recientes",
+    "message": "Newer entries",
     "description": "The label used to navigate to the newer blog posts page (previous page)"
   },
   "theme.blog.paginator.olderEntries": {
-    "message": "Entradas más antiguas",
+    "message": "Older entries",
     "description": "The label used to navigate to the older blog posts page (next page)"
   },
   "theme.blog.post.paginator.navAriaLabel": {
-    "message": "Barra de paginación de publicaciones del blog",
+    "message": "Blog post page navigation",
     "description": "The ARIA label for the blog posts pagination"
   },
   "theme.blog.post.paginator.newerPost": {
-    "message": "Publicación más reciente",
+    "message": "Newer post",
     "description": "The blog post button label to navigate to the newer/previous post"
   },
   "theme.blog.post.paginator.olderPost": {
-    "message": "Publicación más antigua",
+    "message": "Older post",
     "description": "The blog post button label to navigate to the older/next post"
   },
   "theme.tags.tagsPageLink": {
-    "message": "Ver Todas las Etiquetas",
+    "message": "View all tags",
     "description": "The label of the link targeting the tag list page"
   },
   "theme.colorToggle.ariaLabel.mode.system": {
@@ -48,106 +120,106 @@
     "description": "The name for the system color mode"
   },
   "theme.colorToggle.ariaLabel.mode.light": {
-    "message": "modo claro",
+    "message": "light mode",
     "description": "The name for the light color mode"
   },
   "theme.colorToggle.ariaLabel.mode.dark": {
-    "message": "modo oscuro",
+    "message": "dark mode",
     "description": "The name for the dark color mode"
   },
   "theme.colorToggle.ariaLabel": {
-    "message": "Cambiar entre modo oscuro y claro (actualmente {mode})",
+    "message": "Switch between dark and light mode (currently {mode})",
     "description": "The ARIA label for the color mode toggle"
   },
-  "theme.docs.breadcrumbs.navAriaLabel": {
-    "message": "Rastro de navegación",
-    "description": "The ARIA label for the breadcrumbs"
-  },
   "theme.docs.DocCard.categoryDescription.plurals": {
-    "message": "1 artículo|{count} artículos",
+    "message": "1 item|{count} items",
     "description": "The default description for a category card in the generated index about how many items this category includes"
   },
+  "theme.docs.breadcrumbs.navAriaLabel": {
+    "message": "Breadcrumbs",
+    "description": "The ARIA label for the breadcrumbs"
+  },
   "theme.docs.paginator.navAriaLabel": {
-    "message": "Página del documento",
+    "message": "Docs pages",
     "description": "The ARIA label for the docs pagination"
   },
   "theme.docs.paginator.previous": {
-    "message": "Anterior",
+    "message": "Previous",
     "description": "The label used to navigate to the previous doc"
   },
   "theme.docs.paginator.next": {
-    "message": "Siguiente",
+    "message": "Next",
     "description": "The label used to navigate to the next doc"
   },
   "theme.docs.tagDocListPageTitle.nDocsTagged": {
-    "message": "Un documento etiquetado|{count} documentos etiquetados",
+    "message": "One doc tagged|{count} docs tagged",
     "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.docs.tagDocListPageTitle": {
-    "message": "{nDocsTagged} con \"{tagName}\"",
+    "message": "{nDocsTagged} with \"{tagName}\"",
     "description": "The title of the page for a docs tag"
   },
   "theme.docs.versionBadge.label": {
     "message": "Version: {versionLabel}"
   },
   "theme.docs.versions.unreleasedVersionLabel": {
-    "message": "Esta es la documentación sin publicar para {siteTitle}, versión {versionLabel}.",
+    "message": "This is unreleased documentation for {siteTitle} {versionLabel} version.",
     "description": "The label used to tell the user that he's browsing an unreleased doc version"
   },
   "theme.docs.versions.unmaintainedVersionLabel": {
-    "message": "Esta es la documentación para {siteTitle} {versionLabel}, que ya no se mantiene activamente.",
+    "message": "This is documentation for {siteTitle} {versionLabel}, which is no longer actively maintained.",
     "description": "The label used to tell the user that he's browsing an unmaintained doc version"
   },
   "theme.docs.versions.latestVersionSuggestionLabel": {
-    "message": "Para la documentación actualizada, vea {latestVersionLink} ({versionLabel}).",
+    "message": "For up-to-date documentation, see the {latestVersionLink} ({versionLabel}).",
     "description": "The label used to tell the user to check the latest version"
   },
   "theme.docs.versions.latestVersionLinkLabel": {
-    "message": "última versión",
+    "message": "latest version",
     "description": "The label used for the latest version suggestion link label"
   },
   "theme.common.editThisPage": {
-    "message": "Editar esta página",
+    "message": "Edit this page",
     "description": "The link label to edit the current page"
   },
   "theme.common.headingLinkTitle": {
-    "message": "Enlace directo al {heading}",
+    "message": "Direct link to {heading}",
     "description": "Title for link to heading"
   },
   "theme.lastUpdated.atDate": {
-    "message": " en {date}",
+    "message": " on {date}",
     "description": "The words used to describe on which date a page has been last updated"
   },
   "theme.lastUpdated.byUser": {
-    "message": " por {user}",
+    "message": " by {user}",
     "description": "The words used to describe by who the page has been last updated"
   },
   "theme.lastUpdated.lastUpdatedAtBy": {
-    "message": "Última actualización{atDate}{byUser}",
+    "message": "Last updated{atDate}{byUser}",
     "description": "The sentence used to display when a page has been last updated, and by who"
   },
   "theme.navbar.mobileVersionsDropdown.label": {
-    "message": "Versiones",
+    "message": "Versions",
     "description": "The label for the navbar versions dropdown on mobile view"
   },
   "theme.NotFound.title": {
-    "message": "Página No Encontrada",
+    "message": "Page Not Found",
     "description": "The title of the 404 page"
   },
   "theme.tags.tagsListLabel": {
-    "message": "Etiquetas:",
+    "message": "Tags:",
     "description": "The label alongside a tag list"
   },
   "theme.AnnouncementBar.closeButtonAriaLabel": {
-    "message": "Cerrar",
+    "message": "Close",
     "description": "The ARIA label for close button of announcement bar"
   },
   "theme.admonition.caution": {
-    "message": "precaución",
+    "message": "caution",
     "description": "The default label used for the Caution admonition (:::caution)"
   },
   "theme.admonition.danger": {
-    "message": "peligro",
+    "message": "danger",
     "description": "The default label used for the Danger admonition (:::danger)"
   },
   "theme.admonition.info": {
@@ -155,7 +227,7 @@
     "description": "The default label used for the Info admonition (:::info)"
   },
   "theme.admonition.note": {
-    "message": "nota",
+    "message": "note",
     "description": "The default label used for the Note admonition (:::note)"
   },
   "theme.admonition.tip": {
@@ -163,100 +235,96 @@
     "description": "The default label used for the Tip admonition (:::tip)"
   },
   "theme.admonition.warning": {
-    "message": "aviso",
+    "message": "warning",
     "description": "The default label used for the Warning admonition (:::warning)"
   },
   "theme.blog.sidebar.navAriaLabel": {
-    "message": "Navegación de publicaciones recientes",
+    "message": "Blog recent posts navigation",
     "description": "The ARIA label for recent posts in the blog sidebar"
   },
   "theme.DocSidebarItem.expandCategoryAriaLabel": {
-    "message": "Ampliar la categoría '{label}' de la barra lateral",
+    "message": "Expand sidebar category '{label}'",
     "description": "The ARIA label to expand the sidebar category"
   },
   "theme.DocSidebarItem.collapseCategoryAriaLabel": {
-    "message": "Colapsar categoría '{label}' de la barra lateral",
+    "message": "Collapse sidebar category '{label}'",
     "description": "The ARIA label to collapse the sidebar category"
   },
   "theme.IconExternalLink.ariaLabel": {
-    "message": "(opens in new_tab)",
+    "message": "(opens in new tab)",
     "description": "The ARIA label for the external link icon"
   },
   "theme.NavBar.navAriaLabel": {
-    "message": "Principal",
+    "message": "Main",
     "description": "The ARIA label for the main navigation"
   },
   "theme.navbar.mobileLanguageDropdown.label": {
-    "message": "Idiomas",
+    "message": "Languages",
     "description": "The label for the mobile language switcher dropdown"
   },
   "theme.NotFound.p1": {
-    "message": "No pudimos encontrar lo que buscaba.",
+    "message": "We could not find what you were looking for.",
     "description": "The first paragraph of the 404 page"
   },
   "theme.NotFound.p2": {
-    "message": "Comuníquese con el dueño del sitio que le proporcionó la URL original y hágale saber que su vínculo está roto.",
+    "message": "Please contact the owner of the site that linked you to the original URL and let them know their link is broken.",
     "description": "The 2nd paragraph of the 404 page"
   },
   "theme.TOCCollapsible.toggleButtonLabel": {
-    "message": "En esta página",
+    "message": "On this page",
     "description": "The label used by the button on the collapsible TOC component"
   },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "One min read|{readingTime} min read",
+    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
   "theme.blog.post.readMore": {
-    "message": "Leer Más",
+    "message": "Read more",
     "description": "The label used in blog post item excerpts to link to full blog posts"
   },
   "theme.blog.post.readMoreLabel": {
-    "message": "Leer más acerca de {title}",
+    "message": "Read more about {title}",
     "description": "The ARIA label for the link to full blog posts from excerpts"
   },
-  "theme.blog.post.readingTime.plurals": {
-    "message": "Lectura de un minuto|{readingTime} min de lectura",
-    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
-  },
   "theme.CodeBlock.copy": {
-    "message": "Copiar",
+    "message": "Copy",
     "description": "The copy button label on code blocks"
   },
   "theme.CodeBlock.copied": {
-    "message": "Copiado",
+    "message": "Copied",
     "description": "The copied button label on code blocks"
   },
   "theme.CodeBlock.copyButtonAriaLabel": {
-    "message": "Copiar código",
+    "message": "Copy code to clipboard",
     "description": "The ARIA label for copy code blocks button"
   },
   "theme.CodeBlock.wordWrapToggle": {
-    "message": "Alternar ajuste de palabras",
+    "message": "Toggle word wrap",
     "description": "The title attribute for toggle word wrapping button of code block lines"
   },
   "theme.docs.breadcrumbs.home": {
-    "message": "Página de Inicio",
+    "message": "Home page",
     "description": "The ARIA label for the home page in the breadcrumbs"
   },
   "theme.docs.sidebar.collapseButtonTitle": {
-    "message": "Colapsar barra lateral",
+    "message": "Collapse sidebar",
     "description": "The title attribute for collapse button of doc sidebar"
   },
   "theme.docs.sidebar.collapseButtonAriaLabel": {
-    "message": "Colapsar barra lateral",
+    "message": "Collapse sidebar",
     "description": "The title attribute for collapse button of doc sidebar"
   },
   "theme.docs.sidebar.navAriaLabel": {
-    "message": "Barra lateral de Documentos",
+    "message": "Docs sidebar",
     "description": "The ARIA label for the sidebar navigation"
   },
   "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
-    "message": "Cerrar barra de lateral",
+    "message": "Close navigation bar",
     "description": "The ARIA label for close button of mobile sidebar"
   },
   "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
-    "message": "← Volver al menú principal",
+    "message": "← Back to main menu",
     "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
-  },
-  "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
-    "message": "Alternar barra lateral",
-    "description": "The ARIA label for hamburger menu button of mobile navigation"
   },
   "theme.navbar.mobileDropdown.collapseButton.expandAriaLabel": {
     "message": "Expand the dropdown",
@@ -266,20 +334,24 @@
     "message": "Collapse the dropdown",
     "description": "The ARIA label of the button to collapse the mobile dropdown navbar item"
   },
+  "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
+    "message": "Toggle navigation bar",
+    "description": "The ARIA label for hamburger menu button of mobile navigation"
+  },
   "theme.docs.sidebar.expandButtonTitle": {
-    "message": "Expandir barra lateral",
+    "message": "Expand sidebar",
     "description": "The ARIA label and title attribute for expand button of doc sidebar"
   },
   "theme.docs.sidebar.expandButtonAriaLabel": {
-    "message": "Expandir barra lateral",
+    "message": "Expand sidebar",
     "description": "The ARIA label and title attribute for expand button of doc sidebar"
   },
   "theme.blog.post.plurals": {
-    "message": "Una publicación|{count} publicaciones",
+    "message": "One post|{count} posts",
     "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.blog.tagTitle": {
-    "message": "{nPosts} etiquetados con \"{tagName}\"",
+    "message": "{nPosts} tagged with \"{tagName}\"",
     "description": "The title of the page for a blog tag"
   },
   "theme.blog.author.pageTitle": {
@@ -287,134 +359,43 @@
     "description": "The title of the page for a blog author"
   },
   "theme.blog.authorsList.pageTitle": {
-    "message": "Autores",
+    "message": "Authors",
     "description": "The title of the authors page"
   },
   "theme.blog.authorsList.viewAll": {
-    "message": "Ver todos los autores",
+    "message": "View all authors",
     "description": "The label of the link targeting the blog authors page"
   },
   "theme.blog.author.noPosts": {
-    "message": "Este autor aún no ha escrito ninguna publicación.",
+    "message": "This author has not written any posts yet.",
     "description": "The text for authors with 0 blog post"
   },
   "theme.contentVisibility.unlistedBanner.title": {
-    "message": "Página sin clasificar",
+    "message": "Unlisted page",
     "description": "The unlisted content banner title"
   },
   "theme.contentVisibility.unlistedBanner.message": {
-    "message": "Esta página está sin clasificar. Los motores de búsqueda no la indexaran, y solo los usuarios con el enlace directo podrán acceder a esta.",
+    "message": "This page is unlisted. Search engines will not index it, and only users having a direct link can access it.",
     "description": "The unlisted content banner message"
   },
   "theme.contentVisibility.draftBanner.title": {
-    "message": "Borrador",
+    "message": "Draft page",
     "description": "The draft content banner title"
   },
   "theme.contentVisibility.draftBanner.message": {
-    "message": "Esta página es un borrador. Solo será visible en desarrollo y se excluirá de la versión de producción.",
+    "message": "This page is a draft. It will only be visible in dev and be excluded from the production build.",
     "description": "The draft content banner message"
   },
   "theme.ErrorPageContent.tryAgain": {
-    "message": "Intente de nuevo",
+    "message": "Try again",
     "description": "The label of the button to try again rendering when the React error boundary captures an error"
   },
   "theme.common.skipToMainContent": {
-    "message": "Saltar al contenido principal",
+    "message": "Skip to main content",
     "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
   },
   "theme.tags.tagsPageTitle": {
-    "message": "Etiquetas",
+    "message": "Tags",
     "description": "The title of the tag list page"
-  },
-  "homepage.tagline": {
-    "message": "Construido para no estorbar.",
-    "description": "The tagline of the homepage"
-  },
-  "homepage.getStarted": {
-    "message": "Comenzar 🐶",
-    "description": "The Get Started button on the homepage"
-  },
-  "homepage.title": {
-    "message": "Hola desde GoldenDog Linux",
-    "description": "The title of the homepage"
-  },
-  "homepage.description": {
-    "message": "Descripción de la página principal",
-    "description": "The description of the homepage"
-  },
-  "homepage.features.performance.title": {
-    "message": "Rendimiento Confiable",
-    "description": "Title for performance feature"
-  },
-  "homepage.features.performance.description": {
-    "message": "GoldenDog Linux está optimizado para ofrecer velocidad y estabilidad, brindando un rendimiento constante en el que puedes confiar, tanto en tareas cotidianas como en cargas de trabajo exigentes.",
-    "description": "Description for performance feature"
-  },
-  "homepage.features.community.title": {
-    "message": "Impulsado por la Comunidad",
-    "description": "Title for community feature"
-  },
-  "homepage.features.community.description": {
-    "message": "Desarrollado de forma abierta por la comunidad, GoldenDog recibe a colaboradores y usuarios por igual para dar forma a una distribución que crece mediante la colaboración.",
-    "description": "Description for community feature"
-  },
-  "homepage.features.modern.title": {
-    "message": "Moderno y Accesible",
-    "description": "Title for modern feature"
-  },
-  "homepage.features.modern.description": {
-    "message": "GoldenDog saca lo mejor de Debian Stable y utiliza los repositorios oficiales de Debian para proporcionar una experiencia moderna, accesible y sólida como una roca.",
-    "description": "Description for modern feature"
-  },
-  "homepage.screenshotTitle": {
-    "message": "Hermoso, Estable y Familiar"
-  },
-  "homepage.screenshotSubtitle": {
-    "message": "Una experiencia limpia de KDE Plasma impulsada por la base sólida de Debian."
-  },
-  "homepage.cockpitTitle": {
-    "message": "Gestión Facilitada"
-  },
-  "homepage.cockpitDesc": {
-    "message": "GoldenDog Linux viene preconfigurado con Cockpit, lo que le brinda una potente interfaz basada en web para administrar su sistema, monitorear el rendimiento y manejar las actualizaciones sin esfuerzo."
-  },
-  "homepage.learnMore": {
-    "message": "Saber Más"
-  },
-  "newsletter.title": {
-    "message": "Únete a nuestro Boletín"
-  },
-  "newsletter.description": {
-    "message": "Mantente al día con los últimos lanzamientos, actualizaciones de seguridad y noticias de la comunidad."
-  },
-  "newsletter.loading": {
-    "message": "Suscribiendo..."
-  },
-  "newsletter.success": {
-    "message": "¡Listo!"
-  },
-  "newsletter.button": {
-    "message": "Suscribirse"
-  },
-  "newsletter.list.news": {
-    "message": "Noticias Generales"
-  },
-  "newsletter.list.security": {
-    "message": "Actualizaciones de Seguridad"
-  },
-  "newsletter.error.noList": {
-    "message": "Por favor, selecciona al menos una lista."
-  },
-  "newsletter.success.message": {
-    "message": "¡Gracias por suscribirte! Por favor, revisa tu correo para confirmar."
-  },
-  "newsletter.error.generic": {
-    "message": "Algo salió mal. Por favor, inténtalo de nuevo."
-  },
-  "newsletter.error.network": {
-    "message": "No se pudo conectar con el servicio de suscripción. Por favor, comprueba tu conexión o la configuración de CORS."
-  },
-  "newsletter.placeholder": {
-    "message": "tu@correo.com"
   }
 }

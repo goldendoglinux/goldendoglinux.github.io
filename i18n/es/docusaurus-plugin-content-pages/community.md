@@ -1,8 +1,8 @@
+import NewsletterForm from '@site/src/components/NewsletterForm';
+
 # Comunidad
 
 ¡Únete a la comunidad!
-
-import NewsletterForm from '@site/src/components/NewsletterForm';
 
 <NewsletterForm />
 
