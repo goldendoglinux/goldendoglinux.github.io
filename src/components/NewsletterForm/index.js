@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './styles.module.css';
 import Translate, { translate } from '@docusaurus/Translate';
 
@@ -10,6 +10,21 @@ export default function NewsletterForm() {
     });
     const [status, setStatus] = useState('idle'); // idle, loading, success, error
     const [message, setMessage] = useState('');
+
+    // Bot Protection State
+    const [honeypot, setHoneypot] = useState('');
+    const [captcha, setCaptcha] = useState({ a: 0, b: 0, answer: '' });
+
+    // Generate a new math challenge
+    const generateCaptcha = () => {
+        const a = Math.floor(Math.random() * 10) + 1;
+        const b = Math.floor(Math.random() * 10) + 1;
+        setCaptcha({ a, b, answer: '' });
+    };
+
+    useEffect(() => {
+        generateCaptcha();
+    }, []);
 
     const lists = {
         news: {
@@ -37,6 +52,26 @@ export default function NewsletterForm() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+
+        // 1. Honeypot check (Bots fill hidden fields)
+        if (honeypot) {
+            console.warn('Bot detected via honeypot');
+            setStatus('success'); // Fake success for bots
+            return;
+        }
+
+        // 2. CAPTCHA check
+        if (parseInt(captcha.answer) !== captcha.a + captcha.b) {
+            setStatus('error');
+            setMessage(
+                translate({
+                    id: 'newsletter.error.captcha',
+                    message: 'Incorrect answer. Please try again.',
+                })
+            );
+            generateCaptcha();
+            return;
+        }
 
         const uuids = Object.keys(selectedLists)
             .filter((key) => selectedLists[key])
@@ -88,6 +123,7 @@ export default function NewsletterForm() {
                         message: 'Something went wrong. Please try again.',
                     })
                 );
+                generateCaptcha();
             }
         } catch (err) {
             setStatus('error');
@@ -97,6 +133,7 @@ export default function NewsletterForm() {
                     message: 'Failed to connect to the subscription service. Please check your connection or CORS settings.',
                 })
             );
+            generateCaptcha();
         }
     };
 
@@ -112,6 +149,18 @@ export default function NewsletterForm() {
                     </Translate>
                 </p>
                 <form onSubmit={handleSubmit} className={styles.form}>
+                    {/* Honeypot Field (Hidden) */}
+                    <div className={styles.hidden} aria-hidden="true">
+                        <input
+                            type="text"
+                            name="website"
+                            tabIndex="-1"
+                            autoComplete="off"
+                            value={honeypot}
+                            onChange={(e) => setHoneypot(e.target.value)}
+                        />
+                    </div>
+
                     <div className={styles.inputGroup}>
                         <input
                             type="email"
@@ -125,6 +174,23 @@ export default function NewsletterForm() {
                             className={styles.input}
                             disabled={status === 'loading' || status === 'success'}
                         />
+
+                        {/* Inline CAPTCHA for desktop/tablet */}
+                        <div className={styles.captchaGroup}>
+                            <span className={styles.captchaQuestion}>
+                                {captcha.a} + {captcha.b} =
+                            </span>
+                            <input
+                                type="number"
+                                placeholder="..."
+                                value={captcha.answer}
+                                onChange={(e) => setCaptcha({ ...captcha, answer: e.target.value })}
+                                required
+                                className={styles.captchaInput}
+                                disabled={status === 'loading' || status === 'success'}
+                            />
+                        </div>
+
                         <button
                             type="submit"
                             className={styles.button}
