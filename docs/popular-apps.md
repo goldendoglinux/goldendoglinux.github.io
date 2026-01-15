@@ -20,5 +20,6 @@ The helper will configure the Google repository and install Antigravity. Automat
 
 ```sudo dpkg -l | grep antigravity```
 
-NOTICE: Antigravity is a Google product, and as such, it is subject to Google's terms of service. By using Antigravity, you agree to Google's terms of service. This helper is not endorsed by Google and does not modify the product in any way.
+:::info
+Antigravity is a Google product, and as such, it is subject to Google's terms of service. By using Antigravity, you agree to Google's terms of service. This helper is not endorsed by Google and does not modify the product in any way.
 

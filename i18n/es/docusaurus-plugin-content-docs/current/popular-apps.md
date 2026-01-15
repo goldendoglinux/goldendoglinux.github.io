@@ -20,4 +20,5 @@ El paquete _helper_ configurará el repositorio de Google e instalará Antigravi
 
 ```sudo dpkg -l | grep antigravity```
 
-AVISO: Antigravity es un producto de Google y, como tal, está sujeto a los términos de servicio de Google. Al usar Antigravity, usted acepta los términos de servicio de Google. Este paquete ni es oficial ni está respaldado por Google y no modifica el producto bajo ningún concepto.
+:::info
+ Antigravity es un producto de Google y, como tal, está sujeto a los términos de servicio de Google. Al usar Antigravity, usted acepta los términos de servicio de Google. Este paquete ni es oficial ni está respaldado por Google y no modifica el producto bajo ningún concepto.
