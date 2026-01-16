@@ -2,6 +2,24 @@
 
 Todos los cambios notables en el proyecto GoldenDog Linux se documentarán en este archivo.
  
+## [2.0.9] "Golden Retriever" - 2026-01-15
+
+### Añadido
+- **Pantalla de Bienvenida**: `goldendog-welcome` v1.0.1 ahora incluye soporte para boletines (newsletters) directamente desde el slider.
+- **Localización**: Soporte ampliado para más idiomas.
+
+### Nota
+
+> ¡Estamos muy cerca de la fecha de lanzamiento! ¡Siiii!
+>
+> Asegúrate de suscribirte a los boletines de GoldenDog visitando la sección de [comunidad](/community) para estar al día. ¡Ahora tenemos boletines para Noticias Generales y Actualizaciones de Seguridad! Por ahora, solo están disponibles en español o inglés (asegúrate de suscribirte al de tu idioma de preferencia seleccionando el idioma del sitio).
+>
+> Si te suscribes desde GoldenDog usando el diálogo de bienvenida, este seleccionará automáticamente el idioma de los boletines según la configuración de tu máquina (español si tu sistema está en español, o inglés para el resto).
+>
+> En el futuro, queremos tener soporte para muchos más idiomas, pero eso requerirá trabajo voluntario. ¿Hablas con fluidez otro idioma además del inglés o español y te gustaría contribuir? [¡Abre un ticket en nuestro soporte de GitHub!](https://github.com/goldendoglinux/goldendoglinux.github.io/issues)
+>
+> -- Alexia
+
 ## [2.0.8a] "Golden Retriever" - 2026-01-12
 
 ### Añadido
