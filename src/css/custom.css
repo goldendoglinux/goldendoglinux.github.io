@@ -75,11 +75,11 @@ html[data-theme='dark'] .navbar-sidebar {
   background-color: #020203 !important;
 }
 
-html[data-theme='dark'] .navbar-sidebar__item {
+html[data-theme='dark'] .navbar-sidebar .menu__link {
   color: #eceef2 !important;
 }
 
-html[data-theme='dark'] .navbar-sidebar__item:hover {
+html[data-theme='dark'] .navbar-sidebar .menu__link:hover {
   color: var(--goldendog-fuchsia) !important;
 }
 
