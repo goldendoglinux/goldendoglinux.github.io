@@ -1,6 +1,24 @@
 # Changelog
 
 All notable changes to the GoldenDog Linux project will be documented in this file.
+
+## [2.0.11] "Golden Retriever" - 2026-05-09
+
+### Fixed
+- **Welcome Screen**: Fixed the Cloudflare API integration in `goldendog-welcome`. Newsletter registration from the welcome dialog now works correctly.
+
+### Changed
+- **Repository**: Migrated the APT repository to new hosting provided by [shrug.host](https://shrug.host).
+- **Installer**: Updated release information shown in the BIOS and UEFI installation wizards.
+
+### Added
+- **Community**: New Discord server, bridged with IRC. Join at [goldendoglinux.org/discord](/discord), bridged to `irc.libera.chat` channel `#goldendoglinux`.
+
+### Note
+
+> Thank you for your patience. We are getting closer to the release date. Yay!
+>
+> -- Alexia
  
 ## [2.0.9] "Golden Retriever" - 2026-01-15
 
