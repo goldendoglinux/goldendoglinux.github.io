@@ -22,3 +22,22 @@ El paquete _helper_ configurará el repositorio de Google e instalará Antigravi
 
 :::info
  Antigravity es un producto de Google y, como tal, está sujeto a los términos de servicio de Google. Al usar Antigravity, usted acepta los términos de servicio de Google. Este paquete ni es oficial ni está respaldado por Google y no modifica el producto bajo ningún concepto.
+:::
+
+## Visual Studio Code (por Microsoft)
+
+Se puede instalar un paquete _helper_ de GoldenDog Linux para automatizar la instalación de Visual Studio Code.
+
+```sudo apt install vscode-installer-helper```
+
+Una vez instalado, ejecute:
+
+```sudo vscode-installer```
+
+Esto importará el repositorio de Microsoft, la clave de firma e instalará Visual Studio Code.
+
+Puede iniciar Visual Studio Code desde el menú de Plasma o ejecutando `code` en una terminal.
+
+:::info
+Visual Studio Code es un producto de Microsoft. Este paquete helper no está respaldado por Microsoft y no modifica el producto bajo ningún concepto. No estamos afiliados con Microsoft y no tocamos el producto Visual Studio Code.
+:::

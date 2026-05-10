@@ -22,4 +22,23 @@ The helper will configure the Google repository and install Antigravity. Automat
 
 :::info
 Antigravity is a Google product, and as such, it is subject to Google's terms of service. By using Antigravity, you agree to Google's terms of service. This helper is not endorsed by Google and does not modify the product in any way.
+:::
+
+## Visual Studio Code (by Microsoft)
+
+A Goldendog Linux helper package can be installed to automate the installation of Visual Studio Code.
+
+```sudo apt install vscode-installer-helper```
+
+Once installed, run:
+
+```sudo vscode-installer```
+
+This will import the Microsoft repository, the signing key, and install Visual Studio Code.
+
+You can start Visual Studio Code from the Plasma menu or by running `code` in a terminal.
+
+:::info
+Visual Studio Code is a Microsoft product. This helper is not endorsed by Microsoft and does not modify the product in any way. We are not affiliated with Microsoft and do not touch Visual Studio Code's product.
+:::
 
