@@ -94,8 +94,6 @@ h6 {
   background: var(--ifm-navbar-background-color);
   border-bottom: 1px solid var(--surface-border);
   box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
-  position: relative;
-  z-index: 200;
 }
 
 .navbar__title {
@@ -110,9 +108,7 @@ h6 {
 }
 
 .navbar-sidebar {
-  backdrop-filter: var(--surface-blur);
   background: var(--ifm-background-color) !important;
-  z-index: 201 !important;
 }
 
 .footer {
