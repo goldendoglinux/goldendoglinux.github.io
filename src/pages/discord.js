@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Layout from '@theme/Layout';
 
-const DISCORD_INVITE_URL = 'https://discord.gg/y9Fmy5HZMr';
+const DISCORD_INVITE_URL = 'https://discord.gg/7sVFB6Dp5B';
 
 export default function DiscordRedirectPage() {
   useEffect(() => {

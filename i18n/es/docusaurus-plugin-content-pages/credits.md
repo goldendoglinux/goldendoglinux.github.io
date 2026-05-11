@@ -14,4 +14,4 @@ GoldenDog Linux es un esfuerzo comunitario y se basa en muchos proyectos y eleme
 
 ---
 
-Si crees que hemos omitido algún crédito o tienes preguntas sobre el licenciamiento, por favor [abre un problema](https://github.com/goldendoglinux/support/issues).
+Si crees que hemos omitido algún crédito o tienes preguntas sobre el licenciamiento, por favor [abre ticket de soporte](https://github.com/goldendoglinux/support/issues).
