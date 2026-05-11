@@ -82,7 +82,7 @@ const config = {
         title: 'GoldenDog Linux',
         logo: {
           alt: 'GoldenDog Linux Logo',
-          src: 'img/logo.svg',
+          src: 'img/goldendog.png',
         },
         items: [
           {
