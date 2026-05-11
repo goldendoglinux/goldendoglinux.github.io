@@ -89,11 +89,16 @@ h6 {
 }
 
 .navbar {
-  backdrop-filter: var(--surface-blur);
-  -webkit-backdrop-filter: var(--surface-blur);
   background: var(--ifm-navbar-background-color);
   border-bottom: 1px solid var(--surface-border);
   box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+}
+
+@media (min-width: 997px) {
+  .navbar {
+    backdrop-filter: var(--surface-blur);
+    -webkit-backdrop-filter: var(--surface-blur);
+  }
 }
 
 .navbar__title {
