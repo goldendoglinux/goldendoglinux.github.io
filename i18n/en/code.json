@@ -4,7 +4,7 @@
     "description": "The tagline of the homepage"
   },
   "homepage.getStarted": {
-    "message": "Get Started 🐶",
+    "message": "Get Started",
     "description": "The Get Started button on the homepage"
   },
   "homepage.screenshotTitle": {

@@ -14,11 +14,16 @@ However, we believe you should have the freedom to install whatever software you
 
 A GoldenDog Linux helper package can be installed to install Antigravity. 
 
-```sudo apt update && sudo apt install antigravity-installer```
+```bash
+sudo apt update
+sudo apt install antigravity-installer
+```
 
 The helper will configure the Google repository and install Antigravity. Automatically. Be mindful that the process may take about a minute on slow connections. Wait for the desktop notification. You may confirm it is installed by typing:
 
-```sudo dpkg -l | grep antigravity```
+```bash
+sudo dpkg -l | grep antigravity
+```
 
 :::info
 Antigravity is a Google product, and as such, it is subject to Google's terms of service. By using Antigravity, you agree to Google's terms of service. This helper is not endorsed by Google and does not modify the product in any way.
@@ -28,11 +33,15 @@ Antigravity is a Google product, and as such, it is subject to Google's terms of
 
 A Goldendog Linux helper package can be installed to automate the installation of Visual Studio Code.
 
-```sudo apt install vscode-installer-helper```
+```bash
+sudo apt install vscode-installer-helper
+```
 
 Once installed, run:
 
-```sudo vscode-installer```
+```bash
+sudo vscode-installer
+```
 
 This will import the Microsoft repository, the signing key, and install Visual Studio Code.
 

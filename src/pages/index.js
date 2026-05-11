@@ -14,7 +14,7 @@ function HomepageHeader() {
     <header className={clsx('hero', styles.heroBanner)}>
       <div className="container">
         <Heading as="h1" className="hero__title">
-          {siteConfig.title}
+          Goldendog Linux
         </Heading>
         <p className="hero__subtitle">
           <Translate id="homepage.tagline" description="The tagline of the homepage">
@@ -26,7 +26,7 @@ function HomepageHeader() {
             className="button button--primary button--lg"
             to="/docs/intro">
             <Translate id="homepage.getStarted" description="The Get Started button on the homepage">
-              Get Started 🐶
+              Get Started
             </Translate>
           </Link>
         </div>

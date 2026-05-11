@@ -331,7 +331,7 @@
     "description": "The tagline of the homepage"
   },
   "homepage.getStarted": {
-    "message": "Comenzar 🐶",
+    "message": "Comenzar",
     "description": "The Get Started button on the homepage"
   },
   "homepage.title": {
