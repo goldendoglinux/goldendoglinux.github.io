@@ -75,8 +75,8 @@ const config = {
       // Replace with your project's social card
       image: 'img/social-card.png',
       colorMode: {
-        defaultMode: 'dark',
-        respectPrefersColorScheme: false,
+        defaultMode: 'light',
+        respectPrefersColorScheme: true,
       },
       navbar: {
         title: 'GoldenDog Linux',

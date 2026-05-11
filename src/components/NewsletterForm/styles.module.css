@@ -5,21 +5,23 @@
 }
 
 .newsletterCard {
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
+    background: var(--ifm-background-surface-color);
+    backdrop-filter: var(--surface-blur);
+    -webkit-backdrop-filter: var(--surface-blur);
+    border: 1px solid var(--surface-border);
+    border-radius: var(--card-radius);
     padding: 2rem;
     width: 100%;
     max-width: 600px;
     text-align: center;
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    box-shadow: var(--surface-shadow);
 }
 
 .newsletterCard h3 {
     margin-top: 0;
     color: var(--ifm-color-primary);
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    font-weight: 400;
 }
 
 .newsletterCard p {
@@ -43,34 +45,34 @@
 .input {
     flex: 2;
     padding: 0.75rem 1rem;
-    border-radius: 8px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    background: rgba(0, 0, 0, 0.2);
-    color: white;
+    border-radius: 999px;
+    border: 1px solid var(--surface-border);
+    background: color-mix(in srgb, var(--ifm-background-color) 90%, white 10%);
+    color: var(--ifm-font-color-base);
     font-size: 1rem;
     outline: none;
-    transition: border-color 0.2s;
+    transition: border-color 0.2s, box-shadow 0.2s;
     min-width: 0;
 }
 
 .input:focus {
     border-color: var(--ifm-color-primary);
+    box-shadow: 0 0 0 4px color-mix(in srgb, var(--ifm-color-primary) 18%, transparent);
 }
 
 .captchaGroup {
     display: flex;
     align-items: center;
     gap: 0.4rem;
-    background: rgba(255, 255, 255, 0.1);
+    background: color-mix(in srgb, var(--ifm-background-color) 88%, white 12%);
     padding: 0.45rem 0.75rem;
-    border-radius: 8px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 999px;
+    border: 1px solid var(--surface-border);
     white-space: nowrap;
 }
 
 .captchaQuestion {
-    font-family: monospace;
-    font-weight: bold;
+    font-weight: 500;
     font-size: 0.95rem;
     color: var(--ifm-color-primary-light);
 }
@@ -80,9 +82,9 @@
     background: transparent;
     border: none;
     border-bottom: 2px solid var(--ifm-color-primary);
-    color: white;
+    color: var(--ifm-font-color-base);
     text-align: center;
-    font-weight: bold;
+    font-weight: 500;
     font-size: 1rem;
     outline: none;
     padding: 0;
@@ -97,14 +99,15 @@
 
 .button {
     padding: 0.75rem 1.25rem;
-    border-radius: 8px;
+    border-radius: 999px;
     border: none;
     background: var(--ifm-color-primary);
     color: white;
-    font-weight: bold;
+    font-weight: 500;
     cursor: pointer;
-    transition: filter 0.2s, transform 0.1s;
+    transition: filter 0.2s, transform 0.1s, box-shadow 0.2s;
     flex: 1;
+    box-shadow: 0 12px 24px color-mix(in srgb, var(--ifm-color-primary) 28%, transparent);
 }
 
 .button:hover:not(:disabled) {

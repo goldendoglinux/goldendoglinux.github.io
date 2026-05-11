@@ -1,203 +1,219 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
 
-/* Override Infima variables for Premium Dark theme */
 :root {
-  /* Primary color - Deep Amethyst */
-  --ifm-color-primary: #9b59b6;
-  --ifm-color-primary-dark: #8e44ad;
-  --ifm-color-primary-darker: #8842a5;
-  --ifm-color-primary-darkest: #703688;
-  --ifm-color-primary-light: #a569bd;
-  --ifm-color-primary-lighter: #bb8fce;
-  --ifm-color-primary-lightest: #d2b4de;
+  --ifm-color-primary: #2f6fed;
+  --ifm-color-primary-dark: #245fda;
+  --ifm-color-primary-darker: #1f55c4;
+  --ifm-color-primary-darkest: #1a46a0;
+  --ifm-color-primary-light: #4f84f0;
+  --ifm-color-primary-lighter: #7199f3;
+  --ifm-color-primary-lightest: #dce6ff;
 
-  /* Typography - Clean & Modern */
-  --ifm-font-family-base: 'Outfit', 'Inter', system-ui, -apple-system, sans-serif;
-  --ifm-font-color-base: #1a1a1b;
-  /* Dark text for Light Mode */
-  --ifm-heading-color: #080112;
-  /* Nearly black headings */
-
-  /* Code & Details */
-  --ifm-code-font-size: 90%;
-  --docusaurus-highlighted-code-line-bg: rgba(155, 89, 182, 0.1);
-  --ifm-background-color: #ffffff;
-
-  /* GoldenDog Fuchsia */
-  --goldendog-fuchsia: #ff00ff;
-  --ifm-link-hover-color: var(--goldendog-fuchsia);
+  --ifm-font-family-base: 'Poppins', system-ui, -apple-system, sans-serif;
+  --ifm-heading-font-weight: 200;
+  --ifm-font-weight-base: 300;
+  --ifm-font-color-base: #1f2329;
+  --ifm-heading-color: #0f1218;
+  --ifm-background-color: #f7f8fb;
+  --ifm-background-surface-color: rgba(255, 255, 255, 0.88);
+  --ifm-navbar-background-color: rgba(247, 248, 251, 0.78);
+  --ifm-footer-background-color: #f1f3f8;
+  --ifm-code-font-size: 92%;
+  --docusaurus-highlighted-code-line-bg: rgba(47, 111, 237, 0.08);
+  --ifm-link-hover-color: var(--ifm-color-primary-dark);
   --ifm-link-hover-decoration: none;
+
+  --hero-background-start: rgba(47, 111, 237, 0.14);
+  --hero-background-end: rgba(247, 248, 251, 0.94);
+
+  --surface-border: rgba(17, 24, 39, 0.08);
+  --surface-shadow: 0 30px 80px rgba(15, 23, 42, 0.08);
+  --surface-shadow-hover: 0 35px 95px rgba(15, 23, 42, 0.12);
+  --surface-glow: rgba(47, 111, 237, 0.12);
+  --surface-blur: blur(18px);
+  --card-radius: 28px;
 }
 
-/* Premium Dark overrides */
 html[data-theme='dark'] {
-  --ifm-background-color: #020203;
-  /* Deepest midnight background */
-  --ifm-navbar-background-color: rgba(2, 2, 3, 0.75);
-  --ifm-footer-background-color: #020203;
-  /* Unified with background */
+  --ifm-color-primary: #7da9ff;
+  --ifm-color-primary-dark: #5f91ff;
+  --ifm-color-primary-darker: #4a83ff;
+  --ifm-color-primary-darkest: #2f68f0;
+  --ifm-color-primary-light: #9abbff;
+  --ifm-color-primary-lighter: #c0d2ff;
+  --ifm-color-primary-lightest: #ebf1ff;
 
-  --ifm-font-color-base: #eceef2;
-  --ifm-heading-color: #ffffff;
+  --ifm-font-color-base: #d6dae2;
+  --ifm-heading-color: #f5f7fb;
+  --ifm-background-color: #0f1117;
+  --ifm-background-surface-color: rgba(20, 24, 34, 0.84);
+  --ifm-navbar-background-color: rgba(15, 17, 23, 0.72);
+  --ifm-footer-background-color: #0b0d12;
 
-  /* More vibrant accents */
-  --ifm-color-primary: #af73ff;
-  --ifm-color-primary-dark: #9646ff;
-  --ifm-color-primary-darker: #8930ff;
-  --ifm-color-primary-darkest: #6a00f4;
-  --ifm-color-primary-light: #c8a2ff;
-  --ifm-color-primary-lighter: #d4b8ff;
-  --ifm-color-primary-lightest: #f0e6ff;
+  --ifm-link-hover-color: var(--ifm-color-primary-light);
+  --ifm-toc-border-color: rgba(255, 255, 255, 0.08);
+  --ifm-contents-border-color: rgba(255, 255, 255, 0.08);
 
-  --ifm-contents-border-color: rgba(255, 255, 255, 0.06);
-  --ifm-toc-border-color: rgba(255, 255, 255, 0.06);
+  --hero-background-start: rgba(125, 169, 255, 0.12);
+  --hero-background-end: rgba(15, 17, 23, 0.96);
 
-  /* Modern Depth & Glassmorphism */
-  --glow-accent: rgba(175, 115, 255, 0.25);
-  --glass-bg: rgba(255, 255, 255, 0.03);
-  --glass-border: rgba(255, 255, 255, 0.08);
-  --glass-blur: blur(12px);
-
-  /* Override links in dark mode too */
-  --ifm-link-hover-color: #ff00ff;
-  /* Pure GoldenDog Fuchsia */
-
-  /* Fix for Mobile Menu Sidebar in Dark Mode */
-  --ifm-navbar-sidebar-background-color: #020203;
+  --surface-border: rgba(255, 255, 255, 0.08);
+  --surface-shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
+  --surface-shadow-hover: 0 35px 100px rgba(0, 0, 0, 0.5);
+  --surface-glow: rgba(125, 169, 255, 0.16);
 }
 
-/* Ensure mobile sidebar has solid background and visible items in dark mode */
-html[data-theme='dark'] .navbar-sidebar {
-  background-color: #020203 !important;
+html {
+  background:
+    radial-gradient(circle at top, rgba(47, 111, 237, 0.08), transparent 38%),
+    var(--ifm-background-color);
 }
 
-html[data-theme='dark'] .navbar-sidebar .menu__link {
-  color: #eceef2 !important;
+html[data-theme='dark'] {
+  background:
+    radial-gradient(circle at top, rgba(125, 169, 255, 0.12), transparent 34%),
+    var(--ifm-background-color);
 }
 
-html[data-theme='dark'] .navbar-sidebar .menu__link:hover {
-  color: var(--goldendog-fuchsia) !important;
+body {
+  font-weight: 300;
+  letter-spacing: -0.01em;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 200;
+  letter-spacing: -0.04em;
+}
 
-/* Layout Polish */
 .navbar {
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
-  backdrop-filter: var(--glass-blur);
-  -webkit-backdrop-filter: var(--glass-blur);
-  border-bottom: 1px solid var(--glass-border);
+  backdrop-filter: var(--surface-blur);
+  -webkit-backdrop-filter: var(--surface-blur);
   background: var(--ifm-navbar-background-color);
+  border-bottom: 1px solid var(--surface-border);
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
 }
 
 .navbar__title {
-  font-weight: 600;
-  padding-bottom: 2px;
-  /* Prevent 'g' clipping */
+  font-weight: 500;
+  letter-spacing: -0.03em;
 }
 
+.navbar__item,
+.menu__link,
+.footer__link-item {
+  font-weight: 300;
+}
+
+.navbar-sidebar {
+  backdrop-filter: var(--surface-blur);
+  background: var(--ifm-background-color) !important;
+}
 
 .footer {
-  background-color: var(--ifm-background-color) !important;
-  border-top: none !important;
-  text-align: center;
-  padding: 8rem 0;
-  /* More padding for a premium feel */
-  position: relative;
-  overflow: hidden;
+  background: var(--ifm-footer-background-color) !important;
+  border-top: 1px solid var(--surface-border);
   color: var(--ifm-font-color-base);
-  /* Ensure text color is inherited clearly */
+  padding: 5rem 0 4rem;
 }
-
-/* Fix footer link contrast in light mode */
-html:not([data-theme='dark']) .footer__link-item {
-  color: #333 !important;
-  font-weight: 500;
-}
-
-html:not([data-theme='dark']) .footer__link-item:hover {
-  color: var(--goldendog-fuchsia) !important;
-}
-
-/* Sophisticated Screenshot Styling */
-article img,
-.markdown img {
-  border-radius: 12px;
-  border: 1px solid var(--glass-border);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-html[data-theme='dark'] article img,
-html[data-theme='dark'] .markdown img {
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  box-shadow: 0 0 20px rgba(255, 0, 255, 0.1), 0 10px 40px rgba(0, 0, 0, 0.4);
-}
-
-article img:hover,
-.markdown img:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
-}
-
-html[data-theme='dark'] article img:hover,
-html[data-theme='dark'] .markdown img:hover {
-  box-shadow: 0 0 30px rgba(255, 0, 255, 0.15), 0 15px 50px rgba(0, 0, 0, 0.5);
-}
-
-
 
 .footer::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+  inset: 0 0 auto;
   height: 1px;
-  background: linear-gradient(90deg, transparent, var(--ifm-color-primary), transparent);
-  opacity: 0.2;
+  background: linear-gradient(90deg, transparent, var(--ifm-color-primary-light), transparent);
+  opacity: 0.35;
 }
-
-
 
 .footer__links {
   justify-content: center;
-  margin-bottom: 2rem;
+  gap: 2rem;
 }
 
 .footer__col {
   text-align: center;
-  padding: 0 2rem;
+}
+
+.footer__title {
+  font-weight: 500;
+  letter-spacing: -0.02em;
 }
 
 .footer__copyright {
   font-size: 0.9rem;
-  opacity: 0.7;
+  opacity: 0.72;
 }
 
 .footer__social-links {
   display: flex;
-  gap: 1.5rem;
   justify-content: center;
+  gap: 1rem;
   margin-top: 1rem;
 }
 
 .footer__social-link {
   color: var(--ifm-font-color-base);
-  transition: color 0.3s ease, transform 0.3s ease;
-  display: flex;
+  display: inline-flex;
   align-items: center;
+  transition: transform 180ms ease, color 180ms ease;
 }
 
 .footer__social-link:hover {
-  color: var(--goldendog-fuchsia) !important;
-  transform: translateY(-3px);
+  color: var(--ifm-color-primary);
+  transform: translateY(-2px);
   text-decoration: none;
 }
 
+article img,
+.markdown img {
+  border-radius: 18px;
+  border: 1px solid var(--surface-border);
+  box-shadow: var(--surface-shadow);
+  transition: transform 220ms ease, box-shadow 220ms ease;
+}
+
+article img:hover,
+.markdown img:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--surface-shadow-hover);
+}
+
 .button--primary {
-  box-shadow: 0 4px 14px 0 var(--glow-accent);
+  box-shadow: 0 12px 30px var(--surface-glow);
+}
+
+.button--primary,
+.button--secondary {
+  border-radius: 999px;
+  font-weight: 500;
+}
+
+.button--primary:hover,
+.button--secondary:hover {
+  transform: translateY(-1px);
+}
+
+.table-of-contents,
+.theme-doc-toc-desktop,
+.theme-doc-toc-mobile,
+.card,
+.theme-doc-sidebar-item-category,
+.theme-doc-sidebar-item-link,
+.pagination-nav__link,
+.admonition,
+.theme-doc-version-banner,
+.theme-doc-markdown,
+.theme-blog-post-item,
+.theme-blog-sidebar,
+.theme-blog-tags {
+  border-color: var(--surface-border);
+}
+
+::selection {
+  background: rgba(47, 111, 237, 0.18);
 }
