@@ -228,12 +228,12 @@ html[data-theme='dark'] .mainBackground::before {
   }
 
   .heroBanner {
-    padding: 4rem 2rem 6.5rem;
+    padding: 4rem 2rem 4rem;
   }
 
   .mainBackground {
-    margin-top: -90px;
-    padding-top: 90px;
+    margin-top: 0;
+    padding-top: 0;
   }
 
   .cockpitImageSmall,
