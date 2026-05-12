@@ -9,7 +9,7 @@ export default function FooterWrapper(props) {
     <>
       <div className="sponsor-banner-wrapper">
         <Link
-          href="https://shurg.host"
+          href="https://shrug.host"
           className="sponsor-banner-link"
           aria-label="Powered by Shrug.host"
         >
