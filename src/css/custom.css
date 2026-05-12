@@ -116,15 +116,16 @@ h6 {
   background: var(--ifm-background-color) !important;
 }
 
-.footer {
-  background: #080a10 !important;
-  border-top: none;
-  color: #d6dae2;
-  padding: 5rem 0 4rem;
+.sponsor-banner-wrapper {
+  background: #080a10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.75rem 1rem 1.25rem;
   position: relative;
 }
 
-.footer::before {
+.sponsor-banner-wrapper::before {
   content: '';
   position: absolute;
   top: 0;
@@ -133,6 +134,33 @@ h6 {
   height: 2px;
   background: linear-gradient(90deg, transparent 5%, #5ec4e8 20%, #c471ed 50%, #e0545a 80%, transparent 90%);
   opacity: 0.85;
+}
+
+html[data-theme='light'] .sponsor-banner-wrapper {
+  background: #f7f8fb;
+}
+
+.sponsor-banner-link {
+  display: inline-flex;
+  transition: opacity 180ms ease;
+}
+
+.sponsor-banner-link:hover {
+  opacity: 0.75;
+  text-decoration: none;
+}
+
+.sponsor-banner-img {
+  height: 48px;
+  width: auto;
+}
+
+.footer {
+  background: #080a10 !important;
+  border-top: none;
+  color: #d6dae2;
+  padding: 3rem 0 4rem;
+  position: relative;
 }
 
 .footer .footer__title {
