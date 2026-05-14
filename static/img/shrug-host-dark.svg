@@ -9,11 +9,11 @@
   <!-- Status dot -->
   <circle cx="16" cy="15" r="4.5" fill="#10b981"/>
   <!-- "POWERED BY" label -->
-  <text x="27" y="20" font-family="'Commit Mono', ui-monospace, monospace" font-size="8" font-weight="400" fill="#9ca3af" letter-spacing="0.10em">POWERED BY</text>
+  <text x="27" y="15" dominant-baseline="central" font-family="'Commit Mono', ui-monospace, monospace" font-size="8" font-weight="400" fill="#9ca3af" letter-spacing="0.10em">POWERED BY</text>
   <!-- Thin divider -->
   <line x1="100" y1="7" x2="100" y2="23" stroke="#e5e7eb" stroke-width="1"/>
   <!-- "shrug.host" wordmark — single text/tspan so no gap artifact -->
-  <text y="21" font-family="'Commit Mono', ui-monospace, monospace" font-size="12" letter-spacing="-0.01em">
+  <text y="15" dominant-baseline="central" font-family="'Commit Mono', ui-monospace, monospace" font-size="12" letter-spacing="-0.01em">
     <tspan x="110" font-weight="700" fill="#1f2937">shrug</tspan><tspan font-weight="400" fill="#6b7280">.host</tspan>
   </text>
 </svg>
