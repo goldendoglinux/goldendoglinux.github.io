@@ -33,7 +33,7 @@ If someone enters Spain and then rides a motorcycle to France, French border con
 
 The same thing happens here. Goldendog establishes a trust relationship with Debian's *main* and *security* repositories. In essence, it is telling users:
 
-*We are a small, agile territory with our own borders, but if you arrive with a passport signed by Debian, we let you in.*
+*We are a small, autonomous territory with its own borders, but if you arrive with a passport and visa signed by Debian, we let you in.*
 
 In this way, our project trusts that user-installed packages may come from our own APT repository as well as deb.debian.org or security.debian.org.
 

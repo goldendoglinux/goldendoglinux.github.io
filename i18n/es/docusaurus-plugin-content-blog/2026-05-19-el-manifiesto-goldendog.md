@@ -33,7 +33,7 @@ Si alguien entra a España y luego se va en moto hasta Francia, el control front
 
 Aquí sucede lo mismo. Goldendog establece una relación de confianza con los repositorios *main* y *security* de Debian. En esencia, les está diciendo a sus usuarios:
 
-*Nosotros somos un territorio pequeño y ágil, con sus propias fronteras, pero si venís de visita con un pasaporte firmado por Debian, te permitimos el ingreso.*
+*Nosotros somos un territorio autonomo pequeño y con sus propias fronteras, pero si venís de visita con un pasaporte visado y firmado por Debian, te permitimos el ingreso.*
 
 De este modo, nuestro proyecto confía en que los paquetes que el usuario instale puedan venir tanto del repositorio APT propio como de deb.debian.org o security.debian.org.
 
