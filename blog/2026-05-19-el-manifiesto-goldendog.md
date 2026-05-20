@@ -25,6 +25,8 @@ Goldendog was designed specifically with this in mind. Its interface uses a frie
 
 Goldendog does not come with a lot of preinstalled software because that was a deliberate strategic decision.
 
+Neither it needs to perform a full rebranding to pretend it is not a _debian derivative_ because, that would also represent an enormous cost both in terms of infrastructure and human resource:
+
 Why recompile the hundreds of thousands of software packages in the Debian universe when we can use its repositories directly?
 
 Think of the European Schengen Area:

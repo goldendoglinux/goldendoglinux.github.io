@@ -24,6 +24,7 @@ Puesto en palabras simples, el mejor sistema operativo es aquel que logra reduci
 Goldendog fue concebido específicamente con esto en mente. Tiene una paleta de colores amable en su interfaz, elegida específicamente para traer paz. No posee sonidos alarmantes e innecesarios, se utilizan kits de política donde sea posible para reducir elevaciones de permisos innecesarias, y un conjunto de decisiones que contribuyen a que la experiencia del usuario simplemente fluya.
 
 Goldendog no trae un montón de software preinstalado porque eso fue una decisión estratégica mía.
+Ni tampoco pretende hacer un rebranding extremo y pretender que no es un _Debian Derivative_ Por que además eso tiene un costo enorme en recurso humano e infraestructura:
 
 ¿Para qué recompilar los cientos de miles de paquetes de software del universo Debian cuando podemos utilizar directamente sus repositorios?
 
