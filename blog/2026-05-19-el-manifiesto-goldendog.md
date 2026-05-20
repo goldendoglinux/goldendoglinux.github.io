@@ -1,56 +1,45 @@
 ---
 slug: the-goldendog-manifesto
 title: The Goldendog Manifesto
+description: Architecture, fluidity, and the pursuit of the essential
+image: /img/manifesto.png
 authors: [alexia]
 tags: [blog, news]
 ---
 
 The title of this post is a small tribute to the famous [Debian Manifesto](https://www.debian.org/doc/manuals/project-history/manifesto.html), written by Ian Murdock in 1994.
 
-Why does Goldendog exist when there are already so many Debian clones and, for that matter, why not just use Debian directly? It is a question I hear from time to time, and in many cases it is very valid.
 
-In other cases, however, that question comes from the idea that the best Linux operating system is the one that ships with the largest amount of preinstalled software or the largest number of interfaces, and if experience has taught me anything, it is that this is not true.
+Why does Goldendog exist when Debian derivatives abound? Why not simply use Debian instead? It is a question I receive frequently, and in many ways, it is entirely valid.
 
-I do not see operating systems as toolboxes, but as infrastructure.
+Yet sometimes that doubt stems from the belief that the best operating system is one loaded with preinstalled software or multiple interfaces. However, if my experience has taught me anything, it is that this is far from absolute truth. I do not view operating systems as mere toolboxes, but as infrastructure.
 
-An operating system should be quiet and should work without getting in the way. That is exactly why Goldendog's slogan is: **Built to stay out of your way**.
+An operating system, for me, should be silent; it should function without intruding on our path. That is why Goldendog's motto is straightforward: **Designed to stay out of your way**.
 
-It should be something invisible, flowing like a river.
+It should be something invisible, fluid, like the course of a river.
 
-When the operating system works well, users do not waste time on the display manager, the kernel, or an impossible-to-find driver. They can spend that time focused on their work, and the system becomes their companion: a loyal one, like a little dog.
+When the system operates in harmony, users do not waste time wrestling with the display manager, the kernel, or elusive drivers. Instead, they can focus on what truly matters, transforming the machine into a faithful companion—a presence that accompanies rather than obstructs.
 
-Put simply, the best operating system is the one that reduces friction between the user and the system as much as possible.
+In essence: the best operating system is one that minimizes friction between the user and their work as much as possible.
 
-Goldendog was designed specifically with this in mind. Its interface uses a friendly color palette chosen to bring calm. It avoids unnecessary alarming sounds, uses policy kits wherever possible to reduce unnecessary privilege escalations, and follows a set of decisions that help the user experience simply flow.
+Goldendog emerges from this premise. Its interface employs a color palette designed to convey tranquility; it avoids unnecessary auditory alerts, relies on policy kits to prevent excessive privileges, and follows a series of design decisions that allow the experience to simply flow.
 
-Goldendog does not come with a lot of preinstalled software because that was a deliberate strategic decision.
-
-Neither it needs to perform a full rebranding to pretend it is not a _debian derivative_ because, that would also represent an enormous cost both in terms of infrastructure and human resource:
+Goldendog does not ship with software bloat; this is a deliberate strategic choice. Nor does it attempt to hide its origin under forced rebranding—something that would represent enormous costs, both in infrastructure and human resources.
 
 Why recompile the hundreds of thousands of software packages in the Debian universe when we can use its repositories directly?
 
-Think of the European Schengen Area:
+Consider the Schengen Area in Europe. If someone enters Spain and travels by motorcycle to France, French border control does not repeat the procedures Spain has already completed; it trusts the Spanish authorities.
 
-If someone enters Spain and then rides a motorcycle to France, French border control does not redo all the paperwork Spain already completed. Instead, it trusts the Spanish authorities regarding the temporary tourist stay extension, or whatever applies.
+The same applies here. Goldendog establishes a relationship of trust with the main and security repositories of Debian. In essence, we tell the user: "We are a small and autonomous territory, but if you arrive with a passport and visa approved by Debian, our doors are open to you".
 
-The same thing happens here. Goldendog establishes a trust relationship with Debian's *main* and *security* repositories. In essence, it is telling users:
+This architectural decision allows us to delegate the fundamental pillars—GNOME, KDE, and Debian's base—to three gigantic communities. In doing so, we achieve stability and a predictable, trustworthy system.
 
-*We are a small, autonomous territory with its own borders, but if you arrive with a passport and visa signed by Debian, we let you in.*
+It is for this reason that I will never say Goldendog is "better" than Debian. Because it doesn't pretend to be. If I had to use an analogy, I would say Debian is the finest and most resilient fabric in the world, and Goldendog is a custom-made suit, carefully cut and fitted to that same fabric.
 
-In this way, our project trusts that user-installed packages may come from our own APT repository as well as deb.debian.org or security.debian.org.
+When people ask me what makes us special, sometimes I hesitate on how to answer. Perhaps we are not the sports car requiring constant maintenance and adjustments, but rather a pleasant and reliable vehicle that takes you to your destination and includes everything necessary to make the journey enjoyable.
 
-These decisions were made intentionally to build the least annoying and most functional system I believed was humanly possible to create. By delegating core packages to three huge communities, GNOME (Display Manager), KDE (Desktop Environment), and Debian (Base System), we achieve not only stability, but also a predictable and trustworthy system.
+Maybe, in my personal quest for calm spaces, perfection was never about creating the product with the most features, but the opposite. As Antoine de Saint-Exupéry noted in his work _Wind, Sand and Stars (1939)_: "Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away."
 
-This does not mean Goldendog is better than Debian, nor does it aim to be. Debian is a universal operating system. If I had to use an analogy, I would say Debian is the best fabric in the world, and Goldendog is a custom-made dress or suit tailored from that fabric.
+That is Goldendog's promise: not the system with the most additions, but a fluid, robust, and serene experience, with the power of Debian beating under the hood.
 
-So when people ask me what makes it special, sometimes I do not know what to answer.
-
-Maybe it is not like those sports cars that require constant maintenance and tuning, but rather like a beautiful and reliable vehicle that takes you everywhere and comes with everything needed to make the trip pleasant.
-
-Maybe, in my personal case, since I like pleasant and quiet spaces, perfection was never about having the most things, but quite the opposite. Or, paraphrasing Antoine de Saint-Exupery in *Wind, Sand and Stars* (1939): perfection is achieved not when there is nothing more to add, but when there is nothing left to remove.
-
-So I hope I have answered that question as clearly as possible.
-
-Goldendog is not the system that comes with the most things preinstalled, but it offers a smooth work experience with Debian's power and stability under the hood.
-
-- Alexia.
+— Alexia.
