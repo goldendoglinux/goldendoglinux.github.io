@@ -30,7 +30,7 @@ Goldendog no se entrega con una sobrecarga de software preinstalado; esta es una
 
 Pensemos en el Espacio Schengen europeo. Si alguien entra en España y viaja en motocicleta hasta Francia, el control fronterizo francés no repite los trámites que España ya completó; confía en las autoridades españolas.
 
-Lo mismo ocurre aquí. Goldendog establece una relación de confianza con los repositorios main y security de Debian. En esencia, le decimos al usuario: "Somos un territorio pequeño y autónomo, pero si llegas con un pasaporte y visa aprobados por Debian, tienes las puertas abiertas".
+Lo mismo ocurre aquí. Goldendog establece una relación de confianza con los repositorios main y security de Debian. En esencia, le decimos al usuario: "Somos un territorio pequeño y autónomo, pero si llegás con un pasaporte y visa aprobados por Debian, tenés las puertas abiertas".
 
 Esta decisión de arquitectura nos permite delegar los pilares fundamentales —GNOME, KDE y la base de Debian— a tres comunidades gigantescas. Así, logramos estabilidad y un sistema predecible, digno de confianza.
 
