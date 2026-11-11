@@ -2,6 +2,40 @@
 
 Todos los cambios notables en el proyecto GoldenDog Linux se documentarán en este archivo.
 
+## [2.1.23 GA] "Golden Retriever" - 2026-11-11
+
+### Corregido
+- **GRUB**: Se corrigió el texto de la versión en el menú de GRUB, que se cortaba.
+- **Sistema**: `/etc/os-release` ahora incluye `ID_LIKE=debian` también después de las actualizaciones de Debian. Esto mejora la compatibilidad con programas que detectan distribuciones basadas en Debian.
+- **linaudit**: Se corrigió un falso positivo que detectaba Apache sin estar instalado (`linaudit` 0.2.0-2).
+
+### Cambiado
+- **Escritorio**: La barra de tareas ahora queda centrada y ocupa el 85% del ancho de la pantalla principal, al estilo dock. Se ajusta sola en el primer inicio de sesión según la resolución de cada usuario.
+- **Escritorio**: La pantalla de carga (splash) ahora muestra "Goldendog Linux 2 (Golden Retriever)" (`goldendog-theme` 1.0-4).
+- **Escritorio**: Limpieza de carpetas de fondos de pantalla en desuso.
+- **Seguridad**: Nuevos ajustes de seguridad por defecto para SSH:
+  - `root` no puede iniciar sesión por SSH (se entra con el usuario y se usa `sudo`);
+  - `X11Forwarding` desactivado;
+  - el tiempo para autenticarse se reduce a 30 segundos;
+  - se quitan los algoritmos criptográficos débiles.
+- **Seguridad**: Nuevos ajustes de seguridad del kernel:
+  - direcciones del kernel ocultas para usuarios sin privilegios;
+  - sin volcados de memoria (core dumps) de programas setuid;
+  - `ptrace` restringido a procesos hijos;
+  - se ignoran y no se envían redirecciones ICMP.
+- **Seguridad**: Se eliminan paquetes de Apache que entraban como dependencias de GNOME y no se usaban en Plasma (`gnome-user-share`, `apache2-bin`, `libapache2-mod-dnssd`).
+- **Seguridad**: Se quitó `gufw` de la instalación, reemplazado por GoldenDog Firewall.
+- **Sistema**: La versión de GoldenDog ahora es la misma en todos lados: menú de arranque (UEFI y BIOS), "Acerca de este sistema" en Plasma y `/etc/os-release`.
+- **Pantalla de Bienvenida**: `goldendog-welcome` actualizado a 1.0.5.
+
+### Añadido
+- **Seguridad**: Se incluye GoldenDog Firewall (1.0.0-3). El asistente de bienvenida ofrece activarlo.
+- **Repositorio**: `goldendog-theme` 1.0-4 y `linaudit` 0.2.0-2 disponibles por `apt`.
+
+### Nota
+
+> Ninguno de los nuevos ajustes de seguridad de SSH y del kernel afecta a Docker, a las máquinas virtuales ni al reenvío de red. Se pueden personalizar con archivos propios en `/etc/ssh/sshd_config.d/` y `/etc/sysctl.d/`.
+
 ## [2.0.11] "Golden Retriever" - 2026-05-09
 
 ### Corregido

@@ -2,6 +2,40 @@
 
 All notable changes to the GoldenDog Linux project will be documented in this file.
 
+## [2.1.23 GA] "Golden Retriever" - 2026-11-11
+
+### Fixed
+- **GRUB**: Fixed the version text in the GRUB menu, which was being cut off.
+- **System**: `/etc/os-release` now keeps `ID_LIKE=debian` after Debian updates, improving compatibility with programs that detect Debian-based distributions.
+- **linaudit**: Fixed a false positive that reported Apache as present when it was not installed (`linaudit` 0.2.0-2).
+
+### Changed
+- **Desktop**: The taskbar is now centered and takes up 85% of the primary screen's width, dock-style. It adjusts automatically on first login according to each user's screen resolution.
+- **Desktop**: The splash screen now shows "Goldendog Linux 2 (Golden Retriever)" (`goldendog-theme` 1.0-4).
+- **Desktop**: Cleaned up unused wallpaper folders.
+- **Security**: New secure SSH defaults:
+  - `root` can no longer log in over SSH (log in with your user and use `sudo`);
+  - `X11Forwarding` is disabled;
+  - the authentication time window is reduced to 30 seconds;
+  - weak cryptographic algorithms have been removed.
+- **Security**: New kernel hardening defaults:
+  - kernel addresses are hidden from unprivileged users;
+  - no core dumps from setuid programs;
+  - `ptrace` is restricted to child processes;
+  - ICMP redirects are ignored and no longer sent.
+- **Security**: Removed Apache packages that were pulled in as GNOME dependencies and were not used in Plasma (`gnome-user-share`, `apache2-bin`, `libapache2-mod-dnssd`).
+- **Security**: Removed `gufw` from the installation, replaced by GoldenDog Firewall.
+- **System**: The GoldenDog version is now consistent everywhere: boot menu (UEFI and BIOS), "About this System" in Plasma, and `/etc/os-release`.
+- **Welcome Screen**: `goldendog-welcome` updated to 1.0.5.
+
+### Added
+- **Security**: GoldenDog Firewall (1.0.0-3) is now included. The welcome wizard offers to enable it.
+- **Repository**: `goldendog-theme` 1.0-4 and `linaudit` 0.2.0-2 are available via `apt`.
+
+### Note
+
+> None of the new SSH and kernel security settings affect Docker, virtual machines, or network forwarding. They can be customized with your own files in `/etc/ssh/sshd_config.d/` and `/etc/sysctl.d/`.
+
 ## [2.0.11] "Golden Retriever" - 2026-05-09
 
 ### Fixed
