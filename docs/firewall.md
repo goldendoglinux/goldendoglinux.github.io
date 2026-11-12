@@ -96,7 +96,7 @@ Leaving an address empty means *any* address.
 
 ## Applying Your Changes
 
-Changes made in the window are **not applied immediately**. When you are done, click **Save and Apply Rules**. The system will ask for your password, since changing the firewall requires administrator privileges.
+Changes made in the window are **not applied immediately**. When you are done, click **Save and Apply Rules**. Although changing the firewall requires administrator privileges, you will not be asked for your password: Goldendog Firewall elevates privileges through **PolicyKit**, which authorizes the action for the user logged into the local session.
 
 Goldendog Firewall then applies the default policies, adds the rules in the list, and enables or disables the firewall according to the switch. A confirmation message appears at the bottom of the window when everything has been applied successfully. If something goes wrong, a dialog shows the error reported by UFW.
 

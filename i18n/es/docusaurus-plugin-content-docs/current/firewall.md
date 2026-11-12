@@ -96,7 +96,7 @@ Si deja una dirección vacía, la regla se aplica a *cualquier* dirección.
 
 ## Aplicar los Cambios
 
-Los cambios realizados en la ventana **no se aplican de inmediato**. Cuando haya terminado, haga clic en **Guardar y aplicar reglas**. El sistema le solicitará su contraseña, ya que modificar el firewall requiere privilegios de administrador.
+Los cambios realizados en la ventana **no se aplican de inmediato**. Cuando haya terminado, haga clic en **Guardar y aplicar reglas**. Si bien modificar el firewall requiere privilegios de administrador, no se le solicitará su contraseña: Goldendog Firewall eleva los privilegios mediante **PolicyKit**, que autoriza la acción para el usuario que tiene la sesión local iniciada.
 
 A continuación, Goldendog Firewall aplica las políticas predeterminadas, agrega las reglas de la lista y activa o desactiva el firewall según el interruptor. Al finalizar correctamente, aparecerá un mensaje de confirmación en la parte inferior de la ventana. Si se produce algún problema, un diálogo mostrará el error informado por UFW.
 
