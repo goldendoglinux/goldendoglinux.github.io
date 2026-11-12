@@ -5,7 +5,7 @@ description: Recomendaciones y buenas prácticas para mantener tu sistema Golden
 
 # Cómo mantener GoldenDog seguro
 
-GoldenDog viene con ajustes de seguridad razonables de fábrica: actualizaciones de seguridad de Debian activadas, soporte para Secure Boot, SSH y kernel endurecidos, y un firewall listo para encender. Pero ningún ajuste por defecto reemplaza los buenos hábitos. En esta página juntamos las prácticas que recomendamos para que tu sistema se mantenga limpio y seguro con el tiempo.
+Goldendog es un Sistema Operativo **Profesional** y viene con una gran variedad de  ajustes de seguridad razonables de fábrica: actualizaciones de seguridad de Debian activadas, soporte para Secure Boot, SSH y kernel endurecidos, y el firewall habilitado por defecto. Pero ningún ajuste por defecto reemplaza los buenos hábitos. En esta página hemos reunido las prácticas recomendables para que tu sistema se mantenga limpio y seguro con el transcurso del tiempo.
 
 :::tip Lista rápida
 
