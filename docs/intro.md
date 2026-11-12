@@ -20,6 +20,7 @@ Once you have GoldenDog running, check out these guides:
 
 - **Graphics**: [NVIDIA Driver Installation](./nvidia-drivers.md) — Get the best performance for your NVIDIA GPU.
 - **Popular Apps**: [Popular Applications](./popular-apps.md) — A curated list of recommended software and tools.
+- **Security**: [Keeping GoldenDog Secure](/security) — Recommendations and good practices to keep your system clean and secure.
 - **Support**: [Community & Support Hub](/community) — Where to go when you need a helping hand.
 
 ---

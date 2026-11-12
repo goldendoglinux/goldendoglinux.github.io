@@ -121,6 +121,10 @@ const config = {
                 label: 'Introduction',
                 to: '/docs/intro',
               },
+              {
+                label: 'Security',
+                to: '/security',
+              },
             ],
           },
           {
