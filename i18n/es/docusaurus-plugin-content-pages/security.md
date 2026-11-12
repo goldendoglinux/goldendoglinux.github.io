@@ -21,15 +21,15 @@ Goldendog es un Sistema Operativo **Profesional** y viene con una gran variedad 
 
 La mayoría de los ataques aprovechan vulnerabilidades que ya fueron corregidas. Actualizar seguido es lo más importante que podés hacer.
 
-GoldenDog usa los repositorios oficiales de Debian con los parches de seguridad activados, más el repositorio de GoldenDog. Para actualizar todo desde una terminal:
+GoldenDog cuenta con el repositorio de seguridad dedicada de Debian además del suyo propio. Para actualizar todo desde una terminal:
 
 ```bash
 sudo apt update && sudo apt full-upgrade
 ```
 
-También podés actualizar desde **Discover** o desde la [Consola Web](/docs/tweaking-goldendog/web-console), que muestra las actualizaciones de seguridad separadas del resto para que puedas aplicarlas primero.
+También se puede actualizar el sistema desde **Discover** o desde la [Consola Web](/docs/tweaking-goldendog/web-console), que muestra las actualizaciones de seguridad separadas del resto para que se puedan aplicar primero.
 
-No te olvides de las otras fuentes de software de tu sistema:
+Pero ademas de los repos oficiales, el sistema puede tener otras fuentes, como por ejemplo, flatpak:
 
 ```bash
 flatpak update            # aplicaciones Flatpak (Flathub)
@@ -37,20 +37,20 @@ fwupdmgr refresh && fwupdmgr update   # firmware (BIOS/UEFI, SSD, docks, etc.)
 ```
 
 :::note Reiniciá después de actualizar el kernel
-Cuando una actualización trae un kernel nuevo o bibliotecas del sistema, el arreglo no se aplica hasta que reiniciás. No postergues los reinicios durante semanas.
+Cuando una actualización instala un nuevo kernel o bibliotecas core del sistema, el arreglo no se aplica hasta que no se reinicia el equipo. Recomendamos no postergar las actualizaciones y los reinicios.
 :::
 
 Para enterarte de los parches importantes, suscribite al boletín de **Actualizaciones de Seguridad** en la sección [Comunidad](/community). También podés seguir los [avisos de seguridad de Debian](https://www.debian.org/security/).
 
 ## 2. Activá el firewall y revisalo
 
-GoldenDog incluye **GoldenDog Firewall**, una interfaz simple para UFW. El asistente de bienvenida te ofrece activarlo en el primer inicio; si salteaste ese paso, abrilo desde el menú de aplicaciones (o corré `goldendog-firewall`) y encendelo.
+GoldenDog incluye **GoldenDog Firewall**, una interfaz para controlar UFW. El asistente de bienvenida lo activa por defecto y permite realizarle cambios durante el primer inicio; si se saltearon ese paso, se puede abrir desde el menú de aplicaciones (o correr `goldendog-firewall`) para encenderlo.
 
 Configuración recomendada para una computadora de escritorio o notebook:
 
 - **Entrante: Denegar.** Nadie puede conectarse a tu máquina salvo que lo permitas con una regla.
 - **Saliente: Permitir.** Tus aplicaciones navegan y descargan con normalidad.
-- **Abrí solo los puertos que realmente usás** y borrá las reglas que ya no necesites.
+- **Abrir solo los puertos que realmente se necesitan** y borrar las reglas que ya no se necesiten.
 - Si necesitás abrir un puerto solo para tu red de casa (por ejemplo, la Consola Web en el puerto `9090`), usá la pestaña **Avanzado** y limitá el origen (**Desde**) a tu red local, por ejemplo `192.168.1.0/24`, en vez de abrirlo para todo el mundo.
 
 Revisá tus reglas cada tanto, sobre todo después de probar programas o servidores nuevos. También podés ver el estado desde una terminal:
@@ -149,4 +149,4 @@ Un kernel personalizado no recibe automáticamente los parches de seguridad de D
 
 Si creés que encontraste un problema de seguridad en GoldenDog, o tenés dudas sobre estas recomendaciones, escribinos a través de [soporte](https://github.com/goldendoglinux/support/issues) o pasá por los canales de la [comunidad](/community).
 
-La seguridad no es un producto que se instala una vez: es un hábito. ¡Gracias por cuidar tu GoldenDog! 🐶
+La seguridad no es un producto que se instala una vez: es un hábito. ¡Si te gusta cuidar de tu GoldenDog compartilo! 🐶
