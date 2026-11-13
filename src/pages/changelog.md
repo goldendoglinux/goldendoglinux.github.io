@@ -2,34 +2,45 @@
 
 All notable changes to the GoldenDog Linux project will be documented in this file.
 
-## [2.1.23 GA] "Golden Retriever" - 2026-11-11
+## [2.1.25 GA] "Golden Retriever" - 2026-11-12
 
 ### Fixed
 - **GRUB**: Fixed the version text in the GRUB menu, which was being cut off.
-- **System**: `/etc/os-release` now keeps `ID_LIKE=debian` after Debian updates, improving compatibility with programs that detect Debian-based distributions.
+- **System**: `/etc/os-release` now includes `ID_LIKE=debian`, improving compatibility with third-party software that detects Debian-based distributions.
+- **Firewall**: GoldenDog Firewall now reads the real UFW state. Previously, saving could turn the firewall off.
+- **Firewall**: Rules created with GoldenDog Firewall in a language other than English were not being applied.
 - **linaudit**: Fixed a false positive that reported Apache as present when it was not installed (`linaudit` 0.2.0-2).
 
 ### Changed
-- **Desktop**: The taskbar is now centered and takes up 85% of the primary screen's width, dock-style. It adjusts automatically on first login according to each user's screen resolution.
-- **Desktop**: The splash screen now shows "Goldendog Linux 2 (Golden Retriever)" (`goldendog-theme` 1.0-4).
-- **Desktop**: Cleaned up unused wallpaper folders.
+- **Updates**: Everything GoldenDog-specific is now delivered through `apt`, so there is no need to reinstall. Running `sudo apt full-upgrade` or updating from Discover brings fixes, new tools and the new distribution version.
+- **System**: The `goldendoglinux` metapackage now depends on every GoldenDog component, so no one is left with outdated versions.
+- **System**: The GoldenDog version is now consistent everywhere: ISO boot menu, GRUB, "About this System" in Plasma, and `/etc/os-release`.
+- **Security**: The firewall (`ufw`) is now enabled by default from the first boot: incoming traffic is blocked and outgoing traffic is allowed.
 - **Security**: New secure SSH defaults:
   - `root` can no longer log in over SSH (log in with your user and use `sudo`);
   - `X11Forwarding` is disabled;
-  - the authentication time window is reduced to 30 seconds;
+  - the authentication time window (`LoginGraceTime`) is reduced to 30 seconds;
   - weak cryptographic algorithms have been removed.
-- **Security**: New kernel hardening defaults:
-  - kernel addresses are hidden from unprivileged users;
-  - no core dumps from setuid programs;
-  - `ptrace` is restricted to child processes;
+- **Security**: New kernel hardening defaults (`sysctl`):
+  - kernel addresses are hidden from unprivileged users (`kptr_restrict`);
+  - no core dumps from setuid programs (`suid_dumpable`);
+  - `ptrace` is restricted to child processes (`ptrace_scope=1`);
   - ICMP redirects are ignored and no longer sent.
-- **Security**: Removed Apache packages that were pulled in as GNOME dependencies and were not used in Plasma (`gnome-user-share`, `apache2-bin`, `libapache2-mod-dnssd`).
-- **Security**: Removed `gufw` from the installation, replaced by GoldenDog Firewall.
-- **System**: The GoldenDog version is now consistent everywhere: boot menu (UEFI and BIOS), "About this System" in Plasma, and `/etc/os-release`.
-- **Welcome Screen**: `goldendog-welcome` updated to 1.0.5.
+- **Security**: Removed `gnome-user-share`, `apache2-bin` and `libapache2-mod-dnssd`, which were pulled in as recommended dependencies of `gdm3` and were not used.
+- **Security**: GoldenDog Firewall replaces `gufw`.
+- **Firewall**: GoldenDog Firewall options now read "Allow / Deny / Reject" (previously "Accept"), and the German translation is complete (`goldendog-firewall` 1.0.0-6).
+- **Welcome Screen**: `goldendog-welcome` updated to 1.0.6. It now shows the real firewall status, and the Save button is only enabled when there are changes.
+- **Desktop**: The Plasma panel is now centered and takes up 85% of the screen's width on first login.
+- **Desktop**: The splash screen now shows "GoldenDog Linux 2 (Golden Retriever)" (`goldendog-theme` 1.0-4).
+- **Desktop**: Cleaned up empty wallpaper folders and the leftover `/packages` directory in the root of the filesystem.
 
 ### Added
-- **Security**: GoldenDog Firewall (1.0.0-3) is now included. The welcome wizard offers to enable it.
+- **System**: New `goldendog-release` package. It keeps `os-release`, `lsb-release`, Plasma's "About this System" and the version shown by the installed GRUB up to date, and reapplies itself automatically if a Debian update (`base-files`) overwrites them.
+- **Repository**: New `goldendog-archive-keyring` package. The GoldenDog repository key is now installed and renewed like any other package.
+- **Security**: GoldenDog Firewall (1.0.0-6) is now included. See the new guide at [goldendoglinux.org/docs/firewall](/docs/firewall).
+- **Security**: `linaudit` now comes preinstalled to audit your system.
+- **Security**: Tested with Secure Boot enabled (Debian-signed shim and GRUB).
+- **Welcome Screen**: New "Learn how to keep your system secure" link to [goldendoglinux.org/security](/security).
 - **Repository**: `goldendog-theme` 1.0-4 and `linaudit` 0.2.0-2 are available via `apt`.
 
 ### Note
