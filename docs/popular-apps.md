@@ -10,25 +10,6 @@ Goldendog Linux respects user freedom and open-source licenses. Because many pop
 
 However, we believe you should have the freedom to install whatever software you need to get your work (or gaming) done.
 
-## Antigravity (by Google)
-
-A GoldenDog Linux helper package can be installed to install Antigravity. 
-
-```bash
-sudo apt update
-sudo apt install antigravity-installer
-```
-
-The helper will configure the Google repository and install Antigravity. Automatically. Be mindful that the process may take about a minute on slow connections. Wait for the desktop notification. You may confirm it is installed by typing:
-
-```bash
-sudo dpkg -l | grep antigravity
-```
-
-:::info
-Antigravity is a Google product, and as such, it is subject to Google's terms of service. By using Antigravity, you agree to Google's terms of service. This helper is not endorsed by Google and does not modify the product in any way.
-:::
-
 ## Visual Studio Code (by Microsoft)
 
 A Goldendog Linux helper package can be installed to automate the installation of Visual Studio Code.
