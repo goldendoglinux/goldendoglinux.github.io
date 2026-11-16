@@ -33,7 +33,7 @@ Podemos proporcionar orientación voluntaria si tiene problemas, pero tenga en c
     -   *(Opcional)* Si está utilizando una laptop, marque la opción `laptop`.
 
 4.  **Notas Importantes:**
-    KDE Plasma y el servidor SSH ya están instalados. **No vuelva a seleccionar** lo siguiente:
+    KDE Plasma y el servidor SSH ya están instalados (el servidor SSH viene desactivado; se puede activar desde el Centro de seguridad). **No vuelva a seleccionar** lo siguiente:
     -   `KDE Plasma`
     -   `SSH Server`
     

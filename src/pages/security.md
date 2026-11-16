@@ -5,7 +5,7 @@ description: Recommendations and good practices to keep your GoldenDog Linux sys
 
 # Keeping GoldenDog Secure
 
-GoldenDog ships with sensible security defaults: Debian security updates enabled, Secure Boot support, hardened SSH and kernel settings, and a firewall ready to turn on. But no default replaces good habits. This page collects the practices we recommend to keep your system clean and secure over time.
+GoldenDog ships with sensible security defaults: Debian security updates enabled, Secure Boot support, hardened SSH and kernel settings, and a firewall that is on from the first boot. But no default replaces good habits. This page collects the practices we recommend to keep your system clean and secure over time.
 
 :::tip Quick checklist
 
@@ -16,6 +16,16 @@ GoldenDog ships with sensible security defaults: Debian security updates enabled
 - Use a strong password, lock your screen, and keep backups.
 
 :::
+
+## The Security Center
+
+GoldenDog includes the **Security Center**, which brings the most important settings together in one place. Open it from the application menu to:
+
+- turn the **firewall** on or off and choose its default policies;
+- turn **remote access** (SSH server and Cockpit web console) on or off;
+- enable **automatic security updates**;
+- adjust **privacy** options;
+- run a **linaudit** audit of your computer.
 
 ## 1. Keep your system updated
 
@@ -28,6 +38,10 @@ sudo apt update && sudo apt full-upgrade
 ```
 
 You can also update from **Discover** or from the [Web Console](/docs/tweaking-goldendog/web-console), which shows security updates separately from the rest so you can apply them first.
+
+### Automatic security updates
+
+If you prefer not to depend on remembering, the Security Center can install security patches on its own, in the background, as soon as they are available. Open **Security Center** and, under **Security Updates (Recommended)**, turn on **Install security updates automatically**. This option comes **disabled**: the choice is yours. Your computer never restarts on its own, so remember to reboot after kernel updates.
 
 Don't forget the other sources of software on your system:
 
@@ -44,7 +58,7 @@ To stay informed about important patches, subscribe to the **Security Updates** 
 
 ## 2. Turn on the firewall and review it
 
-GoldenDog includes **GoldenDog Firewall**, a simple interface for UFW. The welcome wizard offers to enable it on first boot; if you skipped that step, open it from the application menu (or run `goldendog-firewall`) and turn it on.
+GoldenDog comes with the firewall **enabled from the first boot**, blocking incoming connections and allowing outgoing ones. You can check its status in the **Security Center**, and manage specific rules with **GoldenDog Firewall**, a simple interface for UFW (open it from the application menu or run `goldendog-firewall`). The full guide is in the [GoldenDog Firewall documentation](/docs/firewall).
 
 Recommended settings for a desktop or laptop:
 
@@ -58,6 +72,18 @@ Review your rules every now and then, especially after trying out new software o
 ```bash
 sudo ufw status verbose
 ```
+
+### Applications that need to receive connections
+
+Because incoming connections are blocked, applications that wait for **other devices to connect to your computer** will not work until you allow them. Some common examples:
+
+| Application | What it does | Ports to allow |
+|---|---|---|
+| **LocalSend** | Share files with phones and other computers | `53317` TCP and UDP |
+| **KDE Connect** | Connect your phone to the desktop | `1714:1764` TCP and UDP |
+| **UxPlay** | Receive AirPlay from an iPhone, iPad or Mac | When run as `uxplay -p`: `7000`, `7001`, `7100` TCP and `6000`, `6001`, `7011` UDP |
+
+If an application cannot find your computer, or other devices cannot reach it, the firewall is the first thing to check. The recommended solution is to **add a rule** in GoldenDog Firewall that allows only the ports the application needs, restricted to your local network whenever possible. You can also turn the firewall off while you use the application, but remember to **turn it back on** afterwards, and never do this on a public network.
 
 :::caution Public networks
 On public Wi-Fi (airports, cafés, hotels) the firewall is essential. Make sure it is active before connecting.
@@ -122,9 +148,10 @@ GoldenDog supports **Secure Boot**. If your machine has it, keep it enabled: it 
 
 GoldenDog's SSH defaults are already hardened (`root` cannot log in over SSH, weak algorithms are removed, and more). Even so:
 
-- If you don't need to connect to your machine from another one, **don't install or enable the SSH server**.
-- If you do need it, use **SSH keys** instead of passwords and only open port `22` in the firewall for the networks you trust.
-- The [Web Console](/docs/tweaking-goldendog/web-console) (Cockpit) gives full control of the system. Don't expose port `9090` to the internet; if you use it remotely, restrict it to your local network.
+- The **SSH server** and the [Web Console](/docs/tweaking-goldendog/web-console) (Cockpit) come **disabled**. If you need them, turn them on from **Security Center**, under **Remote Access**. Turning a service on also opens its port in the firewall.
+- Turn them off again when you no longer need them: every service that listens on the network is one more door into your computer.
+- If you use SSH, prefer **SSH keys** over passwords.
+- Cockpit gives full control of the system. Don't expose port `9090` to the internet; if you use it remotely, restrict it to your local network.
 
 ## 8. Keep backups
 

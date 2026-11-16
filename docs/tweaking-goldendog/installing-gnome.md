@@ -33,7 +33,7 @@ We may provide volunteer guidance if you run into problems, but please be aware 
     -   *(Optional)* If you are running on a laptop, check the `laptop` option.
 
 4.  **Important Notes:**
-    KDE Plasma and the SSH Server are already installed. **Do not re-select** the following:
+    KDE Plasma and the SSH Server are already installed (the SSH server comes disabled; you can turn it on from the Security Center). **Do not re-select** the following:
     -   `KDE Plasma`
     -   `SSH Server`
     

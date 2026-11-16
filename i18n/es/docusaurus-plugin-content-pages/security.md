@@ -17,6 +17,16 @@ Goldendog es un Sistema Operativo **Profesional** y viene con una gran variedad 
 
 :::
 
+## El Centro de seguridad
+
+GoldenDog incluye el **Centro de seguridad**, que reúne en un solo lugar los ajustes más importantes. Abrilo desde el menú de aplicaciones para:
+
+- activar o desactivar el **firewall** y elegir sus políticas predeterminadas;
+- activar o desactivar el **acceso remoto** (servidor SSH y consola web Cockpit);
+- habilitar las **actualizaciones de seguridad automáticas**;
+- ajustar las opciones de **privacidad**;
+- auditar tu equipo con **linaudit**.
+
 ## 1. Mantené el sistema actualizado
 
 La mayoría de los ataques aprovechan vulnerabilidades que ya fueron corregidas. Actualizar seguido es lo más importante que podés hacer.
@@ -28,6 +38,10 @@ sudo apt update && sudo apt full-upgrade
 ```
 
 También se puede actualizar el sistema desde **Discover** o desde la [Consola Web](/docs/tweaking-goldendog/web-console), que muestra las actualizaciones de seguridad separadas del resto para que se puedan aplicar primero.
+
+### Actualizaciones de seguridad automáticas
+
+Si preferís no depender de acordarte, el Centro de seguridad puede instalar los parches de seguridad por su cuenta, en segundo plano, apenas estén disponibles. Abrí el **Centro de seguridad** y, en **Actualizaciones de Seguridad (Recomendado)**, activá **Instalar actualizaciones de seguridad automáticamente**. Esta opción viene **desactivada**: la decisión es tuya. El equipo nunca se reinicia por su cuenta, así que acordate de reiniciar después de las actualizaciones del kernel.
 
 Pero ademas de los repos oficiales, el sistema puede tener otras fuentes, como por ejemplo, flatpak:
 
@@ -44,7 +58,7 @@ Para enterarte de los parches importantes, suscribite al boletín de **Actualiza
 
 ## 2. Activá el firewall y revisalo
 
-GoldenDog incluye **GoldenDog Firewall**, una interfaz para controlar UFW. El asistente de bienvenida lo activa por defecto y permite realizarle cambios durante el primer inicio; si se saltearon ese paso, se puede abrir desde el menú de aplicaciones (o correr `goldendog-firewall`) para encenderlo.
+GoldenDog viene con el firewall **activado desde el primer arranque**: bloquea las conexiones entrantes y permite las salientes. Podés ver su estado en el **Centro de seguridad** y administrar reglas específicas con **GoldenDog Firewall**, una interfaz sencilla para UFW (abrilo desde el menú de aplicaciones o corré `goldendog-firewall`). La guía completa está en la [documentación de GoldenDog Firewall](/docs/firewall).
 
 Configuración recomendada para una computadora de escritorio o notebook:
 
@@ -58,6 +72,18 @@ Revisá tus reglas cada tanto, sobre todo después de probar programas o servido
 ```bash
 sudo ufw status verbose
 ```
+
+### Aplicaciones que necesitan recibir conexiones
+
+Como las conexiones entrantes están bloqueadas, las aplicaciones que esperan que **otros dispositivos se conecten a tu equipo** no van a funcionar hasta que lo permitas. Algunos ejemplos habituales:
+
+| Aplicación | Para qué sirve | Puertos a permitir |
+|---|---|---|
+| **LocalSend** | Compartir archivos con el celular y otras computadoras | `53317` TCP y UDP |
+| **KDE Connect** | Conectar el celular con el escritorio | `1714:1764` TCP y UDP |
+| **UxPlay** | Recibir AirPlay desde un iPhone, iPad o Mac | Ejecutado como `uxplay -p`: `7000`, `7001`, `7100` TCP y `6000`, `6001`, `7011` UDP |
+
+Si una aplicación no encuentra tu equipo, o los otros dispositivos no logran llegar a él, lo primero que conviene revisar es el firewall. La solución recomendada es **agregar una regla** en GoldenDog Firewall que permita solo los puertos que la aplicación necesita, limitada a tu red local siempre que sea posible. También podés desactivar el firewall mientras usás la aplicación, pero acordate de **volver a activarlo** después, y nunca lo hagas en una red pública.
 
 :::caution Redes públicas
 En el Wi-Fi público (aeropuertos, bares, hoteles) el firewall es fundamental. Asegurate de que esté activo antes de conectarte.
@@ -122,9 +148,10 @@ GoldenDog es compatible con **Secure Boot**. Si tu máquina lo tiene, dejalo act
 
 Los ajustes de SSH de GoldenDog ya vienen endurecidos (`root` no puede iniciar sesión por SSH, se quitaron los algoritmos débiles, y más). Aun así:
 
-- Si no necesitás conectarte a tu máquina desde otra, **no instales ni actives el servidor SSH**.
-- Si lo necesitás, usá **claves SSH** en lugar de contraseñas y abrí el puerto `22` en el firewall solo para las redes en las que confiás.
-- La [Consola Web](/docs/tweaking-goldendog/web-console) (Cockpit) da control total del sistema. No expongas el puerto `9090` a internet; si la usás de forma remota, limitala a tu red local.
+- El **servidor SSH** y la [Consola Web](/docs/tweaking-goldendog/web-console) (Cockpit) vienen **desactivados**. Si los necesitás, activalos desde el **Centro de seguridad**, en **Acceso remoto**. Al activar un servicio, también se abre su puerto en el firewall.
+- Desactivalos cuando ya no los necesites: cada servicio que escucha en la red es una puerta más de entrada a tu equipo.
+- Si usás SSH, preferí las **claves SSH** antes que las contraseñas.
+- Cockpit da control total del sistema. No expongas el puerto `9090` a internet; si lo usás de forma remota, limitalo a tu red local.
 
 ## 8. Hacé copias de seguridad
 

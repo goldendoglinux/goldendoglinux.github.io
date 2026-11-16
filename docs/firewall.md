@@ -50,13 +50,19 @@ For a desktop or laptop, the safest choice is **Firewall on**, **Incoming: Deny*
 
 Rules are exceptions to the default policies. For example, if incoming traffic is denied but you run an SSH server, you can add a rule that allows port 22.
 
+When the window opens, Goldendog Firewall reads the rules that UFW currently has, including rules created from the terminal, and shows them in the table. Reading them requires administrator privileges, so the system asks for your password. If you cancel, you can still add new rules, and the **Load rules** button lets you try again.
+
 Use the buttons below the table to manage your rules:
 
 - **Add rule** (green **+**): opens the *Add a Firewall Rule* dialog.
-- **Remove selected rule** (**−**): removes the selected rule from the list.
-- **Edit selected rule** (pencil): opens the selected rule so you can modify it.
+- **Remove selected rule** (**−**): removes the selected rule. If the rule was already in the firewall, it is deleted from UFW when you save your changes.
+- **Edit selected rule** (pencil): opens the selected rule so you can modify it. When you save, the old rule is replaced by the new one.
 
-You can also **right-click** a rule to edit or delete it.
+You can also **right-click** a rule to edit or delete it. The rule's **Name** is stored in UFW as the rule's comment, so you will see it again the next time you open the application.
+
+:::note Rules that cannot be edited
+Some rules created outside Goldendog Firewall cannot be represented in the form, for example rules made with `ufw limit`, application profiles such as `OpenSSH`, or routing rules. When you try to edit one of them, the application explains why. You can still delete it and add a new one.
+:::
 
 ## Adding a Rule
 
@@ -75,7 +81,7 @@ The **Simple** tab covers the most common case: opening or closing a port.
 | **Direction** | **In** for incoming traffic, **Out** for outgoing traffic, or **Both**. |
 | **Protocol** | **TCP**, **UDP**, or **Both**. |
 | **Interface** | Apply the rule to all network interfaces or only to a specific one (for example, `wlan0` or `enp3s0`). |
-| **Port** | A port number (`22`), a range (`6000:6007`) or a service name known to the system (`ssh`, `http`). |
+| **Port** | A port number (`22`), a range (`6000:6007`), a list (`80,443`) or a service name known to the system (`ssh`, `http`). Ranges and lists require choosing **TCP** or **UDP** as the protocol, not **Both**. |
 
 **Example:** to allow SSH connections to your computer, use *Policy: Allow*, *Direction: In*, *Protocol: TCP* and *Port: 22*.
 
@@ -96,26 +102,22 @@ Leaving an address empty means *any* address.
 
 ## Applying Your Changes
 
-Changes made in the window are **not applied immediately**. When you are done, click **Save and Apply Rules**. Although changing the firewall requires administrator privileges, you will not be asked for your password: Goldendog Firewall elevates privileges through **PolicyKit**, which authorizes the action for the user logged into the local session.
+Changes made in the window are **not applied immediately**. When you are done, click **Save and Apply Rules**. Since changing the firewall requires administrator privileges, the system asks for your password. It is remembered for a few minutes, so you will not be asked again for every change. If you cancel, the application shows *Nothing was changed.*
 
-Goldendog Firewall then applies the default policies, adds the rules in the list, and enables or disables the firewall according to the switch. A confirmation message appears at the bottom of the window when everything has been applied successfully. If something goes wrong, a dialog shows the error reported by UFW.
+Goldendog Firewall then applies the default policies, deletes the rules you removed or edited, adds the new ones, and enables or disables the firewall according to the switch. A confirmation message appears at the bottom of the window, and the rules list is reloaded from UFW.
 
-:::info Rules are stored by UFW
-Once applied, the rules are saved by UFW and remain active after a reboot. The rules list in Goldendog Firewall only shows the rules you have added during the current session, and removing a rule from that list does **not** remove it from UFW.
+:::info All or nothing
+If UFW reports an error while applying your changes, Goldendog Firewall restores the previous rules automatically, so the firewall is never left half-configured. A dialog shows the error reported by UFW.
 :::
 
-## Reviewing and Removing Applied Rules
+Once applied, the rules are saved by UFW and remain active after a reboot.
 
-To see every rule that is currently active, open a terminal and run:
+## Checking from the Terminal
+
+You can also list every rule that is currently active from a terminal:
 
 ```bash
 sudo ufw status numbered
-```
-
-To delete an applied rule, use its number from the previous list:
-
-```bash
-sudo ufw delete 2
 ```
 
 If you want to start over from a clean configuration, you can reset UFW completely. This removes **all** rules and disables the firewall, so remember to turn it back on afterwards from Goldendog Firewall:

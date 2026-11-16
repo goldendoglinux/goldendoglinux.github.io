@@ -10,6 +10,10 @@ This guide will help you create a bootable USB drive to install GoldenDog Linux 
 Creating a bootable USB will **erase all data** currently on the drive. Please back up any important files before proceeding.
 :::
 
+:::tip Verify the ISO first
+Before creating the USB drive, make sure the ISO you downloaded is authentic and was not altered. The checksum and step-by-step instructions are on the [download page](/download).
+:::
+
 ## Windows (using Rufus)
 
 [Rufus](https://rufus.ie/) is a small, reliable tool for creating bootable USB drives on Windows.
@@ -45,8 +49,8 @@ Creating a bootable USB will **erase all data** currently on the drive. Please b
 list your drives with `lsblk` or `fdisk -l` and select the correct drive.
 
 ```bash
-# Replace /dev/sdX with your actual USB device path
-sudo dd if=goldendog-2.0.0.iso of=/dev/sdX bs=4M status=progress && sync
+# Replace /dev/sdX with your actual USB device path (the whole disk, not a partition like /dev/sdX1)
+sudo dd if=goldendog-2.1.32-amd64.iso of=/dev/sdX bs=4M status=progress oflag=sync
 ```
 
 :::danger

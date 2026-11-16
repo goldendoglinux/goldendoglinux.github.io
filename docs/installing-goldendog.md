@@ -17,6 +17,10 @@ GoldenDog Linux currently only supports **amd64** (64-bit Intel/AMD) architectur
 If you need those, check the [Debian Ports](https://wiki.debian.org/Ports/riscv64) or [Raspberry Pi images](https://raspi.debian.net/tested-images/).
 :::
 
+:::warning Internet connection required
+GoldenDog uses a network installation: Debian packages are downloaded during the installation, so the system is up to date from the first boot. Make sure the computer is connected to the internet, preferably by cable, before you start.
+:::
+
 ## Installation Steps
 
 ### 1. Language & Region
@@ -57,6 +61,12 @@ GRUB is the bootloader that allows your computer to start Linux.
 
 ## First Boot
 Once finished, the system will reboot into GoldenDog. The first boot might take a few extra seconds as the system runs post-installation cleanup and sanitization tasks.
+
+:::info The firewall is already on
+GoldenDog's firewall is active from the first boot and blocks incoming connections. If an application that needs to receive connections from other devices (for example, LocalSend, KDE Connect or UxPlay) cannot reach your computer, you will need to add a rule in [GoldenDog Firewall](/docs/firewall). See [Applications that need to receive connections](/security#applications-that-need-to-receive-connections) for the ports of the most common ones.
+
+The SSH server and the Cockpit web console come disabled; you can turn them on from the **Security Center** if you need them.
+:::
 
 ## Video Drivers
 - **Intel / AMD**: GoldenDog will try to automatically install the correct drivers for you.

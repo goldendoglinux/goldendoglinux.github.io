@@ -10,6 +10,10 @@ Esta guía te ayudará a crear una unidad USB de arranque para instalar GoldenDo
 Crear un USB de arranque **borrará todos los datos** que se encuentren actualmente en la unidad. Por favor, haz una copia de seguridad de cualquier archivo importante antes de continuar.
 :::
 
+:::tip Verificá la ISO primero
+Antes de crear el USB, comprobá que la ISO descargada sea auténtica y no haya sido adulterada. El checksum y las instrucciones paso a paso están en la [página de descarga](/download).
+:::
+
 ## Windows (usando Rufus)
 
 [Rufus](https://rufus.ie/) es una herramienta pequeña y confiable para crear unidades USB de arranque en Windows.
@@ -42,8 +46,8 @@ El método más universal. Abre tu terminal y ejecuta:
 Lista tus unidades con `lsblk` o `fdisk -l` y selecciona la unidad correcta.
 
 ```bash
-# Reemplaza /dev/sdX con la ruta real de tu dispositivo USB
-sudo dd if=goldendog-2.0.0.iso of=/dev/sdX bs=4M status=progress && sync
+# Reemplazá /dev/sdX con la ruta real del USB (el disco entero, no una partición como /dev/sdX1)
+sudo dd if=goldendog-2.1.32-amd64.iso of=/dev/sdX bs=4M status=progress oflag=sync
 ```
 
 :::danger

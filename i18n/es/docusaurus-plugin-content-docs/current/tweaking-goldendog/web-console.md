@@ -8,6 +8,25 @@ GoldenDog Linux incluye **Cockpit** preinstalado, una potente herramienta, que, 
 
 ![Inicio de sesión en Cockpit](/img/cockpit-login.png)
 
+## Activar la Consola Web
+
+Por razones de seguridad, la Consola Web viene **deshabilitada** de forma predeterminada. Puede activarla de cualquiera de estas dos maneras:
+
+- **Desde el Centro de seguridad (recomendado):** abra el **Centro de seguridad** desde el menú de aplicaciones y, en **Acceso remoto**, active **Consola web Cockpit**. Esto también abre el puerto 9090 en el firewall, y debajo del interruptor aparece el acceso directo **Abrir Cockpit**.
+- **Desde una terminal:**
+
+  ```bash
+  sudo systemctl enable --now cockpit.socket
+  ```
+
+  Este método no modifica el firewall, por lo que la Consola Web solo será accesible desde este mismo equipo (`localhost`).
+
+Para desactivarla, utilice el mismo interruptor del Centro de seguridad o ejecute `sudo systemctl disable --now cockpit.socket`.
+
+:::tip
+Mantenga la Consola Web desactivada mientras no la utilice. Cada servicio que escucha en la red es una puerta más de entrada a su equipo.
+:::
+
 ## Cómo Acceder
 
 1.  Abra **Firefox** (o su navegador preferido).
@@ -16,6 +35,8 @@ GoldenDog Linux incluye **Cockpit** preinstalado, una potente herramienta, que, 
 
 ### Gestión Remota
 También puede gestionar su equipo GoldenDog desde otro dispositivo en su red local. Simplemente busque la dirección IP local de su equipo y navegue a `http://[su-ip-local]:9090` desde cualquier navegador en la misma red.
+
+Para que esto funcione, el puerto 9090 debe estar abierto en el firewall. El Centro de seguridad lo abre automáticamente al activar la Consola Web; si la activó desde una terminal, agregue en [Goldendog Firewall](/docs/firewall) una regla que permita el puerto TCP 9090.
 
 ## Acceso Administrativo
 

@@ -19,6 +19,10 @@ Si necesitas esas versiones, consulta los [Puertos de Debian](https://wiki.debia
 Asimismo, está en los planes lanzar una versión ARM64. Proximamente se realizarán los anuncios. 
 :::
 
+:::warning Se necesita conexión a internet
+GoldenDog utiliza una instalación por red: los paquetes de Debian se descargan durante la instalación, por lo que el sistema queda actualizado desde el primer arranque. Antes de comenzar, verificá que el equipo esté conectado a internet, preferentemente por cable.
+:::
+
 ## Pasos de Instalación
 
 ### 1. Idioma y Región
@@ -59,6 +63,12 @@ GRUB es el cargador de arranque que permite que tu computadora inicie Linux.
 
 ## Primer Inicio
 Una vez finalizado, el sistema se reiniciará en GoldenDog. El primer inicio puede tardar unos segundos extra mientras el sistema realiza tareas de limpieza y post-instalación.
+
+:::info El firewall ya está activado
+El firewall de GoldenDog está activo desde el primer arranque y bloquea las conexiones entrantes. Si una aplicación que necesita recibir conexiones desde otros dispositivos (por ejemplo, LocalSend, KDE Connect o UxPlay) no logra llegar a tu equipo, vas a tener que agregar una regla en [GoldenDog Firewall](/docs/firewall). En [Aplicaciones que necesitan recibir conexiones](/security#aplicaciones-que-necesitan-recibir-conexiones) figuran los puertos de las más comunes.
+
+El servidor SSH y la consola web Cockpit vienen desactivados; se pueden activar desde el **Centro de seguridad** cuando se necesiten.
+:::
 
 ## Controladores de Video
 - **Intel / AMD**: GoldenDog intentará instalar automáticamente los controladores correctos por ti.
