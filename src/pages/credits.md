@@ -12,6 +12,10 @@ GoldenDog Linux is a community effort and relies on many open-source projects an
 | **Ubuntu Fonts Pack** | Ubuntu Font Family | Canonical Ltd. | [Ubuntu Font License](https://ubuntu.com/legal/font-licence) |
 | **Website Engine** | Docusaurus | Meta Open Source | [MIT](https://github.com/facebook/docusaurus/blob/main/LICENSE) |
 
+## Infrastructure
+
+GoldenDog Linux's infrastructure, including the APT repository that delivers updates to every installation, is generously donated by **[shrug.host](https://shrug.host)**. Our sincere thanks to Neil Hanlon and shrug.host for provisioning the project and supporting it from the start.
+
 ---
 
 If you believe we have missed a credit or have any questions regarding licensing, please [open an issue](https://github.com/goldendoglinux/support/issues).
