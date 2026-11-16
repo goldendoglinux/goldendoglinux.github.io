@@ -2,7 +2,7 @@ import NewsletterForm from '@site/src/components/NewsletterForm';
 
 # Comunidad
 ## Canales
-*   **IRC**: irc.libera.chat #goldendog (puenteado con Discord)
+*   **IRC**: irc.libera.chat #goldendoglinux (puenteado con Discord)
 *   **Discord**: [Únete](/discord)
 *   **Bluesky**: [Síguenos](https://bsky.app/profile/goldendoglinux.org)
 *   **GitHub**: [Contribuye](https://github.com/goldendoglinux)
