@@ -1,0 +1,80 @@
+---
+title: Download
+description: Download the latest GoldenDog Linux ISO and verify its SHA256 checksum.
+---
+
+import CodeBlock from '@theme/CodeBlock';
+import release from '@site/src/data/release.json';
+
+# Download GoldenDog Linux
+
+<div className="card shadow--md margin-vert--lg">
+  <div className="card__body">
+    <h2 className="margin-bottom--sm">GoldenDog Linux {release.version} "{release.codename}"</h2>
+    <p className="margin-bottom--md">
+      Released on {release.date} · {release.arch} · {release.size}
+    </p>
+    <a className="button button--primary button--lg" href={release.isoUrl}>
+      Download ISO
+    </a>
+  </div>
+</div>
+
+This is always the latest GoldenDog release. Once installed, your system receives every future update through `apt`, so there is no need to download a new ISO to stay up to date.
+
+## Verify Your Download
+
+Before installing, check that the ISO you downloaded is **exactly** the one we published. If even a single byte was changed, whether by a corrupted download or by someone tampering with the file, its SHA256 checksum will be completely different.
+
+This is the official SHA256 checksum for <code>{release.isoFile}</code>:
+
+<CodeBlock language="text">{release.sha256}</CodeBlock>
+
+:::warning Compare against this page
+Always compare against the checksum shown **on this page**. This site and the download server are hosted separately, so someone who managed to replace the ISO on the server could not change this checksum as well. If the checksums do not match, **do not install the ISO**: delete it and download it again.
+:::
+
+### On Linux
+
+Open a terminal in the folder where you saved the ISO (usually `~/Downloads`) and run:
+
+<CodeBlock language="bash">{`sha256sum ${release.isoFile}`}</CodeBlock>
+
+The command prints a long string of letters and numbers followed by the file name. That string must be identical to the checksum above.
+
+You can also let the system do the comparison for you:
+
+<CodeBlock language="bash">{`echo "${release.sha256}  ${release.isoFile}" | sha256sum -c`}</CodeBlock>
+
+If the file is intact, you will see <code>{release.isoFile}: OK</code>. If you see `FAILED`, the file is not the one we published.
+
+### On Windows
+
+Open **PowerShell** in the folder where you saved the ISO and run:
+
+<CodeBlock language="powershell">{`Get-FileHash .\\${release.isoFile} -Algorithm SHA256`}</CodeBlock>
+
+Windows shows the checksum in uppercase letters; that is normal, and only the characters themselves need to match. To let PowerShell do the comparison:
+
+<CodeBlock language="powershell">{`(Get-FileHash .\\${release.isoFile} -Algorithm SHA256).Hash -eq "${release.sha256}"`}</CodeBlock>
+
+The result must be `True`.
+
+### On macOS
+
+Open **Terminal** in the folder where you saved the ISO and run:
+
+<CodeBlock language="bash">{`shasum -a 256 ${release.isoFile}`}</CodeBlock>
+
+## What's New
+
+See the [changelog](/changelog) for the full list of changes in this release.
+
+## Next Steps
+
+1. **Create the installation media**: [Burn the ISO to a USB drive](/docs/installation-guide) on Windows, macOS or Linux.
+2. **Install GoldenDog**: Follow the [installation guide](/docs/installing-goldendog).
+
+:::tip Keep your system secure
+Don't forget to read [Keeping GoldenDog Secure](/security) to learn how to keep your GoldenDog safe after installing it.
+:::

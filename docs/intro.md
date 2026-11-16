@@ -10,7 +10,7 @@ Welcome to the official documentation platform for **GoldenDog Linux**. Whether 
 
 Getting Started
 
-1.  **Get GoldenDog**: [Download the ISO](#) *(Coming Soon)*
+1.  **Get GoldenDog**: [Download the ISO](/download)
 2.  **Prepare**: [Create Installation Media](./installation-guide.md) — Learn how to burn the ISO to a USB drive on Windows, macOS, or Linux.
 3.  **Install**: [Installation Guide](./installing-goldendog.md) — A step-by-step walkthrough of the installation process.
 

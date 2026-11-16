@@ -10,7 +10,7 @@ Bienvenido a la plataforma oficial de documentación de **GoldenDog Linux**. Tan
 
 Comience su recorrido con estas guías esenciales:
 
-1.  **Obtener GoldenDog**: [Descargar la ISO](#) *(Próximamente)*
+1.  **Obtener GoldenDog**: [Descargar la ISO](/download)
 2.  **Preparación**: [Crear Medios de Instalación](./installation-guide.md) — Aprenda a grabar la ISO en una unidad USB en Windows, macOS o Linux.
 3.  **Instalación**: [Guía de Instalación](./installing-goldendog.md) — Un recorrido detallado paso a paso del proceso de instalación.
 
