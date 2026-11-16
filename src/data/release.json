@@ -7,5 +7,6 @@
   "isoUrl": "https://cdn.goldendoglinux.org/2.1.32/goldendog-2.1.32-amd64.iso",
   "sha256Url": "https://cdn.goldendoglinux.org/2.1.32/goldendog-2.1.32-amd64.sha256",
   "isoFile": "goldendog-2.1.32-amd64.iso",
-  "sha256": "aa9805e9f289e983d034ad60cf61936b7f9e4ea722a7d013226e7a436b8b2750"
+  "sha256": "aa9805e9f289e983d034ad60cf61936b7f9e4ea722a7d013226e7a436b8b2750",
+  "notesUrl": "/release-notes/2-1-32"
 }

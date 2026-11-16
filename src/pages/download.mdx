@@ -4,6 +4,7 @@ description: Download the latest GoldenDog Linux ISO and verify its SHA256 check
 ---
 
 import CodeBlock from '@theme/CodeBlock';
+import Link from '@docusaurus/Link';
 import release from '@site/src/data/release.json';
 
 # Download GoldenDog Linux
@@ -17,6 +18,9 @@ import release from '@site/src/data/release.json';
     <a className="button button--primary button--lg" href={release.isoUrl}>
       Download ISO
     </a>
+    <Link className="button button--secondary button--lg margin-left--sm" to={release.notesUrl}>
+      View Release Notes
+    </Link>
   </div>
 </div>
 
@@ -68,7 +72,7 @@ Open **Terminal** in the folder where you saved the ISO and run:
 
 ## What's New
 
-See the [changelog](/changelog) for the full list of changes in this release.
+<p>Read the <Link to={release.notesUrl}>release notes</Link> for the highlights of this release, or see the <Link to="/changelog">changelog</Link> for the full history of changes.</p>
 
 ## Next Steps
 

@@ -4,6 +4,7 @@ description: Descargá la ISO más reciente de GoldenDog Linux y verificá su ch
 ---
 
 import CodeBlock from '@theme/CodeBlock';
+import Link from '@docusaurus/Link';
 import release from '@site/src/data/release.json';
 
 # Descargar GoldenDog Linux
@@ -17,6 +18,9 @@ import release from '@site/src/data/release.json';
     <a className="button button--primary button--lg" href={release.isoUrl}>
       Descargar ISO
     </a>
+    <Link className="button button--secondary button--lg margin-left--sm" to={release.notesUrl}>
+      Ver notas de la versión
+    </Link>
   </div>
 </div>
 
@@ -68,7 +72,7 @@ Abrí **Terminal** en la carpeta donde guardaste la ISO y ejecutá:
 
 ## Novedades
 
-Mirá el [registro de cambios](/changelog) para ver la lista completa de cambios de esta versión.
+<p>Leé las <Link to={release.notesUrl}>notas de la versión</Link> para conocer lo más importante de esta versión, o consultá el <Link to="/changelog">registro de cambios</Link> para ver el historial completo.</p>
 
 ## Próximos pasos
 
