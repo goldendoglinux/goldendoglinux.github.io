@@ -12,15 +12,8 @@ import release from '@site/src/data/release.json';
 <div className="card shadow--md margin-vert--lg">
   <div className="card__body">
     <h2 className="margin-bottom--sm">GoldenDog Linux {release.version} "{release.codename}"</h2>
-    <p className="margin-bottom--md">
-      Publicada el {release.date} · {release.arch} · {release.size}
-    </p>
-    <a className="button button--primary button--lg" href={release.isoUrl}>
-      Descargar ISO
-    </a>
-    <Link className="button button--secondary button--lg margin-left--sm" to={release.notesUrl}>
-      Ver notas de la versión
-    </Link>
+    <p className="margin-bottom--md">Publicada el {release.date} · {release.arch} · {release.size} · <Link to={release.notesUrl}>Ver notas de la versión</Link></p>
+    <a className="button button--primary" href={release.isoUrl}>Descargar ISO</a>
   </div>
 </div>
 
