@@ -5,7 +5,7 @@
   "size": "812 MiB",
   "arch": "amd64",
   "isoUrl": "https://cdn.goldendoglinux.org/latest/goldendog-2.1.33-amd64.iso",
-  "sha256Url": "https://cdn.goldendoglinux.org/latest/goldendog-2.1.33-amd64.sha256",
+  "sha256Url": "https://cdn.goldendoglinux.org/latest/goldendog-2.1.33-amd64.iso.sha256",
   "isoFile": "goldendog-2.1.33-amd64.iso",
   "sha256": "45626aa307dfd6560c51a748b628a9023d534fda6923e7ed778330336980e8d8",
   "notesUrl": "/release-notes/2-1-32"
