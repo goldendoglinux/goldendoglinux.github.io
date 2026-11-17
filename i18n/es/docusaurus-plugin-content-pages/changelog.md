@@ -2,6 +2,11 @@
 
 Todos los cambios notables en el proyecto GoldenDog Linux se documentarán en este archivo.
 
+## [2.1.33 GA] "Golden Retriever" - 2026-11-17
+
+### Añadido
+- **LibreOffice**: Se incluye el paquete de idioma español para LibreOffice.
+
 ## [2.1.32 GA] "Golden Retriever" - 2026-11-16
 
 ### Corregido

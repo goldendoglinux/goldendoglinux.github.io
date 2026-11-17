@@ -1,12 +1,12 @@
 {
-  "version": "2.1.32",
+  "version": "2.1.33",
   "codename": "Golden Retriever",
-  "date": "2026-11-16",
+  "date": "2026-11-17",
   "size": "812 MiB",
   "arch": "amd64",
-  "isoUrl": "https://cdn.goldendoglinux.org/2.1.32/goldendog-2.1.32-amd64.iso",
-  "sha256Url": "https://cdn.goldendoglinux.org/2.1.32/goldendog-2.1.32-amd64.sha256",
-  "isoFile": "goldendog-2.1.32-amd64.iso",
-  "sha256": "aa9805e9f289e983d034ad60cf61936b7f9e4ea722a7d013226e7a436b8b2750",
+  "isoUrl": "https://cdn.goldendoglinux.org/latest/goldendog-2.1.33-amd64.iso",
+  "sha256Url": "https://cdn.goldendoglinux.org/latest/goldendog-2.1.33-amd64.sha256",
+  "isoFile": "goldendog-2.1.33-amd64.iso",
+  "sha256": "45626aa307dfd6560c51a748b628a9023d534fda6923e7ed778330336980e8d8",
   "notesUrl": "/release-notes/2-1-32"
 }

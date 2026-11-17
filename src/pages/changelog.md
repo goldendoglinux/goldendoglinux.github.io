@@ -2,6 +2,11 @@
 
 All notable changes to the GoldenDog Linux project will be documented in this file.
 
+## [2.1.33 GA] "Golden Retriever" - 2026-11-17
+
+### Added
+- **LibreOffice**: The Spanish language pack for LibreOffice is now included.
+
 ## [2.1.32 GA] "Golden Retriever" - 2026-11-16
 
 ### Fixed
