@@ -5,7 +5,13 @@ All notable changes to the GoldenDog Linux project will be documented in this fi
 ## [2.1.33 GA] "Golden Retriever" - 2026-11-17
 
 ### Added
-- **LibreOffice**: The Spanish language pack for LibreOffice is now included.
+- **LibreOffice**: LibreOffice now comes in Spanish, with spell checking and hyphenation. Existing installations receive it with `sudo apt full-upgrade`.
+
+### Changed
+- **Keyboard**: The keyboard layout is no longer fixed to us/latam: the layout chosen in the installer is used.
+
+### Fixed
+- **Boot Menu**: The boot submenus now show the correct version.
 
 ## [2.1.32 GA] "Golden Retriever" - 2026-11-16
 

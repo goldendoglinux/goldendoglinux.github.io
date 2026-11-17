@@ -5,7 +5,13 @@ Todos los cambios notables en el proyecto GoldenDog Linux se documentarán en es
 ## [2.1.33 GA] "Golden Retriever" - 2026-11-17
 
 ### Añadido
-- **LibreOffice**: Se incluye el paquete de idioma español para LibreOffice.
+- **LibreOffice**: LibreOffice viene en castellano, con corrector ortográfico y separación en sílabas. Las instalaciones existentes lo reciben con `sudo apt full-upgrade`.
+
+### Cambiado
+- **Teclado**: La distribución de teclado ya no viene fija en us/latam: se usa la que se elige en el instalador.
+
+### Corregido
+- **Menú de arranque**: Los submenús del arranque muestran la versión correcta.
 
 ## [2.1.32 GA] "Golden Retriever" - 2026-11-16
 
