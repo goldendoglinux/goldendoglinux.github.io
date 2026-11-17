@@ -46,6 +46,39 @@ sudo apt update
 sudo apt install nvidia-driver
 ```
 
+En algunos sistemas (especialmente GPUs Turing como la RTX 2080 Ti), instala también las cabeceras del kernel coincidentes y el firmware non-free para que DKMS compile sin problemas:
+
+```bash
+sudo apt install -y linux-headers-$(uname -r) firmware-misc-nonfree
+```
+
+## Si NVIDIA no carga en absoluto
+
+En algunas GPUs NVIDIA, el controlador de código abierto `nouveau` nunca llega a mostrar una pantalla usable. El controlador privativo aún no está cargado, así que obtienes una pantalla negra o un arranque temprano congelado — sin escritorio por el que navegar.
+
+Hasta que instales el controlador del repositorio, recupera el sistema **escribiendo a mano una edición temporal de GRUB en cada arranque**:
+
+1. En el menú de GRUB, resalta la entrada del kernel de GoldenDog y pulsa `e`.
+2. En la línea `linux`, quita `quiet` (opcional, para ver errores) y añade `nomodeset`.
+3. Arranca con `Ctrl + X`.
+4. Cambia a una consola de texto con `Ctrl + Alt + F3`, inicia sesión e instala el controlador del repositorio (Opción 1 o 2 de arriba).
+5. Tras la instalación, asegúrate de que `nomodeset` **no** quede en `/etc/default/grub`, y luego ejecuta:
+
+```bash
+sudo update-grub
+sudo reboot
+```
+
+`nomodeset` es solo un apaño escrito a mano para poder llegar a un TTY. Una vez instalado `nvidia-driver`, quítalo para que `nvidia-drm` cargue con normalidad.
+
+### Verificar
+
+```bash
+nvidia-smi
+```
+
+Deberías ver la versión del controlador privativo (por ejemplo `550.x`) y tu GPU listada.
+
 ## Post-Instalación
 Una vez finalizada la instalación, reinicia tu computadora para cargar los nuevos controladores.
 

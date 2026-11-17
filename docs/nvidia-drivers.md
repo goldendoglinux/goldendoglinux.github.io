@@ -46,6 +46,39 @@ sudo apt update
 sudo apt install nvidia-driver
 ```
 
+On some systems (especially Turing GPUs such as the RTX 2080 Ti), also install matching headers and non-free firmware so DKMS can build cleanly:
+
+```bash
+sudo apt install -y linux-headers-$(uname -r) firmware-misc-nonfree
+```
+
+## If NVIDIA Is Not Loading at All
+
+On some NVIDIA GPUs the open-source `nouveau` driver never brings up a usable display. The proprietary driver is not loaded yet, so you get a black screen or a frozen early boot — with no desktop to click through.
+
+Until the repository driver is installed, recover by **typing a temporary GRUB edit at every boot**:
+
+1. At the GRUB menu, highlight your GoldenDog kernel entry and press `e`.
+2. On the `linux` line, remove `quiet` (optional, so you can see errors) and add `nomodeset`.
+3. Boot with `Ctrl + X`.
+4. Switch to a text console with `Ctrl + Alt + F3`, log in, and install the repository driver (Option 1 or 2 above).
+5. After install, make sure `nomodeset` is **not** left in `/etc/default/grub`, then run:
+
+```bash
+sudo update-grub
+sudo reboot
+```
+
+`nomodeset` is only a typed workaround so you can reach a TTY. Once `nvidia-driver` is installed, clear it so `nvidia-drm` can load normally.
+
+### Verify
+
+```bash
+nvidia-smi
+```
+
+You should see the proprietary driver version (for example `550.x`) and your GPU listed.
+
 ## Post-Installation
 After the installation completes, restart your computer to load the new drivers.
 
