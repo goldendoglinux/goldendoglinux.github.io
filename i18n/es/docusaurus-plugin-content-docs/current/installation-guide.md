@@ -47,7 +47,7 @@ Lista tus unidades con `lsblk` o `fdisk -l` y selecciona la unidad correcta.
 
 ```bash
 # Reemplazá /dev/sdX con la ruta real del USB (el disco entero, no una partición como /dev/sdX1)
-sudo dd if=goldendog-2.1.33-amd64.iso of=/dev/sdX bs=4M status=progress oflag=sync
+sudo dd if=goldendog-2.1.33.1-amd64.iso of=/dev/sdX bs=4M status=progress oflag=sync
 ```
 
 :::danger

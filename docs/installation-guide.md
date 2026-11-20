@@ -50,7 +50,7 @@ list your drives with `lsblk` or `fdisk -l` and select the correct drive.
 
 ```bash
 # Replace /dev/sdX with your actual USB device path (the whole disk, not a partition like /dev/sdX1)
-sudo dd if=goldendog-2.1.33-amd64.iso of=/dev/sdX bs=4M status=progress oflag=sync
+sudo dd if=goldendog-2.1.33.1-amd64.iso of=/dev/sdX bs=4M status=progress oflag=sync
 ```
 
 :::danger

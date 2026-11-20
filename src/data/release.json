@@ -4,9 +4,9 @@
   "date": "2026-11-18",
   "size": "812 MiB",
   "arch": "amd64",
-  "isoUrl": "https://cdn.goldendoglinux.org/latest/goldendog-2.1.33-amd64.iso",
-  "sha256Url": "https://cdn.goldendoglinux.org/latest/goldendog-2.1.33-amd64.iso.sha256",
-  "isoFile": "goldendog-2.1.33-amd64.iso",
+  "isoUrl": "https://cdn.goldendoglinux.org/latest/goldendog-2.1.33.1-amd64.iso",
+  "sha256Url": "https://cdn.goldendoglinux.org/latest/goldendog-2.1.33.1-amd64.iso.sha256",
+  "isoFile": "goldendog-2.1.33.1-amd64.iso",
   "sha256": "f3787b6789f577eb65cd2211025840ba328a9c7d5747f1057bf725910c6ecdd3",
   "notesUrl": "/release-notes/2-1-32"
 }
