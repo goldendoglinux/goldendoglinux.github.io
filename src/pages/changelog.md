@@ -2,6 +2,19 @@
 
 All notable changes to the GoldenDog Linux project will be documented in this file.
 
+## [2.2.1 GA] "Golden Retriever" - 2026-11-21
+
+### Added
+- **NVIDIA**: New GoldenDog NVIDIA GPU Setup application (testing) to install and maintain the NVIDIA driver without using the terminal. It detects the card and offers only compatible drivers: Debian's driver (550) or NVIDIA's newer drivers from NVIDIA's official repository, with the chosen branch pinned. It test-builds the driver for every installed kernel before changing anything, shows the package changes before applying them, signs the driver for Secure Boot, shows real progress, and can diagnose and repair the installation. It can also be used from the terminal with `sudo goldendog-nvidia-setup status` / `install`.
+- **GoldenDog Welcome**: On computers with an NVIDIA card, a new screen shows the detected model and offers to install the driver, or shows the installed version and a button to open the setup.
+- **Installer**: `mokutil` comes preinstalled, to enroll Secure Boot keys.
+
+### Fixed
+- **Installer**: Installation no longer hangs at "Configure the network" on networks where the router announces stateless DHCPv6 but no DHCPv6 server answers (a bug in Debian's `netcfg` 1.197). The installer now boots with `ipv6.disable=1` and downloads packages over IPv4; the installed system keeps IPv6 as usual.
+
+### Note
+- **Upgrading**: `sudo apt full-upgrade` adds GoldenDog NVIDIA GPU Setup as a recommended package. On computers without an NVIDIA card it can be removed with `sudo apt remove goldendog-nvidia-setup-gui goldendog-nvidia-setup`, and it will not be installed again. It runs no background services.
+
 ## [2.1.33 GA] "Golden Retriever" - 2026-11-17
 
 ### Added
